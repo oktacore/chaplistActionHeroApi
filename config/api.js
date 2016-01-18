@@ -34,6 +34,8 @@ exports.default = {
       directoryFileType : 'index.html',
       // The default priority level given to middleware of all types (action, connection, and say)
       defaultMiddlewarePriority : 100,
+        
+      TOKEN_SECRET: process.env.TOKEN_SECRET || "yTxu5slAaCfVTmG00uIt2aHTRuUerQp2M5mkI4PFbg8=",
       // configuration for your actionhero project structure
       paths: {
         'action':      [ __dirname + '/../actions'      ] ,

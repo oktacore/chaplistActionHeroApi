@@ -4,7 +4,7 @@ module.exports = {
     startPriority: 1000,
     stopPriority: 1000,
     initialize: function (api, next) {
-        api.mySQL = {};
+        api.models = {};
 
         api.SequelizeBase = require("sequelize");
         api.sequelize = new api.SequelizeBase(api.config.sequelize.database, api.config.sequelize.username, api.config.sequelize.password, {
@@ -19,18 +19,18 @@ module.exports = {
             mySQL.push(files[i].split(".")[0])
         }
         mySQL.forEach(function (model) {
-            api.mySQL[model] = api.sequelize.import(__dirname + "./../models/" + model + ".js");
+            api.models[model] = api.sequelize.import(__dirname + "./../models/" + model + ".js");
         });
 
         next();
     },
     start: function (api, next) {
-        api.mySQL.myuser.hasMany(api.mySQL.app, {
+        /*api.models.myuser.hasMany(api.mySQL.app, {
             foreignKey: 'user_id'
         });
-        api.mySQL.app.belongsTo(api.mySQL.myuser, {
+        api.models.app.belongsTo(api.mySQL.myuser, {
             foreignKey: 'user_id'
-        });
+        });*/
         next();
     },
     stop: function (api, next) {

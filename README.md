@@ -13,14 +13,11 @@
 ## To Test:
 `npm test`
 
-DAVID------------
-dvdyzag@gmail.com
-COMANDO SEQUELIZE CLI LOCAL
 sudo node_modules/.bin/sequelize 
 
 # Crear modelo con sequelize cli
 
-sequelize model:create --name MyUser --attributes firstName:string, lastName:string, email:string, passwordHash:text, passwordSalt:text
+sequelize model:create --name User --attributes id_user:string,firstName:string,lastName:string,email:string,image:string
 
 
 # Ejecutar migraciones pendientes

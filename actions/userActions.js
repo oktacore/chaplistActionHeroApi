@@ -116,26 +116,46 @@ exports.createApps = {
     }
 };
 
-/*
-'firstName',
-     'password',
-     'lastName',
-     'email',
-     'name',
-     'user_id'
-*/
 exports.authGoogle = {
     name: "authGoogle",
     description: "I list all the users",
     authenticated: false,
     outputExample: {},
+    inputs: {
+        email: {required: true},
+        image: {required: true},
+        user_id: {required: true},
+        firstName: {required: true},
+        lastName: {required: true}
+    },
     version: 1.0,
 
     run: function (api, connection, next) {
-        console.log('********************\n',JSON.stringify(api.params.postVariables), '\n********************\n');
-        next(true);
+        api.userInit.addOrCreate(connection.params, function(res,error){
+            connection.response = res;
+           next(connection.response, error) ;
+        });
     }
 };
+
+exports.post = {
+    name: "post",
+    description: "I list all the users",
+    authenticated: false,
+    outputExample: {},
+    inputs: {
+        token: {required: true},        
+    },
+    version: 1.0,
+
+    run: function (api, connection, next) {
+        api.tokenInit.validateToken(connection.params.token, function(res,error){
+            connection.response = res;
+           next(connection.response, error) ;
+        });
+    }
+};
+
 
 exports.getApps = {
     name: "getApps",
