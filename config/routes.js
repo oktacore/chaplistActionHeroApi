@@ -28,11 +28,12 @@ exports.default = {
       ---------------------- */
       get: [
         { path: '/users', action: 'usersList' }, // (GET) /api/users
-        { path: '/getApps/:user_id', action: 'getApps' } // (GET) /api/users
+        { path: '/getApps/:user_id', action: 'getApps' }
       ],
       post: [
         { path: '/user', action: 'addUser' }, // (POST) /api/login/123
-        { path: '/apps', action: 'createApps' }
+        { path: '/apps', action: 'createApps' },
+        { path: '/auth/google', action: 'authGoogle' }
           ///:email/:lastName/:firstName/:password
           ///user/1/tamy.vivas@gmail.com/Vivas/TAmy/abc123**
           //http://192.168.122.11:8080/api/user/1/tamy.vivas@gmail.com/Vivas/TAmy/abc123**

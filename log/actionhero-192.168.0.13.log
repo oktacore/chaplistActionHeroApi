@@ -1,0 +1,1167 @@
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-16T00:18:58.871Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-16T00:18:58.929Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-16T00:18:58.950Z"}
+{"level":"notice","message":"pid: 7789","timestamp":"2016-01-16T00:18:59.464Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-16T00:18:59.465Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-16T00:18:59.466Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-16T00:18:59.466Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-16T00:18:59.478Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-16T00:18:59.492Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-16T00:19:00.404Z"}
+{"level":"notice","message":"*** Server Started @ Fri Jan 15 2016 18:19:00 GMT-0600 (CST) ***","timestamp":"2016-01-16T00:19:00.414Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":2,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-16T00:19:07.595Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":1,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-16T00:19:07.604Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":0,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-16T03:24:23.568Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":1,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-16T03:24:23.571Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T00:47:20.216Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T00:47:20.258Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T00:47:20.278Z"}
+{"level":"notice","message":"pid: 12188","timestamp":"2016-01-17T00:47:20.806Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T00:47:20.807Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T00:47:20.807Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T00:47:20.808Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T00:47:20.817Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T00:47:20.825Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T00:47:21.737Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 18:47:21 GMT-0600 (CST) ***","timestamp":"2016-01-17T00:47:21.747Z"}
+{"to":"192.168.0.13","level":"info","message":"[server: websocket] new connection","timestamp":"2016-01-17T00:49:45.979Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T00:50:17.293Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T00:50:17.295Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T00:50:17.295Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T00:50:17.299Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T00:50:49.897Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T00:50:49.940Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T00:50:49.963Z"}
+{"level":"notice","message":"pid: 12461","timestamp":"2016-01-17T00:50:50.426Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T00:50:50.426Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T00:50:50.427Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T00:50:50.428Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T00:50:50.436Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T00:50:50.445Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T00:50:51.610Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 18:50:51 GMT-0600 (CST) ***","timestamp":"2016-01-17T00:50:51.621Z"}
+{"to":"192.168.0.13","level":"info","message":"[server: websocket] new connection","timestamp":"2016-01-17T00:51:06.386Z"}
+{"to":"192.168.0.13","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-01-17T00:51:15.871Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:04:44.347Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:04:44.350Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:04:44.352Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:04:44.357Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:04:44.362Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:05:12.209Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:05:12.250Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:05:12.270Z"}
+{"level":"notice","message":"pid: 12717","timestamp":"2016-01-17T01:05:12.692Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:05:12.694Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:05:12.694Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:05:12.695Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:05:12.705Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:05:12.712Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:05:13.621Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:05:13 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:05:13.631Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:07:46.440Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:07:46.444Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:07:46.445Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:07:46.452Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:07:46.457Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:08:18.060Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:08:18.101Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:08:18.140Z"}
+{"level":"notice","message":"pid: 12783","timestamp":"2016-01-17T01:08:18.555Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:08:18.556Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:08:18.556Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:08:18.557Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:08:18.565Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:08:18.573Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:08:19.642Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:08:19 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:08:19.653Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T01:08:35.652Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:08:35.654Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:08:35.657Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:08:35.658Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:08:35.665Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:08:35.673Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:08:35.737Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:08:35.739Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:08:35.746Z"}
+{"level":"notice","message":"pid: 12783","timestamp":"2016-01-17T01:08:35.760Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:08:35.761Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:08:35.761Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:08:35.762Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:08:35.769Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:08:35.771Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:08:36.371Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:08:36 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:08:36.379Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T01:08:36.380Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T01:11:00.775Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:11:00.775Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:11:00.777Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:11:00.778Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:11:00.784Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:11:00.791Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:11:00.873Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:11:00.874Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:11:00.883Z"}
+{"level":"notice","message":"pid: 12783","timestamp":"2016-01-17T01:11:00.982Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:11:00.982Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:11:00.982Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:11:00.983Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:11:00.987Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:11:00.987Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:11:01.488Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:11:01 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:11:01.491Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T01:11:01.492Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T01:11:21.895Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:11:21.895Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:11:21.896Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:11:21.897Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:11:21.899Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:11:21.902Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:11:21.963Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:11:21.963Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:11:21.970Z"}
+{"level":"notice","message":"pid: 12783","timestamp":"2016-01-17T01:11:21.979Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:11:21.979Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:11:21.980Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:11:21.980Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:11:21.984Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:11:21.985Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:11:22.444Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:11:22 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:11:22.447Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T01:11:22.447Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T01:11:32.982Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:11:32.984Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:11:32.985Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:11:32.986Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:11:32.993Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:11:32.995Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:11:33.040Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:11:33.041Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:11:33.050Z"}
+{"level":"notice","message":"pid: 12783","timestamp":"2016-01-17T01:11:33.063Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:11:33.063Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:11:33.064Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:11:33.064Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:11:33.068Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:11:33.068Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:11:33.495Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:11:33 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:11:33.497Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T01:11:33.497Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T01:11:45.061Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:11:45.063Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:11:45.063Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:11:45.064Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:11:45.068Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:11:45.070Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:11:45.121Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:11:45.122Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:11:45.127Z"}
+{"level":"notice","message":"pid: 12783","timestamp":"2016-01-17T01:11:45.135Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:11:45.136Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:11:45.137Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:11:45.138Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:11:45.142Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:11:45.142Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:11:45.525Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:11:45 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:11:45.527Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T01:11:45.528Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T01:12:25.137Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:12:25.137Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:12:25.138Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:12:25.138Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:12:25.141Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:12:25.145Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:12:25.212Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:12:25.212Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:12:25.216Z"}
+{"level":"notice","message":"pid: 12783","timestamp":"2016-01-17T01:12:25.222Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:12:25.223Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:12:25.223Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:12:25.223Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:12:25.226Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:12:25.228Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:12:25.597Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:17:11.760Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:17:11.805Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:17:11.843Z"}
+{"level":"alert","message":"! Failed to load /home/tamyg/Documentos/testActionHero/actions/addUser.js","timestamp":"2016-01-17T01:17:11.850Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:17:35.629Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:17:35.672Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:17:35.710Z"}
+{"level":"notice","message":"pid: 13008","timestamp":"2016-01-17T01:17:36.256Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:17:36.257Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:17:36.258Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:17:36.259Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:17:36.269Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:17:36.273Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:17:37.109Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:17:37 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:17:37.122Z"}
+{"level":"error","message":"! uncaught error from action: action:google","timestamp":"2016-01-17T01:17:44.209Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T01:17:44.210Z"}
+{"level":"error","message":"!     remoteIP: \"192.168.0.13\"","timestamp":"2016-01-17T01:17:44.210Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T01:17:44.210Z"}
+{"level":"error","message":"!     params: {\"action\":\"google\",\"apiVersion\":1}","timestamp":"2016-01-17T01:17:44.210Z"}
+{"level":"error","message":"! TypeError: undefined is not a function","timestamp":"2016-01-17T01:17:44.213Z"}
+{"level":"error","message":"!     at Object.exports.google.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:89:20)","timestamp":"2016-01-17T01:17:44.213Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T01:17:44.214Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T01:17:44.214Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T01:17:44.214Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T01:17:44.214Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T01:17:44.215Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T01:17:44.215Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T01:17:44.215Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T01:17:44.215Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T01:17:44.216Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T01:17:44.216Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T01:17:44.216Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T01:17:44.216Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T01:17:44.216Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T01:17:44.217Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T01:17:44.217Z"}
+{"level":"error","message":"!     at determineRequestParams (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:436:9)","timestamp":"2016-01-17T01:17:44.217Z"}
+{"level":"error","message":"!     at null.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:186:5)","timestamp":"2016-01-17T01:17:44.217Z"}
+{"level":"error","message":"!     at emit (events.js:107:17)","timestamp":"2016-01-17T01:17:44.217Z"}
+{"level":"error","message":"!     at api.genericServer.buildConnection (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:65:12)","timestamp":"2016-01-17T01:17:44.217Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:256:14","timestamp":"2016-01-17T01:17:44.218Z"}
+{"level":"error","message":"!     at Object.browser_fingerprint.fingerprint (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/browser_fingerprint/lib/browser_fingerprint.js:25:4)","timestamp":"2016-01-17T01:17:44.218Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T01:17:44.218Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":14,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:17:44.220Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":1,"error":"{}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:18:58.677Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":1,"error":"{}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:19:24.765Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:19:32.508Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:19:32.512Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:19:32.513Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:19:32.519Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:19:32.523Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:20:04.101Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:20:04.143Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:20:04.185Z"}
+{"level":"notice","message":"pid: 13079","timestamp":"2016-01-17T01:20:04.812Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:20:04.813Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:20:04.814Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:20:04.815Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:20:04.826Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:20:04.831Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:20:05.678Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:20:05 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:20:05.688Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":2,"error":"{}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:20:06.046Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T01:21:45.735Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:21:45.736Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:21:45.737Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:21:45.738Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:21:45.746Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:21:45.751Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:21:45.804Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:21:45.805Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:21:45.811Z"}
+{"level":"notice","message":"pid: 13079","timestamp":"2016-01-17T01:21:45.824Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:21:45.825Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:21:45.825Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:21:45.826Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:21:45.833Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:21:45.834Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:21:46.357Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:21:46 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:21:46.363Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T01:21:46.363Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T01:21:49.217Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T01:21:49.218Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T01:21:49.219Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T01:21:49.223Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T01:21:49.234Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:21:53.774Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:21:53.815Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:21:53.851Z"}
+{"level":"notice","message":"pid: 13127","timestamp":"2016-01-17T01:21:54.413Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:21:54.414Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:21:54.414Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:21:54.416Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:21:54.429Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:21:54.432Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:21:55.323Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:21:55 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:21:55.333Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":2,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:22:46.107Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":2,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:23:14.310Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:23:57.443Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:23:57.487Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:23:57.524Z"}
+{"level":"notice","message":"pid: 13164","timestamp":"2016-01-17T01:23:58.065Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:23:58.066Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:23:58.067Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:23:58.068Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:23:58.083Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:23:58.090Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:23:58.891Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:23:58 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:23:58.900Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":4,"error":"{\"id\":\"771080167777-jfpd042qois2mcj326hodt7ubcg6ujh6.apps.googleusercontent.com\",\"secret\":\"_VCKiy4NL2ASKWRg_Bhdw4_w\",\"site\":\"http://localhost:8080/oauthCallback\",\"authorizationPath\":\"/api/oauth/authorize\",\"tokenPath\":\"/api/oauth/access_token\",\"scope\":0,\"action\":\"oauth\",\"oauth\":{\"authCode\":{},\"password\":{},\"client\":{},\"accessToken\":{}},\"_events\":{}}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:24:00.583Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:30:09.748Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:30:09.789Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:30:09.826Z"}
+{"level":"notice","message":"pid: 13341","timestamp":"2016-01-17T01:30:10.417Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:30:10.418Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:30:10.419Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:30:10.420Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:30:10.431Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:30:10.434Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:30:11.226Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:30:11 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:30:11.240Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":6,"error":"{\"id\":\"771080167777-jfpd042qois2mcj326hodt7ubcg6ujh6.apps.googleusercontent.com\",\"secret\":\"_VCKiy4NL2ASKWRg_Bhdw4_w\",\"site\":\"https://accounts.google.com/o/oauth2/v2/auth\",\"authorizationPath\":\"/api/oauth/authorize\",\"tokenPath\":\"/api/oauth/access_token\",\"scope\":0,\"action\":\"oauth\",\"oauth\":{\"authCode\":{},\"password\":{},\"client\":{},\"accessToken\":{}},\"_events\":{}}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:30:12.804Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T01:32:47.083Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T01:32:47.125Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T01:32:47.167Z"}
+{"level":"notice","message":"pid: 13403","timestamp":"2016-01-17T01:32:47.699Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T01:32:47.701Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T01:32:47.701Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T01:32:47.702Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T01:32:47.714Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T01:32:47.717Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T01:32:48.492Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 16 2016 19:32:48 GMT-0600 (CST) ***","timestamp":"2016-01-17T01:32:48.502Z"}
+{"to":"192.168.0.13","action":"google","params":"{\"action\":\"google\",\"apiVersion\":1}","duration":2,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T01:32:53.096Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T18:39:26.573Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T18:39:26.693Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T18:39:26.742Z"}
+{"level":"notice","message":"pid: 7945","timestamp":"2016-01-17T18:39:27.915Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T18:39:27.916Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T18:39:27.916Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T18:39:27.917Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T18:39:27.927Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T18:39:27.930Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T18:39:28.956Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 12:39:28 GMT-0600 (CST) ***","timestamp":"2016-01-17T18:39:28.965Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":2,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:39:37.202Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":2,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:39:37.212Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":8,"error":"{\"_key\":\"passport\",\"_strategies\":{\"session\":{\"name\":\"session\"},\"google\":{\"name\":\"google\",\"_oauth2\":{\"_clientId\":\"771080167777-jfpd042qois2mcj326hodt7ubcg6ujh6.apps.googleusercontent.com\",\"_clientSecret\":\"_VCKiy4NL2ASKWRg_Bhdw4_w\",\"_baseSite\":\"\",\"_authorizeUrl\":\"https://accounts.google.com/o/oauth2/auth\",\"_accessTokenUrl\":\"https://accounts.google.com/o/oauth2/token\",\"_accessTokenName\":\"access_token\",\"_authMethod\":\"Bearer\",\"_customHeaders\":{},\"_useAuthorizationHeaderForGET\":false},\"_callbackURL\":\"http://127.0.0.1:8080/auth/google/callback\",\"_scopeSeparator\":\" \",\"_skipUserProfile\":false}},\"_serializers\":[null],\"_deserializers\":[null],\"_infoTransformers\":[],\"_framework\":null,\"_userProperty\":\"user\",\"version\":\"0.1.18\",\"strategies\":{}}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:40:10.828Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":4,"error":"{\"_key\":\"passport\",\"_strategies\":{\"session\":{\"name\":\"session\"},\"google\":{\"name\":\"google\",\"_oauth2\":{\"_clientId\":\"771080167777-jfpd042qois2mcj326hodt7ubcg6ujh6.apps.googleusercontent.com\",\"_clientSecret\":\"_VCKiy4NL2ASKWRg_Bhdw4_w\",\"_baseSite\":\"\",\"_authorizeUrl\":\"https://accounts.google.com/o/oauth2/auth\",\"_accessTokenUrl\":\"https://accounts.google.com/o/oauth2/token\",\"_accessTokenName\":\"access_token\",\"_authMethod\":\"Bearer\",\"_customHeaders\":{},\"_useAuthorizationHeaderForGET\":false},\"_callbackURL\":\"http://127.0.0.1:8080/auth/google/callback\",\"_scopeSeparator\":\" \",\"_skipUserProfile\":false}},\"_serializers\":[null],\"_deserializers\":[null],\"_infoTransformers\":[],\"_framework\":null,\"_userProperty\":\"user\",\"version\":\"0.1.18\",\"strategies\":{}}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:41:42.298Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T18:43:13.086Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T18:43:13.087Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T18:43:13.090Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T18:43:13.091Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T18:43:13.096Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T18:43:13.099Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T18:43:13.158Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T18:43:13.161Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T18:43:13.168Z"}
+{"level":"notice","message":"pid: 7945","timestamp":"2016-01-17T18:43:13.190Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T18:43:13.190Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T18:43:13.191Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T18:43:13.192Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T18:43:13.200Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T18:43:13.201Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T18:43:13.926Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 12:43:13 GMT-0600 (CST) ***","timestamp":"2016-01-17T18:43:13.932Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T18:43:13.933Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T18:43:15.189Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T18:43:15.190Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T18:43:15.191Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T18:43:15.192Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T18:43:15.198Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T18:43:15.205Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T18:43:15.294Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T18:43:15.296Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T18:43:15.303Z"}
+{"level":"notice","message":"pid: 7945","timestamp":"2016-01-17T18:43:15.316Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T18:43:15.316Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T18:43:15.317Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T18:43:15.317Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T18:43:15.321Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T18:43:15.322Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T18:43:15.877Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 12:43:15 GMT-0600 (CST) ***","timestamp":"2016-01-17T18:43:15.881Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T18:43:15.881Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":2,"error":"{\"_key\":\"passport\",\"_strategies\":{\"session\":{\"name\":\"session\"},\"google\":{\"name\":\"google\",\"_oauth2\":{\"_clientId\":\"771080167777-jfpd042qois2mcj326hodt7ubcg6ujh6.apps.googleusercontent.com\",\"_clientSecret\":\"_VCKiy4NL2ASKWRg_Bhdw4_w\",\"_baseSite\":\"\",\"_authorizeUrl\":\"https://accounts.google.com/o/oauth2/auth\",\"_accessTokenUrl\":\"https://accounts.google.com/o/oauth2/token\",\"_accessTokenName\":\"access_token\",\"_authMethod\":\"Bearer\",\"_customHeaders\":{},\"_useAuthorizationHeaderForGET\":false},\"_callbackURL\":\"http://127.0.0.1:8080/auth/google/callback\",\"_scopeSeparator\":\" \",\"_skipUserProfile\":false}},\"_serializers\":[null,null,null],\"_deserializers\":[null,null,null],\"_infoTransformers\":[],\"_framework\":null,\"_userProperty\":\"user\",\"version\":\"0.1.18\",\"strategies\":{}}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:45:39.551Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"error":"[object Object]","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:55:08.692Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T18:55:52.764Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T18:55:52.799Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T18:55:52.819Z"}
+{"level":"notice","message":"pid: 8385","timestamp":"2016-01-17T18:55:53.268Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T18:55:53.269Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T18:55:53.270Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T18:55:53.271Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T18:55:53.280Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T18:55:53.284Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T18:55:54.052Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 12:55:54 GMT-0600 (CST) ***","timestamp":"2016-01-17T18:55:54.066Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":2,"error":"true","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:55:55.612Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":11,"error":"true","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:56:36.233Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T18:58:45.309Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T18:58:45.310Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T18:58:45.312Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T18:58:45.313Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T18:58:45.319Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T18:58:45.322Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T18:58:45.378Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T18:58:45.381Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T18:58:45.386Z"}
+{"level":"notice","message":"pid: 8385","timestamp":"2016-01-17T18:58:45.404Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T18:58:45.404Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T18:58:45.405Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T18:58:45.406Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T18:58:45.413Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T18:58:45.414Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T18:58:46.149Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 12:58:46 GMT-0600 (CST) ***","timestamp":"2016-01-17T18:58:46.157Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T18:58:46.157Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T18:59:00.405Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T18:59:00.405Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T18:59:00.407Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T18:59:00.408Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T18:59:00.413Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T18:59:00.417Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T18:59:00.520Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T18:59:00.522Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T18:59:00.532Z"}
+{"level":"notice","message":"pid: 8385","timestamp":"2016-01-17T18:59:00.550Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T18:59:00.551Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T18:59:00.551Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T18:59:00.552Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T18:59:00.558Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T18:59:00.559Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T18:59:01.156Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 12:59:01 GMT-0600 (CST) ***","timestamp":"2016-01-17T18:59:01.159Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T18:59:01.159Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T18:59:46.733Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T18:59:46.734Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T18:59:46.734Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T18:59:46.734Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T18:59:46.735Z"}
+{"level":"error","message":"! TypeError: undefined is not a function","timestamp":"2016-01-17T18:59:46.739Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:90:20)","timestamp":"2016-01-17T18:59:46.740Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T18:59:46.740Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T18:59:46.740Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T18:59:46.740Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T18:59:46.741Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T18:59:46.741Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T18:59:46.741Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T18:59:46.741Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T18:59:46.743Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T18:59:46.744Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T18:59:46.744Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T18:59:46.746Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T18:59:46.746Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T18:59:46.747Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T18:59:46.747Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T18:59:46.747Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T18:59:46.747Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":21,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:59:46.748Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T18:59:50.492Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T18:59:50.494Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T18:59:50.495Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T18:59:50.498Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T18:59:53.404Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T18:59:53.440Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T18:59:53.468Z"}
+{"level":"notice","message":"pid: 8510","timestamp":"2016-01-17T18:59:53.900Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T18:59:53.902Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T18:59:53.902Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T18:59:53.903Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T18:59:53.914Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T18:59:53.917Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T18:59:54.681Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 12:59:54 GMT-0600 (CST) ***","timestamp":"2016-01-17T18:59:54.690Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T18:59:57.094Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T18:59:57.094Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T18:59:57.095Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T18:59:57.095Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T18:59:57.095Z"}
+{"level":"error","message":"! TypeError: undefined is not a function","timestamp":"2016-01-17T18:59:57.097Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:90:20)","timestamp":"2016-01-17T18:59:57.097Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T18:59:57.097Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T18:59:57.098Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T18:59:57.098Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T18:59:57.098Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T18:59:57.098Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T18:59:57.098Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T18:59:57.099Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T18:59:57.099Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T18:59:57.099Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T18:59:57.099Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T18:59:57.100Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T18:59:57.100Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T18:59:57.100Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T18:59:57.100Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T18:59:57.100Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T18:59:57.101Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":13,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T18:59:57.103Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T19:02:12.934Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T19:02:12.935Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T19:02:12.936Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T19:02:12.937Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T19:02:12.942Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T19:02:12.947Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T19:02:13.009Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T19:02:13.011Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T19:02:13.020Z"}
+{"level":"notice","message":"pid: 8510","timestamp":"2016-01-17T19:02:13.040Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T19:02:13.041Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T19:02:13.041Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T19:02:13.042Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T19:02:13.048Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T19:02:13.049Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T19:02:13.893Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 13:02:13 GMT-0600 (CST) ***","timestamp":"2016-01-17T19:02:13.899Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T19:02:13.900Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T19:02:16.838Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T19:02:16.840Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T19:02:16.841Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T19:02:16.844Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T19:02:16.852Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T19:02:19.192Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T19:02:19.234Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T19:02:19.264Z"}
+{"level":"notice","message":"pid: 8590","timestamp":"2016-01-17T19:02:19.700Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T19:02:19.702Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T19:02:19.702Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T19:02:19.703Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T19:02:19.713Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T19:02:19.716Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T19:02:20.645Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 13:02:20 GMT-0600 (CST) ***","timestamp":"2016-01-17T19:02:20.656Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T19:02:26.850Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T19:02:26.850Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T19:02:26.850Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T19:02:26.850Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T19:02:26.851Z"}
+{"level":"error","message":"! TypeError: undefined is not a function","timestamp":"2016-01-17T19:02:26.853Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:90:20)","timestamp":"2016-01-17T19:02:26.854Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T19:02:26.854Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T19:02:26.854Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T19:02:26.855Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T19:02:26.855Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T19:02:26.855Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T19:02:26.855Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T19:02:26.855Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T19:02:26.856Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T19:02:26.856Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T19:02:26.856Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T19:02:26.856Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T19:02:26.857Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T19:02:26.857Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T19:02:26.857Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T19:02:26.857Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T19:02:26.858Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":15,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T19:02:26.860Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T19:05:04.852Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T19:05:04.856Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T19:05:04.858Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T19:05:04.864Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T19:05:04.871Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T19:08:42.658Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T19:08:42.702Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T19:08:42.720Z"}
+{"level":"notice","message":"pid: 8700","timestamp":"2016-01-17T19:08:43.232Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T19:08:43.233Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T19:08:43.234Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T19:08:43.234Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T19:08:43.242Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T19:08:43.245Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T19:08:44.109Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 13:08:44 GMT-0600 (CST) ***","timestamp":"2016-01-17T19:08:44.120Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T19:08:50.325Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T19:08:50.326Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T19:08:50.326Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T19:08:50.326Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T19:08:50.327Z"}
+{"level":"error","message":"! TypeError: Cannot read property 'redirectToLogin' of undefined","timestamp":"2016-01-17T19:08:50.331Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:90:19)","timestamp":"2016-01-17T19:08:50.331Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T19:08:50.332Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T19:08:50.332Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T19:08:50.332Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T19:08:50.333Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T19:08:50.333Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T19:08:50.334Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T19:08:50.334Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T19:08:50.334Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T19:08:50.334Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T19:08:50.334Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T19:08:50.335Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T19:08:50.335Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T19:08:50.336Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T19:08:50.336Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T19:08:50.336Z"}
+{"level":"error","message":"!     at determineRequestParams (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:436:9)","timestamp":"2016-01-17T19:08:50.336Z"}
+{"level":"error","message":"!     at null.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:186:5)","timestamp":"2016-01-17T19:08:50.337Z"}
+{"level":"error","message":"!     at emit (events.js:107:17)","timestamp":"2016-01-17T19:08:50.337Z"}
+{"level":"error","message":"!     at api.genericServer.buildConnection (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:65:12)","timestamp":"2016-01-17T19:08:50.337Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:256:14","timestamp":"2016-01-17T19:08:50.337Z"}
+{"level":"error","message":"!     at Object.browser_fingerprint.fingerprint (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/browser_fingerprint/lib/browser_fingerprint.js:25:4)","timestamp":"2016-01-17T19:08:50.337Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T19:08:50.338Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":18,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T19:08:50.340Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T19:09:19.156Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T19:09:19.157Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T19:09:19.159Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T19:09:19.160Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T19:09:19.165Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T19:09:19.169Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T19:09:19.228Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T19:09:19.230Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T19:09:19.238Z"}
+{"level":"notice","message":"pid: 8700","timestamp":"2016-01-17T19:09:19.252Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T19:09:19.253Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T19:09:19.253Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T19:09:19.254Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T19:09:19.259Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T19:09:19.260Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T19:09:19.873Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 13:09:19 GMT-0600 (CST) ***","timestamp":"2016-01-17T19:09:19.877Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T19:09:19.878Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T19:09:21.320Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T19:09:21.322Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T19:09:21.322Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T19:09:21.327Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T19:09:21.333Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T19:09:23.232Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T19:09:23.277Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T19:09:23.298Z"}
+{"level":"notice","message":"pid: 8738","timestamp":"2016-01-17T19:09:23.896Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T19:09:23.897Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T19:09:23.897Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T19:09:23.898Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T19:09:23.913Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T19:09:23.917Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T19:09:24.830Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 13:09:24 GMT-0600 (CST) ***","timestamp":"2016-01-17T19:09:24.840Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T19:09:24.918Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T19:09:24.918Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T19:09:24.918Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T19:09:24.919Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T19:09:24.919Z"}
+{"level":"error","message":"! TypeError: Cannot read property 'redirectToLogin' of undefined","timestamp":"2016-01-17T19:09:24.922Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:90:19)","timestamp":"2016-01-17T19:09:24.922Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T19:09:24.922Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T19:09:24.923Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T19:09:24.923Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T19:09:24.923Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T19:09:24.924Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T19:09:24.924Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T19:09:24.924Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T19:09:24.924Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T19:09:24.924Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T19:09:24.924Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T19:09:24.924Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T19:09:24.925Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T19:09:24.925Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T19:09:24.925Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T19:09:24.925Z"}
+{"level":"error","message":"!     at determineRequestParams (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:436:9)","timestamp":"2016-01-17T19:09:24.926Z"}
+{"level":"error","message":"!     at null.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:186:5)","timestamp":"2016-01-17T19:09:24.926Z"}
+{"level":"error","message":"!     at emit (events.js:107:17)","timestamp":"2016-01-17T19:09:24.926Z"}
+{"level":"error","message":"!     at api.genericServer.buildConnection (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:65:12)","timestamp":"2016-01-17T19:09:24.926Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:256:14","timestamp":"2016-01-17T19:09:24.926Z"}
+{"level":"error","message":"!     at Object.browser_fingerprint.fingerprint (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/browser_fingerprint/lib/browser_fingerprint.js:25:4)","timestamp":"2016-01-17T19:09:24.926Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T19:09:24.927Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":13,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T19:09:24.929Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:25:00.027Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:44:40.934Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:44:41.029Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:44:41.051Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:45:13.537Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:45:13.579Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:45:13.607Z"}
+{"level":"notice","message":"pid: 13474","timestamp":"2016-01-17T21:45:14.033Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:45:14.035Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:45:14.036Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:45:14.038Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:45:14.055Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:45:14.059Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:45:14.891Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:45:14 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:45:14.900Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T21:45:21.858Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T21:45:21.858Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T21:45:21.859Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T21:45:21.859Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T21:45:21.860Z"}
+{"level":"error","message":"! ReferenceError: passport is not defined","timestamp":"2016-01-17T21:45:21.862Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:91:10)","timestamp":"2016-01-17T21:45:21.862Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T21:45:21.862Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T21:45:21.862Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T21:45:21.863Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T21:45:21.863Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T21:45:21.863Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T21:45:21.863Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T21:45:21.865Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T21:45:21.865Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T21:45:21.866Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T21:45:21.866Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T21:45:21.866Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T21:45:21.866Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T21:45:21.867Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T21:45:21.867Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T21:45:21.867Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T21:45:21.867Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":15,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T21:45:21.870Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":2,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T21:46:12.312Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":4,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T21:46:25.233Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T21:54:33.175Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:54:33.176Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T21:54:33.178Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T21:54:33.179Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T21:54:33.184Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T21:54:33.187Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:54:33.255Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:54:33.258Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:54:33.264Z"}
+{"level":"notice","message":"pid: 13474","timestamp":"2016-01-17T21:54:33.281Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:54:33.282Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:54:33.284Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:54:33.285Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:54:33.291Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:54:33.292Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:54:34.064Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:54:34 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:54:34.070Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T21:54:34.070Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T21:54:38.281Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:54:38.281Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T21:54:38.284Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T21:54:38.285Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T21:54:38.291Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T21:54:38.299Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:54:38.354Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:54:38.358Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:54:38.364Z"}
+{"level":"notice","message":"pid: 13474","timestamp":"2016-01-17T21:54:38.373Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:54:38.373Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:54:38.374Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:54:38.374Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:54:38.378Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:54:38.379Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:54:38.951Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:54:38 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:54:38.954Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T21:54:38.954Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T21:54:56.373Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:54:56.373Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T21:54:56.375Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T21:54:56.376Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T21:54:56.379Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T21:54:56.384Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:54:56.468Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:54:56.470Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:54:56.474Z"}
+{"level":"notice","message":"pid: 13474","timestamp":"2016-01-17T21:54:56.756Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:54:56.757Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:54:56.757Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:54:56.758Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:54:56.762Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:54:56.762Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:54:57.288Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:54:57 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:54:57.292Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T21:54:57.292Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T21:55:22.489Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:55:22.489Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T21:55:22.490Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T21:55:22.491Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T21:55:22.497Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T21:55:22.499Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:55:22.551Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:55:22.552Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:55:22.558Z"}
+{"level":"notice","message":"pid: 13474","timestamp":"2016-01-17T21:55:22.567Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:55:22.568Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:55:22.568Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:55:22.569Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:55:22.572Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:55:22.573Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:55:23.021Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:55:23 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:55:23.024Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T21:55:23.024Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T21:55:37.567Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:55:37.567Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T21:55:37.568Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T21:55:37.568Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T21:55:37.571Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T21:55:37.572Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:55:37.622Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:55:37.624Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:55:37.631Z"}
+{"level":"notice","message":"pid: 13474","timestamp":"2016-01-17T21:55:37.641Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:55:37.642Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:55:37.643Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:55:37.644Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:55:37.647Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:55:37.648Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:55:38.034Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:55:38 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:55:38.036Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T21:55:38.036Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T21:55:58.641Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:55:58.643Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T21:55:58.645Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T21:55:58.647Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T21:55:58.650Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T21:55:58.658Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:55:58.717Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:55:58.718Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:55:58.724Z"}
+{"level":"notice","message":"pid: 13474","timestamp":"2016-01-17T21:55:58.733Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:55:58.734Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:55:58.734Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:55:58.735Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:55:58.738Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:55:58.739Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:55:59.158Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:55:59 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:55:59.161Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T21:55:59.161Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:57:04.466Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T21:57:04.467Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T21:57:04.467Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T21:57:04.470Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T21:57:04.473Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:57:08.955Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:57:09.008Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:57:09.029Z"}
+{"level":"notice","message":"pid: 13739","timestamp":"2016-01-17T21:57:09.533Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:57:09.534Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:57:09.535Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:57:09.535Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:57:09.544Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:57:09.547Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:57:10.381Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:57:10 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:57:10.391Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":3,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T21:57:14.113Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":2,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T21:57:24.440Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T21:57:56.432Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T21:57:56.434Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T21:57:56.437Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T21:57:56.439Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T21:57:56.444Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T21:57:56.450Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T21:57:56.540Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T21:57:56.543Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T21:57:56.552Z"}
+{"level":"notice","message":"pid: 13739","timestamp":"2016-01-17T21:57:56.570Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T21:57:56.571Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T21:57:56.572Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T21:57:56.573Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T21:57:56.580Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T21:57:56.581Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T21:57:57.209Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 15:57:57 GMT-0600 (CST) ***","timestamp":"2016-01-17T21:57:57.215Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T21:57:57.215Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":3,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T21:57:58.236Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/tamyg/Documentos/testActionHero/initializers/oauth2.js) ***\r\n\r\n","timestamp":"2016-01-17T22:00:18.583Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T22:00:18.583Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T22:00:18.584Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T22:00:18.584Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T22:00:18.586Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T22:00:18.590Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T22:00:18.652Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T22:00:18.654Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T22:00:18.661Z"}
+{"level":"notice","message":"pid: 13739","timestamp":"2016-01-17T22:00:18.668Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T22:00:18.669Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T22:00:18.674Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T22:00:18.674Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T22:00:18.678Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T22:00:18.678Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T22:00:19.146Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 16:00:19 GMT-0600 (CST) ***","timestamp":"2016-01-17T22:00:19.150Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T22:00:19.150Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T22:02:52.294Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T22:09:21.433Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T22:09:21.434Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T22:09:21.434Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T22:09:21.438Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T22:09:21.439Z"}
+{"level":"error","message":"! TypeError: undefined is not a function","timestamp":"2016-01-17T22:09:21.444Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:90:20)","timestamp":"2016-01-17T22:09:21.444Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T22:09:21.444Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T22:09:21.445Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T22:09:21.445Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T22:09:21.448Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T22:09:21.448Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T22:09:21.448Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T22:09:21.449Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T22:09:21.450Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T22:09:21.451Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T22:09:21.451Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T22:09:21.452Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T22:09:21.452Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T22:09:21.452Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T22:09:21.452Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T22:09:21.453Z"}
+{"level":"error","message":"!     at determineRequestParams (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:436:9)","timestamp":"2016-01-17T22:09:21.453Z"}
+{"level":"error","message":"!     at null.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:186:5)","timestamp":"2016-01-17T22:09:21.453Z"}
+{"level":"error","message":"!     at emit (events.js:107:17)","timestamp":"2016-01-17T22:09:21.454Z"}
+{"level":"error","message":"!     at api.genericServer.buildConnection (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:65:12)","timestamp":"2016-01-17T22:09:21.454Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:256:14","timestamp":"2016-01-17T22:09:21.454Z"}
+{"level":"error","message":"!     at Object.browser_fingerprint.fingerprint (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/browser_fingerprint/lib/browser_fingerprint.js:25:4)","timestamp":"2016-01-17T22:09:21.454Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T22:09:21.455Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":26,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T22:09:21.457Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T22:10:05.871Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T22:10:05.872Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T22:10:05.872Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T22:10:05.873Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T22:10:05.874Z"}
+{"level":"error","message":"! TypeError: undefined is not a function","timestamp":"2016-01-17T22:10:05.876Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:90:20)","timestamp":"2016-01-17T22:10:05.877Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T22:10:05.877Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T22:10:05.877Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T22:10:05.878Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T22:10:05.878Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T22:10:05.878Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T22:10:05.879Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T22:10:05.879Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T22:10:05.879Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T22:10:05.880Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T22:10:05.880Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T22:10:05.880Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T22:10:05.881Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T22:10:05.881Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T22:10:05.881Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T22:10:05.881Z"}
+{"level":"error","message":"!     at determineRequestParams (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:436:9)","timestamp":"2016-01-17T22:10:05.882Z"}
+{"level":"error","message":"!     at null.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:186:5)","timestamp":"2016-01-17T22:10:05.882Z"}
+{"level":"error","message":"!     at emit (events.js:107:17)","timestamp":"2016-01-17T22:10:05.882Z"}
+{"level":"error","message":"!     at api.genericServer.buildConnection (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:65:12)","timestamp":"2016-01-17T22:10:05.883Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:256:14","timestamp":"2016-01-17T22:10:05.883Z"}
+{"level":"error","message":"!     at Object.browser_fingerprint.fingerprint (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/browser_fingerprint/lib/browser_fingerprint.js:25:4)","timestamp":"2016-01-17T22:10:05.883Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T22:10:05.883Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":15,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T22:10:05.884Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T22:10:46.986Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T22:10:46.987Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T22:10:46.989Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T22:10:46.992Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T22:19:36.078Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T22:19:36.134Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T22:19:36.157Z"}
+{"level":"notice","message":"pid: 14193","timestamp":"2016-01-17T22:19:36.679Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T22:19:36.680Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T22:19:36.682Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T22:19:36.684Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T22:19:36.695Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T22:19:36.700Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T22:19:37.669Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 16:19:37 GMT-0600 (CST) ***","timestamp":"2016-01-17T22:19:37.682Z"}
+{"level":"error","message":"! uncaught error from action: action:authGoogle","timestamp":"2016-01-17T22:19:39.280Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-01-17T22:19:39.281Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2016-01-17T22:19:39.281Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-01-17T22:19:39.282Z"}
+{"level":"error","message":"!     params: {\"action\":\"authGoogle\",\"apiVersion\":1}","timestamp":"2016-01-17T22:19:39.282Z"}
+{"level":"error","message":"! TypeError: undefined is not a function","timestamp":"2016-01-17T22:19:39.287Z"}
+{"level":"error","message":"!     at Object.exports.authGoogle.run (/home/tamyg/Documentos/testActionHero/actions/addUser.js:90:20)","timestamp":"2016-01-17T22:19:39.287Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-01-17T22:19:39.288Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-01-17T22:19:39.288Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-01-17T22:19:39.288Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-01-17T22:19:39.288Z"}
+{"level":"error","message":"!     at iterate (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-01-17T22:19:39.289Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-01-17T22:19:39.289Z"}
+{"level":"error","message":"!     at _parallel (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-01-17T22:19:39.289Z"}
+{"level":"error","message":"!     at Object.async.series (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-01-17T22:19:39.289Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-01-17T22:19:39.289Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-01-17T22:19:39.290Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-01-17T22:19:39.290Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:197:16)","timestamp":"2016-01-17T22:19:39.290Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-01-17T22:19:39.290Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-01-17T22:19:39.291Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:188:16","timestamp":"2016-01-17T22:19:39.291Z"}
+{"level":"error","message":"!     at determineRequestParams (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:436:9)","timestamp":"2016-01-17T22:19:39.291Z"}
+{"level":"error","message":"!     at null.<anonymous> (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:186:5)","timestamp":"2016-01-17T22:19:39.292Z"}
+{"level":"error","message":"!     at emit (events.js:107:17)","timestamp":"2016-01-17T22:19:39.293Z"}
+{"level":"error","message":"!     at api.genericServer.buildConnection (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/initializers/genericServer.js:65:12)","timestamp":"2016-01-17T22:19:39.293Z"}
+{"level":"error","message":"!     at /home/tamyg/Documentos/testActionHero/node_modules/actionhero/servers/web.js:256:14","timestamp":"2016-01-17T22:19:39.293Z"}
+{"level":"error","message":"!     at Object.browser_fingerprint.fingerprint (/home/tamyg/Documentos/testActionHero/node_modules/actionhero/node_modules/browser_fingerprint/lib/browser_fingerprint.js:25:4)","timestamp":"2016-01-17T22:19:39.293Z"}
+{"level":"error","message":"*","timestamp":"2016-01-17T22:19:39.294Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":19,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T22:19:39.296Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to config change (/home/tamyg/Documentos/testActionHero/config/routes.js) ***\r\n\r\n","timestamp":"2016-01-17T22:24:33.810Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T22:24:33.812Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T22:24:33.815Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T22:24:33.816Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T22:24:33.824Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T22:24:33.829Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T22:24:33.907Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T22:24:33.909Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T22:24:33.917Z"}
+{"level":"notice","message":"pid: 14193","timestamp":"2016-01-17T22:24:33.933Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T22:24:33.933Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T22:24:33.935Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T22:24:33.936Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T22:24:33.942Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T22:24:33.943Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T22:24:34.523Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 16:24:34 GMT-0600 (CST) ***","timestamp":"2016-01-17T22:24:34.527Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-17T22:24:34.527Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T22:25:59.062Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T22:25:59.063Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T22:25:59.064Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T22:25:59.070Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T22:25:59.076Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T22:32:43.468Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T22:32:43.508Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T22:32:43.531Z"}
+{"level":"notice","message":"pid: 14445","timestamp":"2016-01-17T22:32:43.986Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T22:32:43.987Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T22:32:43.988Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T22:32:43.988Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T22:32:43.996Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T22:32:44.004Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T22:32:44.945Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 16:32:44 GMT-0600 (CST) ***","timestamp":"2016-01-17T22:32:44.955Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-01-17T22:32:48.144Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T22:49:55.108Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T22:49:55.111Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T22:49:55.112Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T22:49:55.117Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T22:49:55.123Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-17T22:50:44.094Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-17T22:50:44.136Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-17T22:50:44.159Z"}
+{"level":"notice","message":"pid: 14851","timestamp":"2016-01-17T22:50:44.647Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-17T22:50:44.648Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-17T22:50:44.649Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-17T22:50:44.650Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-17T22:50:44.660Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-17T22:50:44.674Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-17T22:50:45.605Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 16:50:45 GMT-0600 (CST) ***","timestamp":"2016-01-17T22:50:45.619Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-17T23:32:00.915Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-17T23:32:00.919Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-17T23:32:00.920Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-17T23:32:00.926Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-17T23:32:00.941Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T00:40:32.767Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T00:40:32.920Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-18T00:40:32.944Z"}
+{"level":"notice","message":"pid: 18476","timestamp":"2016-01-18T00:40:34.602Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-18T00:40:34.602Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T00:40:34.603Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T00:40:34.604Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T00:40:34.615Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T00:40:34.624Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T00:40:35.689Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 18:40:35 GMT-0600 (CST) ***","timestamp":"2016-01-18T00:40:35.699Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-18T01:04:21.242Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-18T01:04:21.244Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-18T01:04:21.245Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-18T01:04:21.251Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-18T01:04:21.254Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T01:04:23.359Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T01:04:23.404Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-18T01:04:23.423Z"}
+{"level":"notice","message":"pid: 18918","timestamp":"2016-01-18T01:04:23.916Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-18T01:04:23.917Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T01:04:23.918Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T01:04:23.919Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T01:04:23.928Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T01:04:23.938Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T01:04:24.994Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 19:04:25 GMT-0600 (CST) ***","timestamp":"2016-01-18T01:04:25.008Z"}
+{"to":"127.0.0.1","params":"{}","duration":1,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T01:21:08.596Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to config change (/home/tamyg/Documentos/testActionHero/config/routes.js) ***\r\n\r\n","timestamp":"2016-01-18T01:25:23.461Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-18T01:25:23.463Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-18T01:25:23.466Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-18T01:25:23.467Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-18T01:25:23.474Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-18T01:25:23.480Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T01:25:23.550Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T01:25:23.552Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-18T01:25:23.559Z"}
+{"level":"notice","message":"pid: 18918","timestamp":"2016-01-18T01:25:23.572Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-18T01:25:23.573Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T01:25:23.573Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T01:25:23.574Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T01:25:23.581Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T01:25:23.583Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T01:25:24.262Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 19:25:24 GMT-0600 (CST) ***","timestamp":"2016-01-18T01:25:24.268Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-18T01:25:24.269Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to config change (/home/tamyg/Documentos/testActionHero/config/routes.js) ***\r\n\r\n","timestamp":"2016-01-18T01:25:28.488Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-18T01:25:28.489Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-18T01:25:28.490Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-18T01:25:28.490Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-18T01:25:28.493Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-18T01:25:28.495Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T01:25:28.542Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T01:25:28.543Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-18T01:25:28.547Z"}
+{"level":"notice","message":"pid: 18918","timestamp":"2016-01-18T01:25:28.560Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-18T01:25:28.560Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T01:25:28.561Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T01:25:28.561Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T01:25:28.565Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T01:25:28.566Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T01:25:29.011Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 19:25:29 GMT-0600 (CST) ***","timestamp":"2016-01-18T01:25:29.015Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-18T01:25:29.015Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to config change (/home/tamyg/Documentos/testActionHero/config/routes.js) ***\r\n\r\n","timestamp":"2016-01-18T01:25:41.499Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-18T01:25:41.500Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-18T01:25:41.501Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-18T01:25:41.501Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-18T01:25:41.505Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-18T01:25:41.507Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T01:25:41.566Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T01:25:41.567Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-18T01:25:41.573Z"}
+{"level":"notice","message":"pid: 18918","timestamp":"2016-01-18T01:25:41.579Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-18T01:25:41.580Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T01:25:41.580Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T01:25:41.581Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T01:25:41.584Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T01:25:41.584Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T01:25:42.011Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 19:25:42 GMT-0600 (CST) ***","timestamp":"2016-01-18T01:25:42.014Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-18T01:25:42.015Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to config change (/home/tamyg/Documentos/testActionHero/config/routes.js) ***\r\n\r\n","timestamp":"2016-01-18T01:28:03.572Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-18T01:28:03.572Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-18T01:28:03.572Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-18T01:28:03.573Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-18T01:28:03.577Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-18T01:28:03.635Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T01:28:03.636Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T01:28:03.637Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-18T01:28:03.643Z"}
+{"level":"notice","message":"pid: 18918","timestamp":"2016-01-18T01:28:03.651Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-18T01:28:03.651Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T01:28:03.652Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T01:28:03.652Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T01:28:03.656Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T01:28:03.657Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T01:28:04.067Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 19:28:04 GMT-0600 (CST) ***","timestamp":"2016-01-18T01:28:04.069Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-18T01:28:04.070Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-18T01:30:25.593Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-18T01:30:25.594Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-18T01:30:25.594Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-18T01:30:25.598Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T01:30:27.627Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T01:30:27.673Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-18T01:30:27.701Z"}
+{"level":"notice","message":"pid: 19730","timestamp":"2016-01-18T01:30:28.190Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-18T01:30:28.191Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T01:30:28.191Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T01:30:28.192Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T01:30:28.199Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T01:30:28.207Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T01:30:29.135Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 19:30:29 GMT-0600 (CST) ***","timestamp":"2016-01-18T01:30:29.145Z"}
+{"to":"127.0.0.1","params":"{\"code\":\"4/9qcXBrMc2I0NGc0SvbGZ0JnQQ65Q-d3OlU7rWaNsa7w\",\"authuser\":\"0\",\"hd\":\"ingenieria.usac.edu.gt\",\"session_state\":\"44f19a3c86e4611f2380d8eb7f1dc7f9e098a988..02d6\",\"prompt\":\"consent\"}","duration":1,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T01:35:49.125Z"}
+{"to":"127.0.0.1","params":"{\"code\":\"4/ph8FEJFV703z0KyReP8B1CoJT2kA5hURxUbIn8zJxoU\",\"authuser\":\"0\",\"hd\":\"ingenieria.usac.edu.gt\",\"session_state\":\"1dc07d9b0ef788fda2573907e9c09e418a16ea23..b701\",\"prompt\":\"consent\"}","duration":1,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T01:36:56.793Z"}
+{"to":"127.0.0.1","params":"{\"code\":\"4/v2A1gFQvYreTTWJtdcINQTARL1xaHBljddGV5jg_b0w\",\"authuser\":\"0\",\"hd\":\"ingenieria.usac.edu.gt\",\"session_state\":\"1a34b78341a3d43297e9f8103a7f9f9ebd9d284b..4436\",\"prompt\":\"consent\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T01:39:26.904Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":2,"error":"{\"globalSafeParams\":[\"file\",\"apiVersion\",\"callback\",\"action\"],\"postVariables\":[\"file\",\"apiVersion\",\"callback\",\"action\",\"firstName\",\"password\",\"lastName\",\"email\",\"name\",\"user_id\"]}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T01:39:27.141Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":3,"error":"{\"globalSafeParams\":[\"file\",\"apiVersion\",\"callback\",\"action\"],\"postVariables\":[\"file\",\"apiVersion\",\"callback\",\"action\",\"firstName\",\"password\",\"lastName\",\"email\",\"name\",\"user_id\"]}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T01:55:18.758Z"}
+{"level":"alert","message":"! Failed to load /home/tamyg/Documentos/testActionHero/actions/addUser.js","timestamp":"2016-01-18T01:56:05.753Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T01:56:52.400Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T01:56:52.445Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has joined the cluster","timestamp":"2016-01-18T01:56:52.469Z"}
+{"level":"notice","message":"pid: 20383","timestamp":"2016-01-18T01:56:52.894Z"}
+{"level":"notice","message":"server ID: 192.168.0.13","timestamp":"2016-01-18T01:56:52.897Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T01:56:52.898Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T01:56:52.899Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T01:56:52.916Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T01:56:52.926Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T01:56:54.062Z"}
+{"level":"notice","message":"*** Server Started @ Sun Jan 17 2016 19:56:54 GMT-0600 (CST) ***","timestamp":"2016-01-18T01:56:54.071Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":6,"error":"{\"globalSafeParams\":[\"file\",\"apiVersion\",\"callback\",\"action\"],\"postVariables\":[\"file\",\"apiVersion\",\"callback\",\"action\",\"firstName\",\"password\",\"lastName\",\"email\",\"name\",\"user_id\"]}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T01:57:14.973Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"error":"Error: user_id is a required parameter for this action","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T01:59:23.664Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":2,"error":"{\"globalSafeParams\":[\"file\",\"apiVersion\",\"callback\",\"action\"],\"postVariables\":[\"file\",\"apiVersion\",\"callback\",\"action\",\"firstName\",\"password\",\"lastName\",\"email\",\"name\",\"user_id\"]}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:03:41.721Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"error":"{\"globalSafeParams\":[\"file\",\"apiVersion\",\"callback\",\"action\"],\"postVariables\":[\"file\",\"apiVersion\",\"callback\",\"action\",\"firstName\",\"password\",\"lastName\",\"email\",\"name\",\"user_id\"]}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:04:16.526Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":0,"error":"{\"globalSafeParams\":[\"file\",\"apiVersion\",\"callback\",\"action\"],\"postVariables\":[\"file\",\"apiVersion\",\"callback\",\"action\",\"firstName\",\"password\",\"lastName\",\"email\",\"name\",\"user_id\"]}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:04:50.149Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":0,"error":"{\"globalSafeParams\":[\"file\",\"apiVersion\",\"callback\",\"action\"],\"postVariables\":[\"file\",\"apiVersion\",\"callback\",\"action\",\"firstName\",\"password\",\"lastName\",\"email\",\"name\",\"user_id\"]}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:05:26.349Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":0,"error":"Error: postVariables is a required parameter for this action","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:21:26.159Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":0,"error":"Error: postVariables is a required parameter for this action","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:21:53.168Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"error":"Error: postVariables is a required parameter for this action","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:22:16.834Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":0,"error":"true","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:23:24.800Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"error":"true","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:23:54.147Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":2,"error":"true","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:24:34.741Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"error":"true","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:31:54.015Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"error":"true","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T02:32:26.558Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-18T02:34:18.861Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-18T02:34:18.863Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-18T02:34:18.864Z"}
+{"level":"info","message":"actionhero member 192.168.0.13 has left the cluster","timestamp":"2016-01-18T02:34:18.869Z"}

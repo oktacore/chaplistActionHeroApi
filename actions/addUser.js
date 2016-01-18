@@ -93,7 +93,6 @@ exports.createApps = {
         }
 
     },
-
     run: function (api, connection, next) {
         api.mySQL.myuser.findById(connection.params.user_id)
             .then(function (user) {
@@ -114,6 +113,27 @@ exports.createApps = {
                 connection.errors = error.message;
                 next(connection.errors, true);
             })
+    }
+};
+
+/*
+'firstName',
+     'password',
+     'lastName',
+     'email',
+     'name',
+     'user_id'
+*/
+exports.authGoogle = {
+    name: "authGoogle",
+    description: "I list all the users",
+    authenticated: false,
+    outputExample: {},
+    version: 1.0,
+
+    run: function (api, connection, next) {
+        console.log('********************\n',JSON.stringify(api.params.postVariables), '\n********************\n');
+        next(true);
     }
 };
 

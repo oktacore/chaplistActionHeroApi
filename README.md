@@ -33,4 +33,11 @@ node_modules/.bin/actionhero generateAction --name=myAction
 
 # Relaciones
 
-http://stackoverflow.com/questions/22958683/how-to-implement-many-to-many-association-in-sequelize
+[relaciones](http://stackoverflow.com/questions/22958683/how-to-implement-many-to-many-association-in-sequelize)
+
+## angular - bootstrap - cors
+
+[abc](https://github.com/evantahler/actionhero-angular-bootstrap-cors-csrf)
+
+## satellizer para consumo de apis vía angular
+[satellizer](https://github.com/sahat/satellizer)
