@@ -1,43 +1,37 @@
 <html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="content-language" content="en" />
-    <meta name="description" content="actionhero.js" />
-    <link rel="stylesheet" href="/public/css/actionhero.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="icon" href="/public/favicon.ico">
-    <title>actionhero.js</title>
-
-    <script src="/public/javascript/actionheroClient.js"></script>
+    <!--angular-->
     <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/angular-local-storage.min.js"></script>
     <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="js/angular/appAngular.js"></script>
     <script type="text/javascript" src="js/angular/controller.js"></script>
     <script type="text/javascript" src="js/angular/factory.js"></script>
     <script type="text/javascript" src="js/angular-google-auth-master/google-auth.min.js"></script>
-    
+
+    <!--import head-->
+    <div ng-include="'views/partials/head.html'"></div>
 
 </head>
 
+        <div ng-include="'views/partials/header.html'"></div>
+
 <body ng-app="appChaplist" class="container">
-    <!-- Google Auth -->
-    <!-- Place this asynchronous JavaScript just before your </body> tag -->
-    <script type="text/javascript">
-        (function () {
-            var po = document.createElement('script');
-            po.type = 'text/javascript';
-            po.async = true;
-            po.src = 'https://apis.google.com/js/client:plusone.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(po, s);
-        })();
-    </script>
     <ui-view></ui-view>
-
 </body>
-
-
+    <footer>
+        <!-- Google Auth -->
+        <!-- Place this asynchronous JavaScript just before your </body> tag -->
+        <script type="text/javascript">
+            (function () {
+                var po = document.createElement('script');
+                po.type = 'text/javascript';
+                po.async = true;
+                po.src = 'https://apis.google.com/js/client:plusone.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+        <div ng-include="'views/partials/footer.html'"></div>
+    </footer>
 </html>

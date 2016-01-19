@@ -1,0 +1,249 @@
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700);
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url("http://weloveiconfonts.com/api/?family=zocial");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:before,
+:after {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: #ddd;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    width: 210px;
+    height: 40px;
+    margin: 10px auto;
+    padding: 0 0 0 55px;
+    font: 700 16px/40px 'Quattrocento Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn span {
+    font-size: 14px;
+    text-transform: none;
+    color: #aaa;
+}
+
+.btn:before {
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    font: 20px/40px entypo;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px 0 0 2px;
+}
+
+.btn.fb:before {
+    content: '\f30c';
+    background: linear-gradient(to bottom, #4477cc 0%, #2f5fae 100%);
+}
+
+.btn.tw:before {
+    content: '\f309';
+    background: linear-gradient(to bottom, #00ccff 0%, #00a3cc 100%);
+}
+
+.btn.gp:before {
+    content: '\f30f';
+    background: linear-gradient(to bottom, #dd4433 0%, #bd2f20 100%);
+}
+
+.btn.am:before {
+    content: 'a';
+    font-family: zocial;
+    text-transform: none;
+    background: linear-gradient(to bottom, #ffaa00 0%, #cc8800 100%);
+}
+
+.btn.ya:before {
+    content: 'Y';
+    font-family: zocial;
+    text-transform: none;
+    background: linear-gradient(to bottom, #cc44cc 0%, #ae2fae 100%);
+}
+
+.btn:hover {
+    text-shadow: 0 0 10px #fff;
+}
+
+
+/* reverse */
+
+.btn.reverse {
+    color: #fff;
+}
+
+.btn.reverse span {
+    color: #eee;
+}
+
+.btn.fb.reverse {
+    background: linear-gradient(to bottom, #4477cc 0%, #2f5fae 100%);
+}
+
+.btn.tw.reverse {
+    background: linear-gradient(to bottom, #00ccff 0%, #00a3cc 100%);
+}
+
+.btn.gp.reverse {
+    background: linear-gradient(to bottom, #dd4433 0%, #bd2f20 100%);
+}
+
+.btn.am.reverse {
+    background: linear-gradient(to bottom, #ffaa00 0%, #cc8800 100%);
+}
+
+.btn.ya.reverse {
+    background: linear-gradient(to bottom, #cc44cc 0%, #ae2fae 100%);
+}
+
+.btn.reverse:before {
+    color: #555;
+    background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+}
+
+
+/* naked */
+
+.btn.naked:before {
+    border-right: 1px solid #aaa;
+    background: none;
+}
+
+.btn.fb.naked:before {
+    color: #356ac2;
+}
+
+.btn.tw.naked:before {
+    color: #00b8e6;
+}
+
+.btn.gp.naked:before {
+    color: #d33523;
+}
+
+.btn.am.naked:before {
+    color: #e69900;
+}
+
+.btn.ya.naked:before {
+    color: #c235c2;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*body {
+    background: #567;
+    font-family: 'Open Sans', sans-serif;
+}*/
+
+.button {
+    width: 100px;
+    background: #3399cc;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+}
+
+.button:hover {
+    background: #2288bb;
+}
+
+#login {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 2%;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+
+#triangle {
+    width: 0;
+    border-top: 12x solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #3399cc;
+    border-left: 12px solid transparent;
+    margin: 0 auto;
+}
+
+#login h1 {
+    background: #3399cc;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    background: #f0f0f0;
+    padding: 6% 4%;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 92%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 95%;
+    color: #555;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #3399cc;
+    border: 0;
+    padding: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+}
+
+input[type="submit"]:hover {
+    background: #2288bb;
+}

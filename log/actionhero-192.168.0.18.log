@@ -1,0 +1,72 @@
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T23:05:20.526Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T23:05:20.550Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-18T23:05:20.565Z"}
+{"level":"notice","message":"pid: 3508","timestamp":"2016-01-18T23:05:20.847Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-18T23:05:20.848Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T23:05:20.848Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T23:05:20.848Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T23:05:20.858Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T23:05:20.865Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T23:05:21.342Z"}
+{"level":"notice","message":"*** Server Started @ Mon Jan 18 2016 17:05:21 GMT-0600 (CST) ***","timestamp":"2016-01-18T23:05:21.343Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"109466752344824488896\",\"email\":\"201212728@ingenieria.usac.edu.gt\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"\",\"firstName\":\"\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":3,"error":"Error: firstName is a required parameter for this action","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T23:05:45.782Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"109466752344824488896\",\"email\":\"201212728@ingenieria.usac.edu.gt\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"\",\"firstName\":\"\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":1,"error":"Error: firstName is a required parameter for this action","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T23:06:35.586Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":221,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTMxNTg0NTMsImV4cCI6MTQ1MzI0NDg1M30.9jDWq4gyV0Dh92SX1ya3u_xDWwG_lgP1_V3xISoDs0Q\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T23:07:33.308Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-18T23:39:56.976Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-18T23:39:56.978Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-18T23:39:56.979Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has left the cluster","timestamp":"2016-01-18T23:39:56.984Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-18T23:39:56.989Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-18T23:40:00.458Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-18T23:40:00.484Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-18T23:40:00.499Z"}
+{"level":"notice","message":"pid: 4308","timestamp":"2016-01-18T23:40:00.766Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-18T23:40:00.766Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-18T23:40:00.767Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-18T23:40:00.767Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-18T23:40:00.777Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-18T23:40:00.784Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-18T23:40:01.271Z"}
+{"level":"notice","message":"*** Server Started @ Mon Jan 18 2016 17:40:01 GMT-0600 (CST) ***","timestamp":"2016-01-18T23:40:01.272Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":145,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTMxNjExMzYsImV4cCI6MTQ1MzI0NzUzNn0.HyUgvJB_X16jjLNW4kclgSwwHRTckXG4acxPX21u-4E\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-18T23:52:16.147Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-19T00:01:57.250Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-19T00:01:57.254Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-19T00:01:57.255Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has left the cluster","timestamp":"2016-01-19T00:01:57.260Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-19T00:01:57.264Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-19T00:02:01.270Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-19T00:02:01.294Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-19T00:02:01.309Z"}
+{"level":"notice","message":"pid: 4761","timestamp":"2016-01-19T00:02:01.565Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-19T00:02:01.566Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-19T00:02:01.566Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-19T00:02:01.566Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-19T00:02:01.575Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-19T00:02:01.582Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-19T00:02:02.055Z"}
+{"level":"notice","message":"*** Server Started @ Mon Jan 18 2016 18:02:02 GMT-0600 (CST) ***","timestamp":"2016-01-19T00:02:02.056Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-19T01:04:52.380Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-19T01:04:52.382Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-19T01:04:52.383Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has left the cluster","timestamp":"2016-01-19T01:04:52.388Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-19T01:04:52.393Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-19T01:04:57.077Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-19T01:04:57.103Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-19T01:04:57.114Z"}
+{"level":"notice","message":"pid: 6515","timestamp":"2016-01-19T01:04:57.378Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-19T01:04:57.379Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-19T01:04:57.380Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-19T01:04:57.380Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-19T01:04:57.395Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-19T01:04:57.411Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-19T01:04:57.932Z"}
+{"level":"notice","message":"*** Server Started @ Mon Jan 18 2016 19:04:57 GMT-0600 (CST) ***","timestamp":"2016-01-19T01:04:57.933Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":140,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTMxNzExMzAsImV4cCI6MTQ1MzI1NzUzMH0.ZzKTuhMWlRdr0BR2Hud0tvpK7LIgfLlhMx-we_gWlw4\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-19T02:38:50.139Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":31,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTMxNzM2ODgsImV4cCI6MTQ1MzI2MDA4OH0.Bmxenlw64cSb46P20CavkKVpVKQumUi3h9-RYJin9O8\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-19T03:21:28.422Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":16,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTMxNzQ3ODMsImV4cCI6MTQ1MzI2MTE4M30.OUzzriHvUGbDtoI4JJpGjxdZglAmCtgx-TvSFBX9zzU\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-19T03:39:43.274Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":14,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTMxNzQ4MDIsImV4cCI6MTQ1MzI2MTIwMn0.ZvC5NAReCktHkMdF4OnIFgGAV6KEfpzh5b8RNorkfeM\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-19T03:40:02.028Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-19T03:48:33.027Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-19T03:48:33.029Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-19T03:48:33.030Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has left the cluster","timestamp":"2016-01-19T03:48:33.036Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-19T03:48:33.041Z"}
