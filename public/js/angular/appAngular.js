@@ -1,12 +1,15 @@
-angular.module('appChaplist', ['ui.router', 'controllers', 'factories', 'jackrabbitsgroup.angular-google-auth'])
+angular.module('appChaplist', ['ui.router', 'controllers', 'factories', 'jackrabbitsgroup.angular-google-auth', 'LocalStorageModule'])
 
-.config(function ($stateProvider, $httpProvider, $urlRouterProvider) {
+.config(function ($stateProvider,$httpProvider, $urlRouterProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = "application/json";
     $stateProvider
         .state('index', {
             url: '/index',
             templateUrl: 'views/pages/login.html',
-            controller: 'ctrlLogin'
+            controller: 'ctrlLogin',
+            resolve: {
+                skipIfLoggedIn: skipIfLoggedIn
+            }
         })
         .state('home', {
             url: '/home',
@@ -20,5 +23,15 @@ angular.module('appChaplist', ['ui.router', 'controllers', 'factories', 'jackrab
         });
 
     $urlRouterProvider.otherwise('index');
+
+    function skipIfLoggedIn($q) {
+        var deferred = $q.defer();
+        if ($rootScope.token) {
+            deferred.reject();
+        } else {
+            deferred.resolve();
+        }
+        return deferred.promise;
+    }
 
 });

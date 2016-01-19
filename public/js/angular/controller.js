@@ -26,21 +26,31 @@ angular.module('controllers', [])
 
         $scope.$on(evtGoogleLogin, function (evt, googleInfo) {
             $scope.googleInfo = googleInfo;
-            factory.login(googleInfo.rawData);
+            factory.login(googleInfo.rawData, function (res) {
+                if (res.user_id) {
+                    $state.go('home');
+                } else {
+                    $window.alert('Ocurrio algun error durante la autenticacion');
+                }
+            });
+
         });
 
     })
-.controller('ctrlHome', function ($scope, $state, $window, factory) {
+    .controller('ctrlHome', function ($scope, $state, $window, factory,$rootScope) {
 
-<<<<<<< HEAD
+        var vm = this;
+        var user = factory.getUser();
+        var token = factory.getToken();
+        $rootScope.token = token;
+        $scope.logout = function () {
+            factory.logout();
+            $state.go('index');
+        }
+
     })
-.controller('ctrlAcerca', function ($scope, $state, $window, factory) {
-=======
-    $scope.$on(evtGoogleLogin, function (evt, googleInfo) {
-        $scope.googleInfo = googleInfo;
-        console.log(googleInfo);
-        factory.login(googleInfo.rawData);
-    });
->>>>>>> 571b931e53f4329d00386886f681e121dbd87ab0
+    .controller('ctrlAcerca', function ($scope, $state, $window, factory) {
+
+
 
     });
