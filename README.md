@@ -18,6 +18,8 @@ sudo node_modules/.bin/sequelize
 # Crear modelo con sequelize cli
 
 sequelize model:create --name User --attributes id_user:string,firstName:string,lastName:string,email:string,image:string
+//App: 
+sequelize model:create --name App --attributes name:string,appSecret:string,packageName:string,hashKey:string
 
 
 # Ejecutar migraciones pendientes

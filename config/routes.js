@@ -27,12 +27,9 @@ exports.default = {
 
       ---------------------- */
       get: [
-        { path: '/users', action: 'usersList' }, // (GET) /api/users
-        { path: '/getApps/:user_id', action: 'getApps' }
+        { path: '/getApps/:token', action: 'getApps' }
       ],
       post: [
-        { path: '/user', action: 'addUser' }, // (POST) /api/login/123
-        { path: '/apps', action: 'createApps' },
         { path: '/auth/google', action: 'authGoogle' },
         { path: '/post', action: 'post' }
           ///:email/:lastName/:firstName/:password

@@ -26,6 +26,7 @@ angular.module('controllers', [])
 
     $scope.$on(evtGoogleLogin, function (evt, googleInfo) {
         $scope.googleInfo = googleInfo;
+        console.log(googleInfo);
         factory.login(googleInfo.rawData);
     });
 
