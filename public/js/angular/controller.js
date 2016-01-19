@@ -32,7 +32,15 @@ angular.module('controllers', [])
     })
 .controller('ctrlHome', function ($scope, $state, $window, factory) {
 
+<<<<<<< HEAD
     })
 .controller('ctrlAcerca', function ($scope, $state, $window, factory) {
+=======
+    $scope.$on(evtGoogleLogin, function (evt, googleInfo) {
+        $scope.googleInfo = googleInfo;
+        console.log(googleInfo);
+        factory.login(googleInfo.rawData);
+    });
+>>>>>>> 571b931e53f4329d00386886f681e121dbd87ab0
 
     });

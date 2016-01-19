@@ -25,30 +25,30 @@ exports.addUser = {
 
     },
 
-    run: function (api, connection, next) {
-        if (connection.params.password.length < 6) {
-            connection.error = "password must be longer than 6 chars";
-            next(connection.error, true)
+    run: function (api, data, next) {
+        if (data.params.password.length < 6) {
+            data.error = "password must be longer than 6 chars";
+            next(data.error, true)
         } else {
             var passwordSalt = 'ASDLKJASDLFKJ005165485' //api.utils.randomString(64);
-            var passwordHash = crypto.createHash('sha256').update(passwordSalt + connection.params.password).digest("hex");
+            var passwordHash = crypto.createHash('sha256').update(passwordSalt + data.params.password).digest("hex");
 
             api.mySQL.myuser
                 .build({
-                    email: connection.params.email,
+                    email: data.params.email,
                     passwordHash: passwordHash,
                     passwordSalt: passwordSalt,
-                    firstName: connection.params.firstName,
-                    lastName: connection.params.lastName,
+                    firstName: data.params.firstName,
+                    lastName: data.params.lastName,
                 })
                 .save()
                 .then(function (user) {
-                    connection.response = user;
-                    next(connection.response, true);
+                    data.response = user;
+                    next(data.response, true);
                 })
                 .catch(function (error) {
-                    connection.errors = error.message;
-                    next(connection.errors, true);
+                    data.errors = error.message;
+                    next(data.errors, true);
                 });
         }
     }
@@ -63,16 +63,16 @@ exports.usersList = {
     outputExample: {},
     version: 1.0,
 
-    run: function (api, connection, next) {
+    run: function (api, data, next) {
         api.mySQL.myuser.findById(1)
             .then(function (list) {
-                connection.response = list;
-                next(connection.response, true);
+                data.response = list;
+                next(data.response, true);
 
             })
             .catch(function (error) {
-                connection.errors = error.message;
-                next(connection.errors, true);
+                data.errors = error.message;
+                next(data.errors, true);
             })
     }
 };
@@ -93,47 +93,47 @@ exports.createApps = {
         }
 
     },
-    run: function (api, connection, next) {
-        api.mySQL.myuser.findById(connection.params.user_id)
+    run: function (api, data, next) {
+        api.mySQL.myuser.findById(data.params.user_id)
             .then(function (user) {
                 console.log('******************\n', user, '******************\n');
                 user.createApp({
-                        name: connection.params.name
+                        name: data.params.name
                     })
                     .then(function (app) {
-                        connection.response = app;
-                        next(connection.response, true);
+                        data.response = app;
+                        next(data.response, true);
                     })
                     .catch(function (error) {
-                        connection.errors = error;
-                        next(connection.errors, true);
+                        data.errors = error;
+                        next(data.errors, true);
                     });
             })
             .catch(function (error) {
-                connection.errors = error.message;
-                next(connection.errors, true);
+                data.errors = error.message;
+                next(data.errors, true);
             })
     }
 };
 
 exports.authGoogle = {
     name: "authGoogle",
-    description: "I list all the users",
+    description: "authenticate using google+ and generate a token for the session",
     authenticated: false,
     outputExample: {},
     inputs: {
         email: {required: true},
         image: {required: true},
         user_id: {required: true},
-        firstName: {required: true},
-        lastName: {required: true}
+        firstName: {required: false},
+        lastName: {required: false}
     },
     version: 1.0,
 
-    run: function (api, connection, next) {
-        api.userInit.addOrCreate(connection.params, function(res,error){
-            connection.response = res;
-           next(connection.response, error) ;
+    run: function (api, data, next) {
+        api.userInit.addOrCreate(data.params, function (res, error) {
+            data.response = res;
+            next(data.response, error);
         });
     }
 };
@@ -144,49 +144,18 @@ exports.post = {
     authenticated: false,
     outputExample: {},
     inputs: {
-        token: {required: true},        
+        token: {
+            required: true
+        },
     },
     version: 1.0,
 
-    run: function (api, connection, next) {
-        api.tokenInit.validateToken(connection.params.token, function(res,error){
-            connection.response = res;
-           next(connection.response, error) ;
+    run: function (api, data, next) {
+        api.tokenInit.validateToken(data.params.token, function (res, error) {
+            data.response = res;
+            next(data.response, error);
         });
     }
 };
 
 
-exports.getApps = {
-    name: "getApps",
-    description: "I list all the users",
-    authenticated: false,
-    outputExample: {},
-    version: 1.0,
-    inputs: {
-        user_id: {
-            required: true
-        }
-
-    },
-
-    run: function (api, connection, next) {
-        api.mySQL.myuser.findById(connection.params.user_id)
-            .then(function (user) {
-                console.log('******************\n', user, '******************\n');
-                user.getApps()
-                    .then(function (app) {
-                        connection.response = app;
-                        next(connection.response, true);
-                    })
-                    .catch(function (error) {
-                        connection.errors = error;
-                        next(connection.errors, true);
-                    });
-            })
-            .catch(function (error) {
-                connection.errors = error.message;
-                next(connection.errors, true);
-            })
-    }
-};

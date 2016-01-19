@@ -18,30 +18,30 @@ module.exports = {
                 };
                 callback(jwt.encode(payload, api.config.general.TOKEN_SECRET), true);
             },
-
+            
+            /*
+                Función que valida un token determinado retornanod su estado y su id_user
+            */
             validateToken: function (token, callback) {
                 var payload = jwt.decode(token, api.config.general.TOKEN_SECRET);
-                
+                var res = {
+                    data: payload.sub,
+                    valid: true
+                };
                 if (payload.exp <= moment().unix()) {
-                    console.log('Token expirado')
-                    /*return res
-                        .status(401)
-                        .send({
-                            message: "El token ha expirado"
-                        });*/
+                    res.valid = false;
+                    res.data = 'token no válido'
                 }
-
-                callback(JSON.stringify(payload.sub), true);
-
+                callback(JSON.stringify(res), true);
             }
-
         };
-
         next();
     },
+    
     start: function (api, next) {
         next();
     },
+    
     stop: function (api, next) {
         next();
     }

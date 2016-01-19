@@ -25,12 +25,12 @@ module.exports = {
         next();
     },
     start: function (api, next) {
-        /*api.models.myuser.hasMany(api.mySQL.app, {
-            foreignKey: 'user_id'
+        api.models.user.hasMany(api.models.app, {
+            foreignKey: 'userId'
         });
-        api.models.app.belongsTo(api.mySQL.myuser, {
-            foreignKey: 'user_id'
-        });*/
+        api.models.app.belongsTo(api.models.user, {
+            foreignKey: 'userId'
+        });
         next();
     },
     stop: function (api, next) {

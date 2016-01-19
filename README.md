@@ -18,6 +18,8 @@ sudo node_modules/.bin/sequelize
 # Crear modelo con sequelize cli
 
 sequelize model:create --name User --attributes id_user:string,firstName:string,lastName:string,email:string,image:string
+//App: 
+sequelize model:create --name App --attributes name:string,appSecret:string,packageName:string,hashKey:string
 
 
 # Ejecutar migraciones pendientes
@@ -38,3 +40,6 @@ node_modules/.bin/actionhero generateAction --name=myAction
 
 ## satellizer para consumo de apis vía angular
 [satellizer](https://github.com/sahat/satellizer)
+
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTY1ODc2NDUyMzA2ODk5NTAyMjkiLCJpYXQiOjE0NTMxNjkyODAsImV4cCI6MTQ1MzI1NTY4MH0.IrmsDqhdYSQUrP6qKO-lYjxCwH4lNEDjunhNLlDNwPE
