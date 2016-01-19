@@ -3,11 +3,8 @@ module.exports = function (sequelize, DataTypes) {
     var App = sequelize.define('App', {
         name: {
             type: DataTypes.STRING,
-            allowNull: false
-        },
-        UserId: {
-            type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
         appSecret: {
             type: DataTypes.STRING,

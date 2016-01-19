@@ -27,14 +27,12 @@ exports.default = {
 
       ---------------------- */
       get: [
-        { path: '/getApps/:token', action: 'getApps' }
+        { path: '/Apps/:token', action: 'getApps' }
       ],
       post: [
         { path: '/auth/google', action: 'authGoogle' },
+        { path: '/App', action: 'createApp' },
         { path: '/post', action: 'post' }
-          ///:email/:lastName/:firstName/:password
-          ///user/1/tamy.vivas@gmail.com/Vivas/TAmy/abc123**
-          //http://192.168.122.11:8080/api/user/1/tamy.vivas@gmail.com/Vivas/TAmy/abc123**
       ]
     }
   }
