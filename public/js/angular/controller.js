@@ -48,9 +48,17 @@ angular.module('controllers', [])
             $state.go('index');
         }
 
+<<<<<<< HEAD
     })
     .controller('ctrlAcerca', function ($scope, $state, $window, factory) {
 
 
-
+=======
+    $scope.$on(evtGoogleLogin, function (evt, googleInfo) {
+        $scope.googleInfo = googleInfo;
+        console.log(googleInfo);
+        factory.login(googleInfo.rawData);
     });
+>>>>>>> 9d7363d0a5ab955393a6a2d5491cf467011263d5
+
+});
