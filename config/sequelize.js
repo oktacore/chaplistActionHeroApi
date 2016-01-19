@@ -3,16 +3,15 @@ exports.default = {
         return {
             "autoMigrate" : true,
             "loadFixtures": false,
-            "database"    : "testActionHero",
+            "database"    : "c9",
             "dialect"     : "mysql",
             "port"        : 3306,
-            "host"        : "127.0.0.1",
-            "username"    : "dba_sa",
-            "password"    : "chepe"
+            "host"        : process.env.IP,
+            "username"    : "root",
+            "password"    : ""
         };
     }
 };
-
 
 // For sequelize-cli
 // Add to the exports below, if you have setup additional environment-specific settings

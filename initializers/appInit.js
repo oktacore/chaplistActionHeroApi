@@ -41,7 +41,7 @@ module.exports = {
                         }
                     })
                     .then(function (user) {
-                        params.appSecret = crypto.createHash('sha256').update(id_user).digest("hex");
+                        params.appSecret = crypto.createHash('sha256').update(id_user+params.name).digest("hex");
                         user.createApp(params)
                             .then(function (app) {
                                 next(JSON.stringify(app), true);
@@ -53,6 +53,55 @@ module.exports = {
                     .catch(function (error) {
                         next(JSON.stringify(error.message), true);
                     });
+            },
+            /*
+                Función para la actualización de los parámetros de una APP
+            */
+            updateApp: function(_id, id_user, data ,next){
+                var params =  _.pick(data, 'name','packageName', 'hashKey');
+                api.models.user.findOne({
+                    where:{
+                        id_user: id_user
+                    }
+                })
+                .then(function (user) {
+                    api.models.app.update(params, 
+                      { where: { id : _id, userId: user.id }} 
+                    ).then(function(res) {
+                        next(JSON.stringify(res), true);
+                    })
+                    .catch(function (error) {
+                        next(JSON.stringify(error.message), error);
+                    });
+                })
+                .catch(function (error) {
+                    next(JSON.stringify(error.message), error);
+                });
+            },
+            /*
+                Función para la eliminación de una app para un usuario específico
+            */
+            deleteApp: function(_id, id_user ,next){
+                api.models.user.findOne({
+                    where:{
+                        id_user: id_user
+                    }
+                })
+                .then(function (user) {
+                    api.models.app.destroy({
+                       where: {
+                          id: _id,
+                          userId: user.id
+                       }
+                    }).then(function(rowDeleted){ // rowDeleted will return number of rows deleted
+                      next(JSON.stringify(rowDeleted), true);
+                    }, function(error){
+                        next(JSON.stringify(error.message), true);
+                    });
+                })
+                .catch(function (error) {
+                    next(JSON.stringify(error.message), error);
+                });
             }
         };
         next();
