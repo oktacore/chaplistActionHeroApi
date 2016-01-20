@@ -37,7 +37,7 @@ angular.module('controllers', [])
         });
 
     })
-    .controller('ctrlHome', function ($scope, $state, $window, factory,$rootScope) {
+    .controller('ctrlHome', function ($scope, $state, $window, factory, $rootScope) {
 
         var vm = this;
         var user = factory.getUser();
@@ -48,17 +48,122 @@ angular.module('controllers', [])
             $state.go('index');
         }
 
-<<<<<<< HEAD
     })
     .controller('ctrlAcerca', function ($scope, $state, $window, factory) {
 
 
-=======
-    $scope.$on(evtGoogleLogin, function (evt, googleInfo) {
-        $scope.googleInfo = googleInfo;
-        console.log(googleInfo);
-        factory.login(googleInfo.rawData);
-    });
->>>>>>> 9d7363d0a5ab955393a6a2d5491cf467011263d5
 
-});
+    })
+    .controller('ctrlFormApp', function ($scope, $state, $window, factory) {
+
+
+
+    })
+    .controller('ctrlApps', function ($scope, $state, $window, factory, DTOptionsBuilder, DTColumnDefBuilder) {
+
+        var vm = this;
+
+        //*****************************************************************************************************
+        vm.dtOptions = DTOptionsBuilder.newOptions().withPaginationType('full_numbers').withDisplayLength(10);
+        vm.dtColumnDefs = [
+        DTColumnDefBuilder.newColumnDef(0),
+        DTColumnDefBuilder.newColumnDef(1),
+        DTColumnDefBuilder.newColumnDef(2),
+        DTColumnDefBuilder.newColumnDef(3),
+        DTColumnDefBuilder.newColumnDef(4)
+    ];
+
+        vm.apps = [
+            {
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },
+            {
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },
+            {
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },
+            {
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },
+            {
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },
+            {
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },{
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },{
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },{
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },{
+
+                name: "up",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            },{
+
+                name: "app",
+                hash: "adfa",
+                appid: "1231",
+                secret: "afsdfasd",
+                package: "hola"
+            }
+            ];
+
+
+        //Definition of functions for salePoint view actions
+        vm.removeMedicine = removeMedicine;
+
+        function removeMedicine(index, medicine) {
+            vm.listmedicine.splice(index, 1);
+        }
+
+    });

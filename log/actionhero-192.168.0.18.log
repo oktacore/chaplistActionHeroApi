@@ -70,3 +70,37 @@
 {"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-19T03:48:33.030Z"}
 {"level":"info","message":"actionhero member 192.168.0.18 has left the cluster","timestamp":"2016-01-19T03:48:33.036Z"}
 {"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-19T03:48:33.041Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-19T22:50:31.727Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-19T22:50:31.752Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-19T22:50:31.767Z"}
+{"level":"notice","message":"pid: 3524","timestamp":"2016-01-19T22:50:32.030Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-19T22:50:32.031Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-19T22:50:32.032Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-19T22:50:32.032Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-19T22:50:32.040Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-19T22:52:52.011Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-19T22:52:52.036Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-19T22:52:52.046Z"}
+{"level":"notice","message":"pid: 3548","timestamp":"2016-01-19T22:52:52.306Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-19T22:52:52.307Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-19T22:52:52.307Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-19T22:52:52.308Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-19T22:52:52.314Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-19T22:56:02.836Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-19T22:56:02.860Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-19T22:56:02.876Z"}
+{"level":"notice","message":"pid: 3579","timestamp":"2016-01-19T22:56:03.136Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-19T22:56:03.137Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-19T22:56:03.137Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-19T22:56:03.137Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-19T22:56:03.145Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-19T22:56:03.152Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-19T22:56:03.623Z"}
+{"level":"notice","message":"*** Server Started @ Tue Jan 19 2016 16:56:03 GMT-0600 (CST) ***","timestamp":"2016-01-19T22:56:03.629Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"103899806757295147224\",\"email\":\"viurus@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"Perez\",\"firstName\":\"Juan\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":138,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDM4OTk4MDY3NTcyOTUxNDcyMjQiLCJpYXQiOjE0NTMyNjQxMDEsImV4cCI6MTQ1MzM1MDUwMX0.ZybADtKhjK9-f7inw2EYItMKFS8Kf1YtpITqiQaP0eg\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-20T04:28:21.103Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"103899806757295147224\",\"email\":\"viurus@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"Perez\",\"firstName\":\"Juan\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":8,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDM4OTk4MDY3NTcyOTUxNDcyMjQiLCJpYXQiOjE0NTMyNjQxNjQsImV4cCI6MTQ1MzM1MDU2NH0.4bm0FJP4T_QpMScWsygibIvr4aF5nGTXaBqzEvYd3L0\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-01-20T04:29:24.093Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-20T05:17:22.913Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-20T05:17:22.916Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-20T05:17:22.917Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has left the cluster","timestamp":"2016-01-20T05:17:22.925Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-20T05:17:22.932Z"}

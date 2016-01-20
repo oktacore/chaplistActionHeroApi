@@ -3,18 +3,12 @@ exports.default = {
         return {
             "autoMigrate" : true,
             "loadFixtures": false,
-            "database"    : "c9",
+            "database"    : "testActionHero",
             "dialect"     : "mysql",
             "port"        : 3306,
-<<<<<<< HEAD
             "host"        : "127.0.0.1",
             "username"    : "root",
             "password"    : "root"
-=======
-            "host"        : process.env.IP,
-            "username"    : "root",
-            "password"    : ""
->>>>>>> 9d7363d0a5ab955393a6a2d5491cf467011263d5
         };
     }
 };

@@ -1,6 +1,13 @@
 <html>
 
 <head>
+
+    <!--datatables-->
+    <script type="text/javascript" src="/public/javascript/dataTables/jquery.min.js"></script>
+    <script type="text/javascript" src="/public/javascript/dataTables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/public/javascript/dataTables/angular.min.js"></script>
+    <script type="text/javascript" src="/public/javascript/dataTables/angular-datatables.min.js"></script>
+
     <!--angular-->
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
@@ -19,19 +26,20 @@
 <body ng-app="appChaplist" class="container">
     <ui-view></ui-view>
 </body>
-    <footer>
-        <!-- Google Auth -->
-        <!-- Place this asynchronous JavaScript just before your </body> tag -->
-        <script type="text/javascript">
-            (function () {
-                var po = document.createElement('script');
-                po.type = 'text/javascript';
-                po.async = true;
-                po.src = 'https://apis.google.com/js/client:plusone.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(po, s);
-            })();
-        </script>
-        <div ng-include="'views/partials/footer.html'"></div>
-    </footer>
+<footer>
+    <!-- Google Auth -->
+    <!-- Place this asynchronous JavaScript just before your </body> tag -->
+    <script type="text/javascript">
+        (function () {
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            po.src = 'https://apis.google.com/js/client:plusone.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+    <div ng-include="'views/partials/footer.html'"></div>
+</footer>
+
 </html>
