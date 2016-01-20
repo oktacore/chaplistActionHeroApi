@@ -1,15 +1,16 @@
-<div ng-include="'views/partials/headerHome.html'"></div>
-<main>
-    <br>
-    <div class="panel panel-default">
-        <div class="panel-body" align="center" valign="center">
+<div ng-include="'views/partials/header.html'"></div>
+<br>
+   <main>
+    <div class="panel panel-primary">
+      <!--<div class="panel-heading">Crear App</div>-->
+      <div class="panel-body">
             <div id="login">
                 <h1>Crea App</h1>
                 <form>
-                    <input type="text" placeholder="PackageName" />
-                    <input type="text" placeholder="Hashkey" />
-                    <input type="text" placeholder="AppName" />
-                    <input type="submit" value="Crear" />
+                    <input type="text" ng-model="data.packageName" placeholder="PackageName" />
+                    <input type="text" ng-model="data.hashKey" placeholder="Hashkey" />
+                    <input type="text" ng-model="data.name" placeholder="AppName" />
+                    <input type="submit" ng-click="createApp(data.name, data.packageName, data.hashKey)" value="Crear" />
                 </form>
             </div>
             <br>

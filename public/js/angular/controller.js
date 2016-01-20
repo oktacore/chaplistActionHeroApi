@@ -4,6 +4,9 @@ angular.module('controllers', [])
         var googleClientId = '771080167777-jfpd042qois2mcj326hodt7ubcg6ujh6.apps.googleusercontent.com';
         var evtGoogleLogin = "evtGoogleLogin";
 
+        $scope.headerHome = false;
+        $scope.headerLogin = true;
+    
         jrgGoogleAuth.init({
             'client_id': googleClientId,
             'scopeHelp': ['login', 'email', 'profile']
@@ -41,8 +44,12 @@ angular.module('controllers', [])
 
         var vm = this;
         var user = factory.getUser();
-        var token = factory.getToken();
-        $rootScope.token = token;
+
+        $scope.user = user;
+
+        $scope.headerHome = true;
+        $scope.headerLogin = false;
+
         $scope.logout = function () {
             factory.logout();
             $state.go('index');
@@ -51,112 +58,56 @@ angular.module('controllers', [])
     })
     .controller('ctrlAcerca', function ($scope, $state, $window, factory) {
 
+        var vm = this;
+        var user = factory.getUser();
+        $scope.headerHome = false;
+        $scope.headerLogin = true;
+        if (user.user_id) {
+            $scope.headerHome = true;
+            $scope.headerLogin = false;
+        }
 
 
     })
     .controller('ctrlFormApp', function ($scope, $state, $window, factory) {
 
+        $scope.data = {};
+        $scope.headerHome = true;
+        $scope.headerLogin = false;
 
+        $scope.createApp = function (name, packageName, hashKey) {
+            if (name == "" || packageName == "" || hashKey == "") {
+                $window.alert("Llene todos los campos para la creación de la App!!")
+                return;
+            }
+            factory.createApp(name, packageName, hashKey, function (res) {
+                console.log(res);
+            });
+        }
 
     })
     .controller('ctrlApps', function ($scope, $state, $window, factory, DTOptionsBuilder, DTColumnDefBuilder) {
-
         var vm = this;
-
+        vm.apps = [];
+        $scope.headerHome = true;
+        $scope.headerLogin = false;
+        
         //*****************************************************************************************************
         vm.dtOptions = DTOptionsBuilder.newOptions().withPaginationType('full_numbers').withDisplayLength(10);
         vm.dtColumnDefs = [
-        DTColumnDefBuilder.newColumnDef(0),
-        DTColumnDefBuilder.newColumnDef(1),
-        DTColumnDefBuilder.newColumnDef(2),
-        DTColumnDefBuilder.newColumnDef(3),
-        DTColumnDefBuilder.newColumnDef(4)
-    ];
+            DTColumnDefBuilder.newColumnDef(0),
+            DTColumnDefBuilder.newColumnDef(1),
+            DTColumnDefBuilder.newColumnDef(2),
+            DTColumnDefBuilder.newColumnDef(3),
+            DTColumnDefBuilder.newColumnDef(4)
+        ];
 
-        vm.apps = [
-            {
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },
-            {
 
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },
-            {
+        factory.getApps().then(function (res) {
+            console.log(res);
+            vm.apps = JSON.parse(res.data);
+        });
 
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },
-            {
-
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },
-            {
-
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },
-            {
-
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },{
-
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },{
-
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },{
-
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },{
-
-                name: "up",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            },{
-
-                name: "app",
-                hash: "adfa",
-                appid: "1231",
-                secret: "afsdfasd",
-                package: "hola"
-            }
-            ];
 
 
         //Definition of functions for salePoint view actions
@@ -165,5 +116,6 @@ angular.module('controllers', [])
         function removeMedicine(index, medicine) {
             vm.listmedicine.splice(index, 1);
         }
+
 
     });

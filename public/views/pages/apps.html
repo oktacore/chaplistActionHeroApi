@@ -1,26 +1,26 @@
-<div ng-include="'views/partials/headerHome.html'"></div>
+<div ng-include="'views/partials/header.html'"></div>
 <main>
     <br>
-    <div class="panel panel-default">
-        <div class="panel-body">
-           <br>
-            <table class="display" datatable="ng" dt-options="sale.dtOptions" dt-column-defs="sale.dtColumnDefs" class="table table-striped table-bordered">
+    <div class="panel panel-primary">
+<!--      <div class="panel-heading">Apps</div> -->
+      <div class="panel-body">
+            <table  class="display nowrap" cellspacing="0" width="100%" datatable="ng" dt-options="ap.dtOptions" dt-column-defs="ap.dtColumnDefs" >
                 <thead>
                     <tr>
                         <th>AppName</th>
                         <th>PackageName</th>
                         <th>HashKey</th>
                         <th>SecretKey</th>
-                        <th>AppId</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="app in ap.apps">
                         <td>{{ app.name }}</td>
-                        <td>{{ app.package }}</td>
-                        <td>{{ app.hash }}</td>
-                        <td>{{ app.appid }}</td>
-                        <td>{{ app.secret}}</td>
+                        <td>{{ app.packageName }}</td>
+                        <td>{{ app.hashKey }}</td>
+                        <td><input type="text" value="{{ app.appSecret }}" readonly="true" size="10"></td>
+                        <td>eliminar</td>
                     </tr>
                 </tbody>
             </table>

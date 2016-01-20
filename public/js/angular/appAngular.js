@@ -1,4 +1,4 @@
-angular.module('appChaplist', ['ui.router', 'controllers', 'factories','datatables','jackrabbitsgroup.angular-google-auth','LocalStorageModule'])
+angular.module('appChaplist', ['ui.router', 'controllers', 'factories', 'datatables', 'jackrabbitsgroup.angular-google-auth', 'LocalStorageModule'])
 
 .config(function ($stateProvider, $httpProvider, $urlRouterProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = "application/json";
@@ -7,14 +7,17 @@ angular.module('appChaplist', ['ui.router', 'controllers', 'factories','datatabl
             url: '/index',
             templateUrl: 'views/pages/login.html',
             controller: 'ctrlLogin',
-            /*            resolve: {
-                            skipIfLoggedIn: skipIfLoggedIn
-                        }*/
+            resolve: {
+                skipIfLoggedIn: skipIfLoggedIn
+            }
         })
         .state('home', {
             url: '/home',
             templateUrl: 'views/pages/home.html',
-            controller: 'ctrlHome'
+            controller: 'ctrlHome',
+            resolve: {
+                loginRequired: loginRequired
+            }
         })
         .state('acerca', {
             url: '/acerca',
@@ -24,24 +27,41 @@ angular.module('appChaplist', ['ui.router', 'controllers', 'factories','datatabl
         .state('formApp', {
             url: '/formApp',
             templateUrl: 'views/pages/formApp.html',
-            controller: 'ctrlFormApp'
+            controller: 'ctrlFormApp',
+            resolve: {
+                loginRequired: loginRequired
+            }
         })
         .state('apps', {
             url: '/apps',
             templateUrl: 'views/pages/apps.html',
-            controller: 'ctrlApps as ap'
+            controller: 'ctrlApps as ap',
+            resolve: {
+                loginRequired: loginRequired
+            }
         });
 
     $urlRouterProvider.otherwise('index');
 
-    /*    function skipIfLoggedIn($q) {
-            var deferred = $q.defer();
-            if ($rootScope.token) {
-                deferred.reject();
-            } else {
-                deferred.resolve();
-            }
-            return deferred.promise;
-        }*/
+    function skipIfLoggedIn($q, factory) {
+        console.log(factory.isAuthenticated());
+        var deferred = $q.defer();
+        if (factory.isAuthenticated()) {
+            deferred.reject();
+        } else {
+            deferred.resolve();
+        }
+        deferred.resolve();
+        return deferred.promise;
+    }
 
+    function loginRequired($q, $state, factory) {
+        var deferred = $q.defer();
+        if (factory.isAuthenticated()) {
+            deferred.resolve();
+        } else {
+            $state.go('index');
+        }
+        return deferred.promise;
+    }
 });

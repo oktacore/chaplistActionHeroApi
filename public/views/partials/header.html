@@ -2,13 +2,16 @@
 <br>
 <header>
     <nav>
-       <div>
+      <div ng-if="headerLogin">
+            <a href="#/index"><span> Login </span></a>
+        </div>
+       <div ng-if="headerHome">
             <a href="#/home"><span> Home </span></a>
         </div>
-        <div>
+        <div ng-if="headerHome">
             <a href="#/apps"><span> Apps </span></a>
         </div>
-        <div>
+        <div ng-if="headerHome">
             <a href="#/formApp"><span> Crear App </span></a>
         </div>
         <div>
