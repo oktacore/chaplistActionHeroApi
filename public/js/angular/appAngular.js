@@ -39,6 +39,15 @@ angular.module('appChaplist', ['ui.router', 'controllers', 'factories', 'datatab
             resolve: {
                 loginRequired: loginRequired
             }
+        })
+        .state('editApp', {
+            url: '/editApp',
+            templateUrl: 'views/pages/editApp.html',
+            controller: 'ctrlEditApp',
+            resolve: {
+                loginRequired: loginRequired,
+                appRequired: appRequired
+            }
         });
 
     $urlRouterProvider.otherwise('index');
@@ -61,6 +70,16 @@ angular.module('appChaplist', ['ui.router', 'controllers', 'factories', 'datatab
             deferred.resolve();
         } else {
             $state.go('index');
+        }
+        return deferred.promise;
+    }
+    
+     function appRequired($q, $state, factory) {
+        var deferred = $q.defer();
+        if (factory.app.name ){
+            deferred.resolve();
+        } else {
+            $state.go('apps');
         }
         return deferred.promise;
     }

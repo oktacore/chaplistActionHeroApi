@@ -2,9 +2,9 @@
 <main>
     <br>
     <div class="panel panel-primary">
-<!--      <div class="panel-heading">Apps</div> -->
-      <div class="panel-body">
-            <table  class="display nowrap" cellspacing="0" width="100%" datatable="ng" dt-options="ap.dtOptions" dt-column-defs="ap.dtColumnDefs" >
+        <!--      <div class="panel-heading">Apps</div> -->
+        <div class="panel-body">
+            <table class="display nowrap" cellspacing="0" width="100%" datatable="ng" dt-options="ap.dtOptions" dt-column-defs="ap.dtColumnDefs">
                 <thead>
                     <tr>
                         <th>AppName</th>
@@ -12,6 +12,7 @@
                         <th>HashKey</th>
                         <th>SecretKey</th>
                         <th>Eliminar</th>
+                        <th>Editar</th>                        
                     </tr>
                 </thead>
                 <tbody>
@@ -19,8 +20,15 @@
                         <td>{{ app.name }}</td>
                         <td>{{ app.packageName }}</td>
                         <td>{{ app.hashKey }}</td>
-                        <td><input type="text" value="{{ app.appSecret }}" readonly="true" size="10"></td>
-                        <td>eliminar</td>
+                        <td>
+                            <input type="text" value="{{ app.appSecret }}" readonly="true" size="10">
+                        </td>
+                        <td>
+                           <a href="" ng-click="ap.deleteApp($index, app.id)" >Eliminar</a>
+                        </td>
+                        <td>
+                           <a href="" ng-click="ap.updateApp(app)" >editar</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

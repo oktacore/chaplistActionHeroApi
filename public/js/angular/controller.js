@@ -6,7 +6,7 @@ angular.module('controllers', [])
 
         $scope.headerHome = false;
         $scope.headerLogin = true;
-    
+
         jrgGoogleAuth.init({
             'client_id': googleClientId,
             'scopeHelp': ['login', 'email', 'profile']
@@ -81,7 +81,12 @@ angular.module('controllers', [])
                 return;
             }
             factory.createApp(name, packageName, hashKey, function (res) {
-                console.log(res);
+                if (res.status != 200) {
+                    $window.alert("No se pudo crear la app");
+                    return;
+                }
+                $scope.data = {}
+                $window.alert("App creada con éxito");
             });
         }
 
@@ -91,7 +96,7 @@ angular.module('controllers', [])
         vm.apps = [];
         $scope.headerHome = true;
         $scope.headerLogin = false;
-        
+
         //*****************************************************************************************************
         vm.dtOptions = DTOptionsBuilder.newOptions().withPaginationType('full_numbers').withDisplayLength(10);
         vm.dtColumnDefs = [
@@ -101,21 +106,48 @@ angular.module('controllers', [])
             DTColumnDefBuilder.newColumnDef(3),
             DTColumnDefBuilder.newColumnDef(4)
         ];
+    
+        vm.apps = factory.getApps();
 
-
-        factory.getApps().then(function (res) {
-            console.log(res);
-            vm.apps = JSON.parse(res.data);
-        });
-
-
-
-        //Definition of functions for salePoint view actions
-        vm.removeMedicine = removeMedicine;
-
-        function removeMedicine(index, medicine) {
-            vm.listmedicine.splice(index, 1);
+        if(vm.apps.length < 1){
+            factory.getAppsFromServer().then(function (res) {
+                vm.apps = JSON.parse(res.data);
+            });    
         }
 
+        //Definition of functions for salePoint view actions
+        vm.deleteApp = deleteApp;
+        vm.updateApp = updateApp;
+
+        function deleteApp(index, app) {
+            factory.deleteApp(index, app, function (res) {
+                if (res == 1) {
+                    vm.apps.splice(index, 1);
+                }
+            });
+        }
+
+        function updateApp(app) {
+            factory.app = app;
+            $state.go('editApp');
+            /*factory.updateApp(index, app, function (res) {
+                if (res == 1) {
+                    vm.apps.splice(index, 1);
+                }
+            });*/
+        }
+
+
+    })
+
+ .controller('ctrlEditApp', function ($scope, $state, $window, factory) {
+
+        $scope.data = factory.app;
+
+        $scope.updateApp = function () {
+            factory.updateApp($scope.data);
+            $window.alert('Cambios realizados.');
+             $state.go('apps');
+        }
 
     });

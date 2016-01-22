@@ -1,0 +1,23 @@
+<div ng-include="'views/partials/header.html'"></div>
+<br>
+   <main>
+    <div class="panel panel-primary">
+      <!--<div class="panel-heading">Crear App</div>-->
+      <div class="panel-body">
+            <div id="login">
+                <h1>Edita tu App</h1>
+                <form>
+                    <input type="text" ng-model="data.packageName" placeholder="PackageName" />
+                    <input type="text" ng-model="data.hashKey" placeholder="Hashkey" />
+                    <input type="text" ng-model="data.name" placeholder="AppName" />
+                    <input type="submit" ng-click="updateApp()" value="Actualizar" />
+                </form>
+            </div>
+            <br>
+            <div class="profile-text">
+                <h1 class="profile-name">Edita tu App</h1>
+                <span class="profile-title">ChapList API Consumer</span>
+            </div>
+        </div>
+    </div>
+</main>

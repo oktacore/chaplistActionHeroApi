@@ -6,6 +6,7 @@ angular.module('factories', [])
     comun.user = {};
     comun.token = null;
     comun.apps = [];
+    comun.app = {};
 
     comun.login = function (googleInfo, callback) {
         var body = {
@@ -54,7 +55,10 @@ angular.module('factories', [])
     comun.logout = function () {
         comun.user = null;
         comun.token = null;
+        comun.apps = [];
+        comun.app = {};
         localStorageService.set('user', null);
+        localStorageService.set('apps', []);
         localStorageService.set('token', null);
     }
 
@@ -64,21 +68,63 @@ angular.module('factories', [])
             packageName: packageName,
             hashKey: hashKey
         }
-        console.log(comun.token)
         return $http.post('/api/App/' + comun.token, body)
             .then(function (res) {
+                addAppLS(res);
                 callback(res);
             }, function (err) {
                 callback(err);
             });
     }
 
-    comun.getApps = function () {
+    comun.getAppsFromServer = function () {
         return $http.get('/api/Apps/' + comun.token)
             .success(function (res) {
-
+                setAppsLS(res);
+                return res;
+            
+            });
+    }
+    
+    comun.getApps = function(){
+        if (comun.apps.length < 1) {
+            comun.apps = localStorageService.get('apps');
+            return comun.apps;
+        } else
+            return comun.apps;
+        
+    }
+    
+    comun.deleteApp = function(index, app, callback){
+        return $http.delete('/api/App/'+app+'/' + comun.token)
+            .success(function (res) {
+                if(res == 1 )
+                    comun.apps.splice(index, 1);
+                callback(res);
                 return res;
             });
+    }
+    
+      comun.updateApp = function( app){
+            return $http.put('/api/App/'+app.id+'/'+comun.token, app)
+            .success(function(res){
+                 var i = comun.apps.indexOf(app);
+                comun.apps[i] = app;
+                comun.app = {};
+            })            
+    }
+      
+      
+    function setAppsLS(res){
+        res = JSON.parse(res);
+        localStorageService.set('apps', res);
+        comun.apps = res;        
+    }
+    
+    function addAppLS(res){
+        res = JSON.parse(res.data);
+        comun.apps.push(res);
+        localStorageService.set('apps', comun.apps);        
     }
 
 
