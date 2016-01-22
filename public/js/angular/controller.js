@@ -54,7 +54,6 @@ angular.module('controllers', [])
             factory.logout();
             $state.go('index');
         }
-
     })
     .controller('ctrlAcerca', function ($scope, $state, $window, factory) {
 
@@ -62,12 +61,10 @@ angular.module('controllers', [])
         var user = factory.getUser();
         $scope.headerHome = false;
         $scope.headerLogin = true;
-        if (user.user_id) {
+        if (user) {
             $scope.headerHome = true;
             $scope.headerLogin = false;
         }
-
-
     })
     .controller('ctrlFormApp', function ($scope, $state, $window, factory) {
 
@@ -89,7 +86,6 @@ angular.module('controllers', [])
                 $window.alert("App creada con éxito");
             });
         }
-
     })
     .controller('ctrlApps', function ($scope, $state, $window, factory, DTOptionsBuilder, DTColumnDefBuilder) {
         var vm = this;
@@ -106,13 +102,14 @@ angular.module('controllers', [])
             DTColumnDefBuilder.newColumnDef(3),
             DTColumnDefBuilder.newColumnDef(4)
         ];
-    
+
         vm.apps = factory.getApps();
 
-        if(vm.apps.length < 1){
+        if (vm.apps.length < 1) {
+                console.log('res');
             factory.getAppsFromServer().then(function (res) {
                 vm.apps = JSON.parse(res.data);
-            });    
+            });
         }
 
         //Definition of functions for salePoint view actions
@@ -122,7 +119,7 @@ angular.module('controllers', [])
         function deleteApp(index, app) {
             factory.deleteApp(index, app, function (res) {
                 if (res == 1) {
-                    vm.apps.splice(index, 1);
+                    //vm.apps.splice(index, 1);
                 }
             });
         }
@@ -140,14 +137,16 @@ angular.module('controllers', [])
 
     })
 
- .controller('ctrlEditApp', function ($scope, $state, $window, factory) {
+.controller('ctrlEditApp', function ($scope, $state, $window, factory) {
 
-        $scope.data = factory.app;
+    $scope.data = factory.app;
+    $scope.headerHome = true;
+    $scope.headerLogin = false;
 
-        $scope.updateApp = function () {
-            factory.updateApp($scope.data);
-            $window.alert('Cambios realizados.');
-             $state.go('apps');
-        }
+    $scope.updateApp = function () {
+        factory.updateApp($scope.data);
+        $window.alert('Cambios realizados.');
+        $state.go('apps');
+    }
 
-    });
+});

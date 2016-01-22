@@ -7,6 +7,7 @@
 
 body {
 	font-family: 'Roboto', Arial, sans-serif;
+    background-image: url("../images/Fondo.jpg");
 	background-color: #ebebeb;
 	overflow-x: hidden;
 	text-align: center;

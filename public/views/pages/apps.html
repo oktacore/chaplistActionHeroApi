@@ -4,6 +4,7 @@
     <div class="panel panel-primary">
         <!--      <div class="panel-heading">Apps</div> -->
         <div class="panel-body">
+           <toaster-container></toaster-container>
             <table class="display nowrap" cellspacing="0" width="100%" datatable="ng" dt-options="ap.dtOptions" dt-column-defs="ap.dtColumnDefs">
                 <thead>
                     <tr>
@@ -24,7 +25,8 @@
                             <input type="text" value="{{ app.appSecret }}" readonly="true" size="10">
                         </td>
                         <td>
-                           <a href="" ng-click="ap.deleteApp($index, app.id)" >Eliminar</a>
+                           <a href="" confirmed-click="ap.deleteApp($index, app.id)" ng-confirm-click="¿Desea eliminar la App?" >Eliminar</a>
+                            
                         </td>
                         <td>
                            <a href="" ng-click="ap.updateApp(app)" >editar</a>

@@ -1,16 +1,21 @@
 <div ng-include="'views/partials/header.html'"></div>
 <main>
     <br>
-        <div class="panel panel-primary">
-      <!--<div class="panel-heading">Profile</div>-->
-      <div class="panel-body">
+    <div class="panel panel-primary">
+        <div class="panel-body">
             <img src="{{user.image}}" class="profile-img">
-            <div class="profile-text">                <h1 class="profile-name">{{user.lastName}},{{user.firstName}}</h1>
+            <div class="profile-text">
+                <h1 class="profile-name">{{user.lastName}},{{user.firstName}}</h1> 
                 {{user.email}}
-                <a class='btn gp naked' ng-click="logout()">
-                       LOGOUT
-                    </a>
+                <br>
+                <a class='btn gp naked' ng-click="logout()">Logout
+                    <span>
+                                with google+
+                    </span>
+                </a>
+                <br>
                 <span class="profile-title">ChapList API Consumer</span>
+            </div>
         </div>
     </div>
 </main>
