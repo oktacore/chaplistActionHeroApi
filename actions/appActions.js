@@ -29,6 +29,37 @@ exports.getApps = {
     }
 };
 
+exports.test = {
+    name: 'test',
+    description: 'get all apps from specific user, defined by valid token param',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+    inputs: { },
+    run: function (api, data, next) {
+         api.models.offer.findOne({
+                        where: {
+                            id: 1,
+                            supermarketId: 1,
+                            current: true
+                        }
+                    })
+                    .then(function (user) {
+                        user.getProducts()
+                            .then(function (app) {
+                                next(app, true);
+                            })
+                            .catch(function (error) {
+                                next(error, true);
+                            });
+                    })
+    }
+};
+
+
 //id_user, data, next, name, packageName, hashKey
 
 exports.createApp = {

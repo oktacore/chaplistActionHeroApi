@@ -25,12 +25,35 @@ module.exports = {
         next();
     },
     start: function (api, next) {
+        //user -> apps
         api.models.user.hasMany(api.models.app, {
             foreignKey: 'userId'
         });
         api.models.app.belongsTo(api.models.user, {
             foreignKey: 'userId'
         });
+        //supermarket -> offers
+        api.models.supermarket.hasMany(api.models.offer, {
+            foreignKey: 'supermarketId'
+        });
+        api.models.offer.belongsTo(api.models.supermarket, {
+            foreignKey: 'supermarketId'
+        });
+        //supermarket -> stores
+        api.models.supermarket.hasMany(api.models.store, {
+            foreignKey: 'supermarketId'
+        });
+        api.models.store.belongsTo(api.models.supermarket, {
+            foreignKey: 'supermarketId'
+        });
+        //many to many offer, product, store
+        api.models.offer.belongsToMany(api.models.product, {through: 'productStore'});
+        api.models.product.belongsToMany(api.models.offer, {through: 'productStore'});
+        
+        //m.Book.hasMany(m.Article, {through: 'book_articles'});
+        //m.Article.hasMany(m.Books, {through: 'book_articles'});
+        
+        
         next();
     },
     stop: function (api, next) {
