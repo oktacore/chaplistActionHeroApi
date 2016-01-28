@@ -7,6 +7,20 @@ module.exports = {
     stopPriority: 1000,
     initialize: function (api, next) {
         api.appInit = {
+            getApp: function(secretKey, packageName, next){
+                api.models.app.findOne({
+                    where: {
+                        appSecret: secretKey,
+                        packageName: packageName
+                    }
+                })
+                .then(function (app) {
+                    next(JSON.stringify(app), true);
+                })
+                .catch(function (error) {
+                    next(JSON.stringify(error.message), true);
+                });   
+            },
             /*
                 Función para obtener las apps de un usuario mediante su token
             */

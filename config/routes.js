@@ -27,13 +27,13 @@ exports.default = {
 
       ---------------------- */
       get: [
-        { path: '/Apps/:token', action: 'getApps' },
-        { path: '/test', action: 'test' }
+        { path: '/Apps/:token', action: 'getApps' }
       ],
       post: [
         { path: '/auth/google', action: 'authGoogle' },
         { path: '/App/:token', action: 'createApp' },
-        { path: '/post', action: 'post' }
+        { path: '/Chap/tokenPetition', action: 'tokenPetition' }
+          
       ],
       put: [
         { path: '/App/:_id/:token', action: 'updateApp' },
