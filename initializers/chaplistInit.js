@@ -4,17 +4,34 @@ module.exports = {
     stopPriority: 1000,
     initialize: function (api, next) {
         api.chaplistInit = {
-            tokenPetition: function(secretKey, packageName, uuid, next){
-                api.appInit.getApp(secretKey, packageName, function(res, error){
-                    if(res){
-                        api.tokenInit.createToken(uuid, function(res, error){
-                            //console.log('****************token\n',res,'\n****************\n');
-                            next(res, error);
-                        });
-                    }else{
-                        next(null, error);                        
+            tokenPetition: function (secretKey, packageName, uuid, next) {
+                api.appInit.getApp(secretKey, packageName, function (res, error) {                    
+                    var result = JSON.parse(res);
+                    if (res == 'null') {
+                        next('null', error);                        
+                    } else {
+                        api.tokenInit.createToken(uuid, function (res, error) {
+                            next(JSON.stringify(res), error);
+                        });                        
                     }
-                });                
+                });
+            },
+
+            getSupermarkets: function (token, next) {
+                api.tokenInit.validateTokenApp(token, function (res, error) {
+                    if(res.valid){
+                        api.models.supermarket.findAll()
+                        .then(function (supermarkets) {
+                            res.supermarkets = supermarkets;
+                            next(JSON.stringify(res), true);
+                        })
+                        .catch(function (error) {
+                            next(JSON.stringify(error), error);
+                        });                        
+                    }else{
+                        next(JSON.stringify(res), error);
+                    }                    
+                });
             }
         };
 

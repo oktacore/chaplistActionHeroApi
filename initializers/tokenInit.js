@@ -33,6 +33,29 @@ module.exports = {
                     res.data = 'token no válido'
                 }
                 callback(JSON.stringify(res), true);
+            },
+            /*
+                Función que valida un token determinado de una app
+            */
+            validateTokenApp: function (token, callback) {
+                var payload = jwt.decode(token, api.config.general.TOKEN_SECRET);
+                var resp = {
+                    token: token,
+                    valid: true                    
+                };
+                //payload.sub,
+                if(payload.sub){//compruebo que el token cumpla la estructura
+                    if (payload.exp <= moment().unix()) {
+                        api.tokenInit.createToken(payload.sub, function(res, error){
+                            resp.token = res;
+                            callback(resp, true);   
+                        });
+                    }else
+                        callback(resp, true);                    
+                }else{
+                    resp.valid= false;
+                    callback(resp, true);
+                }                
             }
         };
         next();

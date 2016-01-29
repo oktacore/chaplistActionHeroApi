@@ -27,3 +27,28 @@ exports.tokenPetition = {
         });
     }
 };
+
+
+exports.getSupermarkets = {
+    name: 'getSupermarkets',
+    description: 'getSupermarkets',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+
+    inputs: {
+        token: {
+            required: true
+        }
+    },
+
+    run: function (api, data, next) {
+        api.chaplistInit.getSupermarkets(data.params.token,function (res, error) {
+            data.response = res;
+            next(data.response, error);
+        });
+    }
+};
