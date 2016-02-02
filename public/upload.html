@@ -8,10 +8,19 @@
     <link rel="icon" href="/public/favicon.ico">
     <title>uploadOffer</title>
 
+    <link rel="stylesheet" href="/public/css/actionhero.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/headerBar.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/login.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/profile.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/acerca.css" type="text/css">
+    <link rel="icon" href="/public/favicon.ico" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
     <script type="text/javascript" src="/public/javascript/actionheroClient.js"></script>
     <script type="text/javascript" src="javascript/xlsx/xlsx.core.min.js"></script>
     <script type="text/javascript" src="javascript/xlsx/shim.js"></script>
-
     <style>
         #drop {
             border: 2px dashed #bbb;
@@ -23,40 +32,47 @@
             font: 20pt bold, "Vollkorn";
             color: #bbb
         }
-
-        #b64data {
-            width: 100%;
-        }
     </style>
 
 </head>
-<body>
-    <b>JS-XLSX (XLSX/XLSB/XLSM/XLS/XML)</b>
-    <br /> Output Format:
-    <select name="format">
-        <option value="csv" selected> CSV</option>
-        <option value="json"> JSON</option>
-        <option value="form"> FORMULAE</option>
-    </select>
-    <br />
 
-    <div id="drop">Drop an XLSX / XLSM / XLSB / ODS / XLS / XML file here to see sheet data</div>
-    <p>
-    <input type="file" name="xlfile" id="xlf" /> ... or click here to select a file</p>
-    <textarea id="b64data">... or paste a base64-encoding here</textarea>
-    <input type="button" id="dotext" value="Click here to process the base64 text" onclick="b64it();" />
-    <br /> Advanced Demo Options:
-    <br /> Use Web Workers: (when available)
-    <input type="checkbox" name="useworker" checked>
-    <br /> Use Transferrables: (when available)
-    <input type="checkbox" name="xferable" checked>
-    <br /> Use readAsBinaryString: (when available)
-    <input type="checkbox" name="userabs" checked>
-    <br />
-    <pre id="out"></pre>
-    <br />
-    <script type="text/javascript" src="javascript/xlsx/xlsxConvert.js"></script>
+<body class="container">
+    <br>
+    <header>
+        <nav>
+            <div>
+                <a href="./#/index"><span> Login </span></a>
+            </div>
+            <div>
+                <a href="./#/acerca"><span> Acerca </span></a>
+            </div>
+            <div>
+                <a href="upload.html"><span> Cargar </span></a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <div class="panel panel-primary">
+        <div class="panel-body">
+            <div id="drop">Drop an XLSX / XLSM / XLSB / ODS / XLS / XML file here to see sheet data</div>
+            <br>
+            <div align="center">
+                <input type="file" name="xlfile" id="xlf" /> ... ó haz click para seleccionar un archivo.
+            </div>
+            <!--<br /> Use Web Workers: (when available)-->
+            <input type="checkbox" name="useworker" checked hidden="true">
+            <!--<br /> Use Transferrables: (when available)-->
+            <input type="checkbox" name="xferable" checked hidden="true">
+            <!--<br  /> Use readAsBinaryString: (when available)-->
+            <input type="checkbox" name="userabs" checked hidden="true">
+            <br />
+            <pre id="out"></pre>
+        </div>
+    </div>
 </body>
-
+<footer>
+    <script type="text/javascript" src="javascript/xlsx/xlsxConvert.js"></script>
+    <p class="text-center text-muted">© Copyright Chaplist 2016</p>
+</footer>
 
 </html>

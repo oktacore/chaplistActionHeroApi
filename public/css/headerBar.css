@@ -11,6 +11,9 @@ body {
 	background-color: #ebebeb;
 	overflow-x: hidden;
 	text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 header {
