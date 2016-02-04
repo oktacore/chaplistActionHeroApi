@@ -33,7 +33,8 @@ exports.default = {
       post: [
         { path: '/auth/google', action: 'authGoogle' },
         { path: '/App/:token', action: 'createApp' },
-        { path: '/Chap/tokenPetition', action: 'tokenPetition' }
+        { path: '/Chap/tokenPetition', action: 'tokenPetition' },
+        { path: '/uploadStore', action: 'uploadStores' }
           
       ],
       put: [

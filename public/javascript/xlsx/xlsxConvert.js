@@ -125,17 +125,19 @@ function process_wb(wb) {
         out.innerText = JSON.stringify(output, 2, 2);
         // construct an HTTP request
         var xhr = new XMLHttpRequest();
-        xhr.open("post", "/api/upload", true);
+        xhr.open("post", "/api/uploadStore", true);
         xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
         // send the collected data as JSON
-        xhr.send(output);
+        xhr.send(JSON.stringify(output));
 
         xhr.onloadend = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
-                alert("Carga exitosa");
+                alert(xhr.status+" "+xhr.responseText);
+                out.innerText = "";
             } else {
-                alert("Intentar de nuevo");
+                alert(xhr.status+""+xhr.responseText);
+                out.innerText = "";
             }
         };
     }
