@@ -121,3 +121,76 @@
 {"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-20T05:22:55.249Z"}
 {"level":"info","message":"actionhero member 192.168.0.18 has left the cluster","timestamp":"2016-01-20T05:22:55.254Z"}
 {"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-20T05:22:55.260Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-30T18:37:35.223Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-30T18:37:35.226Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-30T18:37:35.236Z"}
+{"level":"notice","message":"pid: 27207","timestamp":"2016-01-30T18:37:35.257Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-30T18:37:35.257Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-30T18:37:35.259Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-30T18:37:35.260Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-30T18:37:35.265Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-30T18:37:35.266Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-30T18:37:35.638Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 30 2016 12:37:35 GMT-0600 (CST) ***","timestamp":"2016-01-30T18:37:35.646Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-30T18:37:35.646Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to config change (/home/usuario/documents/chaplistActionHeroApi/config/sequelize.js) ***\r\n\r\n","timestamp":"2016-01-30T18:37:58.148Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-01-30T18:37:58.148Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-01-30T18:37:58.149Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-30T18:37:58.149Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-30T18:37:58.151Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has left the cluster","timestamp":"2016-01-30T18:37:58.195Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-01-30T18:37:58.196Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-01-30T18:37:58.198Z"}
+{"level":"info","message":"actionhero member 192.168.0.18 has joined the cluster","timestamp":"2016-01-30T18:37:58.203Z"}
+{"level":"notice","message":"pid: 27207","timestamp":"2016-01-30T18:37:58.218Z"}
+{"level":"notice","message":"server ID: 192.168.0.18","timestamp":"2016-01-30T18:37:58.218Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-01-30T18:37:58.219Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-01-30T18:37:58.219Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-01-30T18:37:58.223Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-01-30T18:37:58.223Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-01-30T18:37:58.620Z"}
+{"level":"notice","message":"*** Server Started @ Sat Jan 30 2016 12:37:58 GMT-0600 (CST) ***","timestamp":"2016-01-30T18:37:58.626Z"}
+{"level":"info","message":"*** actionhero restarted ***","timestamp":"2016-01-30T18:37:58.626Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"Soy una prueba\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:38:33.919Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"Soy una prueba\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:38:55.852Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"Soy una prueba\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:40:39.861Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"Soy una prueba\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:41:18.609Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"{\\r\\n  \\\"Sheet1\\\": [\\r\\n    {\\r\\n      \\\"supermercado\\\": \\\"0\\\",\\r\\n      \\\"nombre\\\": \\\"Econo Arriola\\\",\\r\\n      \\\"telefo\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:42:45.428Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"{\\n  \\\"CORTOS\\\": [\\n    {\\n      \\\"undefined\\\": \\\"ECONOSUPER\\\"\\n    },\\n    {\\n      \\\"undefined\\\": \\\"Dirección\\\"\\n  \"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:47:40.235Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"{\\n  \\\"Sheet1\\\": [\\n    {\\n      \\\"supermercado\\\": \\\"0\\\",\\n      \\\"nombre\\\": \\\"Econo Arriola\\\",\\n      \\\"telefono\\\": \"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:49:03.883Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"{\\n  \\\"CORTOS\\\": [\\n    {\\n      \\\"undefined\\\": \\\"ECONOSUPER\\\"\\n    },\\n    {\\n      \\\"undefined\\\": \\\"Dirección\\\"\\n  \"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:52:22.580Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"{\\r\\n  \\\"Sheet1\\\": [\\r\\n    {\\r\\n      \\\"supermercado\\\": \\\"0\\\",\\r\\n      \\\"nombre\\\": \\\"Econo Arriola\\\",\\r\\n      \\\"telefo\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:52:54.039Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"SHEET: CORTOS\\r\\n\\r\\nB7='ECONOSUPER\\r\\nB8='Tienda\\r\\nC8='Corto\\r\\nD8='Dirección\\r\\nA9='1\\r\\nB9='Econo Arriola\\r\\nC9=\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:53:25.376Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"{\\n  \\\"CORTOS\\\": [\\n    {\\n      \\\"undefined\\\": \\\"ECONOSUPER\\\"\\n    },\\n    {\\n      \\\"undefined\\\": \\\"Dirección\\\"\\n  \"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:53:40.537Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"SHEET: CORTOS\\n\\n,,,,,,\\n,,,,,,\\n,,,,,,\\n,,,,,,\\n,,,,,,\\n,,,,,,\\n,ECONOSUPER,,,,,\\n,Tienda,Corto,Dirección,,,\"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T19:53:55.813Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"{\\n  \\\"Sheet1\\\": [\\n    {\\n      \\\"supermercado\\\": \\\"0\\\",\\n      \\\"nombre\\\": \\\"Econo Arriola\\\",\\n      \\\"telefono\\\": \"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T20:12:34.605Z"}
+{"to":"127.0.0.1","params":"{\"Sucursales\":\"{\\n  \\\"Sheet1\\\": [\\n    {\\n      \\\"supermercado\\\": \\\"0\\\",\\n      \\\"nombre\\\": \\\"Econo Arriola\\\",\\n      \\\"telefono\\\": \"}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-01T20:15:03.403Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T02:24:08.740Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T02:25:28.759Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T02:39:37.138Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T02:48:20.906Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T02:51:52.110Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T02:56:02.204Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T02:56:08.450Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T02:57:50.430Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:01:18.886Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:03:42.668Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:11:15.937Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:12:02.534Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:12:44.986Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:13:12.211Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:40:15.088Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:50:10.214Z"}
+{"to":"127.0.0.1","action":"authGoogle","params":"{\"user_id\":\"103899806757295147224\",\"email\":\"viurus@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"Perez\",\"firstName\":\"Juan\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":32,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDM4OTk4MDY3NTcyOTUxNDcyMjQiLCJpYXQiOjE0NTQzODUwNzAsImV4cCI6MTQ1NDM4NTEzMH0.dWDF3tQ19D_1c4QUOarEMFVrNwd-KZS8j5Y56HvL0-g\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:51:10.370Z"}
+{"to":"127.0.0.1","action":"getApps","params":"{\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDM4OTk4MDY3NTcyOTUxNDcyMjQiLCJpYXQiOjE0NTQzODUwNzA\",\"action\":\"getApps\",\"apiVersion\":1}","duration":10,"error":"Error: []","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:51:14.680Z"}
+{"to":"127.0.0.1","action":"getApps","params":"{\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDM4OTk4MDY3NTcyOTUxNDcyMjQiLCJpYXQiOjE0NTQzODUwNzA\",\"action\":\"getApps\",\"apiVersion\":1}","duration":8,"error":"Error: []","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:51:18.334Z"}
+{"to":"127.0.0.1","action":"getApps","params":"{\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDM4OTk4MDY3NTcyOTUxNDcyMjQiLCJpYXQiOjE0NTQzODUwNzA\",\"action\":\"getApps\",\"apiVersion\":1}","duration":11,"error":"Error: []","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T03:51:38.263Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-02-02T03:58:21.347Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] new connection","timestamp":"2016-02-02T03:58:41.999Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-02-02T03:58:58.590Z"}
+{"to":"127.0.0.1","level":"info","message":"[server: websocket] connection closed","timestamp":"2016-02-02T03:59:00.373Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T04:06:38.253Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T04:07:11.797Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T04:07:22.388Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T04:10:51.488Z"}
+{"to":"127.0.0.1","params":"{}","duration":0,"error":"Error: unknown action or invalid apiVersion","level":"info","message":"[ action @ web ]","timestamp":"2016-02-02T04:11:19.280Z"}

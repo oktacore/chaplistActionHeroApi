@@ -52,3 +52,27 @@ exports.getSupermarkets = {
         });
     }
 };
+
+exports.getStores = {
+    name: 'getStores',
+    description: 'getStores',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+
+    inputs: {
+        token: {
+            required: false
+        }
+    },
+
+    run: function (api, data, next) {
+        api.chaplistInit.getStores(1, data.params.token,function (res, error) {
+            data.response = res;
+            next(data.response, error);
+        });
+    }
+};

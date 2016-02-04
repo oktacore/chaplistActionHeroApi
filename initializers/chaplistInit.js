@@ -4,34 +4,51 @@ module.exports = {
     stopPriority: 1000,
     initialize: function (api, next) {
         api.chaplistInit = {
+
             tokenPetition: function (secretKey, packageName, uuid, next) {
-                api.appInit.getApp(secretKey, packageName, function (res, error) {                    
+                api.appInit.getApp(secretKey, packageName, function (res, error) {
                     var result = JSON.parse(res);
                     if (res == 'null') {
-                        next('null', error);                        
+                        next('null', error);
                     } else {
                         api.tokenInit.createToken(uuid, function (res, error) {
                             next(JSON.stringify(res), error);
-                        });                        
+                        });
                     }
                 });
             },
 
             getSupermarkets: function (token, next) {
                 api.tokenInit.validateTokenApp(token, function (res, error) {
-                    if(res.valid){
+                    if (res.valid) {
                         api.models.supermarket.findAll()
-                        .then(function (supermarkets) {
-                            res.supermarkets = supermarkets;
-                            next(JSON.stringify(res), true);
-                        })
-                        .catch(function (error) {
-                            next(JSON.stringify(error), error);
-                        });                        
-                    }else{
+                            .then(function (supermarkets) {
+                                res.supermarkets = supermarkets;
+                                next(JSON.stringify(res), true);
+                            })
+                            .catch(function (error) {
+                                next(JSON.stringify(error), error);
+                            });
+                    } else {
                         next(JSON.stringify(res), error);
-                    }                    
+                    }
                 });
+            },
+        
+            getStores: function (supermarket, token,next) {
+                var retorno = {};
+                api.models.supermarket.findById(1)
+                    .then(function (supermarket) {
+                        retorno.image = supermarket.image;
+                        supermarket.getStores()
+                        .then(function(stores){
+                            retorno.stores = stores
+                           next(JSON.stringify(retorno), true); 
+                        });                        
+                    })
+                    .catch(function (error) {
+                        next(JSON.stringify(error), error);
+                    });
             }
         };
 

@@ -14,3 +14,21 @@
 {"level":"notice","message":"stopping server: websocket","timestamp":"2016-01-25T16:55:54.032Z"}
 {"level":"info","message":"actionhero member actionhero has left the cluster","timestamp":"2016-01-25T16:55:54.035Z"}
 {"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-01-25T16:55:54.039Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-04T17:02:46.675Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-04T17:02:46.702Z"}
+{"level":"info","message":"actionhero member actionhero has joined the cluster","timestamp":"2016-02-04T17:02:46.717Z"}
+{"level":"notice","message":"pid: 8950","timestamp":"2016-02-04T17:02:46.988Z"}
+{"level":"notice","message":"server ID: actionhero","timestamp":"2016-02-04T17:02:46.988Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-04T17:02:46.989Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-04T17:02:46.989Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-04T17:02:46.997Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-04T17:02:47.003Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-04T17:02:47.460Z"}
+{"level":"notice","message":"*** Server Started @ Thu Feb 04 2016 11:02:47 GMT-0600 (CST) ***","timestamp":"2016-02-04T17:02:47.474Z"}
+{"to":"127.0.0.1","action":"getSupermarkets","params":"{\"token\":\"asddsf\",\"action\":\"getSupermarkets\",\"apiVersion\":1}","duration":111,"error":"Error: {}","level":"info","message":"[ action @ web ]","timestamp":"2016-02-04T17:03:43.195Z"}
+{"level":"info","message":"\r\n\r\n*** rebooting due to initializer change (/home/usuario/documents/chaplistActionHeroApi/initializers/chaplistInit.js) ***\r\n\r\n","timestamp":"2016-02-04T17:04:54.826Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-02-04T17:04:54.827Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-02-04T17:04:54.829Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-02-04T17:04:54.830Z"}
+{"level":"info","message":"actionhero member actionhero has left the cluster","timestamp":"2016-02-04T17:04:54.834Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-02-04T17:04:54.839Z"}
