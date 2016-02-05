@@ -1,7 +1,7 @@
 angular.module('controllers', [])
 
 .controller('ctrlLogin', function ($scope, $state, $window, factory, jrgGoogleAuth) {
-        var googleClientId = '771080167777-jfpd042qois2mcj326hodt7ubcg6ujh6.apps.googleusercontent.com';
+        var googleClientId = '394841887046-6rq45ur9l6avdrlrhgfjd118f85d9ia7.apps.googleusercontent.com';
         var evtGoogleLogin = "evtGoogleLogin";
 
         $scope.headerHome = false;
@@ -105,7 +105,7 @@ angular.module('controllers', [])
 
         vm.apps = factory.getApps();
 
-        if (vm.apps.length < 1) {
+        if (vm.apps && vm.apps.length < 1) {
                 console.log('res');
             factory.getAppsFromServer().then(function (res) {
                 vm.apps = JSON.parse(res.data);

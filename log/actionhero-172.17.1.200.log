@@ -1,0 +1,173 @@
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-05T04:13:59.999Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-05T04:14:00.074Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has joined the cluster","timestamp":"2016-02-05T04:14:00.111Z"}
+{"level":"notice","message":"pid: 1481","timestamp":"2016-02-05T04:14:00.864Z"}
+{"level":"notice","message":"server ID: 172.17.1.200","timestamp":"2016-02-05T04:14:00.865Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-05T04:14:00.866Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-05T04:14:00.867Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-05T04:14:00.878Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-05T04:14:00.891Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-05T04:14:02.050Z"}
+{"level":"notice","message":"*** Server Started @ Fri Feb 05 2016 04:14:02 GMT+0000 (UTC) ***","timestamp":"2016-02-05T04:14:02.083Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-02-05T04:14:04.965Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-02-05T04:14:04.967Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-02-05T04:14:04.968Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has left the cluster","timestamp":"2016-02-05T04:14:04.972Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-05T04:16:22.945Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-05T04:16:23.004Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has joined the cluster","timestamp":"2016-02-05T04:16:23.025Z"}
+{"level":"notice","message":"pid: 1556","timestamp":"2016-02-05T04:16:23.709Z"}
+{"level":"notice","message":"server ID: 172.17.1.200","timestamp":"2016-02-05T04:16:23.709Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-05T04:16:23.710Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-05T04:16:23.711Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-05T04:16:23.724Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-05T04:16:23.736Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-05T04:16:24.834Z"}
+{"level":"notice","message":"*** Server Started @ Fri Feb 05 2016 04:16:24 GMT+0000 (UTC) ***","timestamp":"2016-02-05T04:16:24.860Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-02-05T04:23:13.416Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-02-05T04:23:13.418Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-02-05T04:23:13.419Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has left the cluster","timestamp":"2016-02-05T04:23:13.426Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-02-05T04:23:13.562Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-05T04:23:18.049Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-05T04:23:18.109Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has joined the cluster","timestamp":"2016-02-05T04:23:18.132Z"}
+{"level":"notice","message":"pid: 2252","timestamp":"2016-02-05T04:23:18.924Z"}
+{"level":"notice","message":"server ID: 172.17.1.200","timestamp":"2016-02-05T04:23:18.924Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-05T04:23:18.925Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-05T04:23:18.926Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-05T04:23:18.938Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-05T04:23:18.948Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-05T04:23:20.102Z"}
+{"level":"notice","message":"*** Server Started @ Fri Feb 05 2016 04:23:20 GMT+0000 (UTC) ***","timestamp":"2016-02-05T04:23:20.135Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-02-05T04:24:05.051Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-02-05T04:24:05.053Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-02-05T04:24:05.054Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has left the cluster","timestamp":"2016-02-05T04:24:05.059Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-05T04:24:08.798Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-05T04:24:08.859Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has joined the cluster","timestamp":"2016-02-05T04:24:08.892Z"}
+{"level":"notice","message":"pid: 2276","timestamp":"2016-02-05T04:24:09.713Z"}
+{"level":"notice","message":"server ID: 172.17.1.200","timestamp":"2016-02-05T04:24:09.714Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-05T04:24:09.715Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-05T04:24:09.718Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-05T04:24:09.737Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-05T04:24:09.750Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-05T04:24:11.157Z"}
+{"level":"notice","message":"*** Server Started @ Fri Feb 05 2016 04:24:11 GMT+0000 (UTC) ***","timestamp":"2016-02-05T04:24:11.185Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-02-05T04:25:00.257Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-02-05T04:25:00.259Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-02-05T04:25:00.260Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has left the cluster","timestamp":"2016-02-05T04:25:00.268Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-02-05T04:25:00.366Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-05T04:25:03.774Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-05T04:25:03.832Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has joined the cluster","timestamp":"2016-02-05T04:25:03.863Z"}
+{"level":"notice","message":"pid: 2302","timestamp":"2016-02-05T04:25:04.630Z"}
+{"level":"notice","message":"server ID: 172.17.1.200","timestamp":"2016-02-05T04:25:04.632Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-05T04:25:04.633Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-05T04:25:04.634Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-05T04:25:04.649Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-05T04:25:04.663Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-05T04:25:06.067Z"}
+{"level":"notice","message":"*** Server Started @ Fri Feb 05 2016 04:25:06 GMT+0000 (UTC) ***","timestamp":"2016-02-05T04:25:06.111Z"}
+{"to":"181.174.106.61","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":286,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTQ2NDY1MjQsImV4cCI6MTQ1NDY0NjU4NH0.qMMifH61uOIUJoKLJxVIRchwtLyiWa3zPf1WyxIq6UQ\",\"created\":true,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-02-05T04:28:44.093Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-02-05T04:33:25.451Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-02-05T04:33:25.453Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-02-05T04:33:25.454Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has left the cluster","timestamp":"2016-02-05T04:33:25.561Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-02-05T04:33:25.575Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-05T04:33:29.502Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-05T04:33:29.574Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has joined the cluster","timestamp":"2016-02-05T04:33:29.604Z"}
+{"level":"notice","message":"pid: 2338","timestamp":"2016-02-05T04:33:30.288Z"}
+{"level":"notice","message":"server ID: 172.17.1.200","timestamp":"2016-02-05T04:33:30.289Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-05T04:33:30.290Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-05T04:33:30.291Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-05T04:33:30.303Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-05T04:33:30.313Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-05T04:33:31.401Z"}
+{"level":"notice","message":"*** Server Started @ Fri Feb 05 2016 04:33:31 GMT+0000 (UTC) ***","timestamp":"2016-02-05T04:33:31.427Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-02-05T04:36:50.796Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-02-05T04:36:50.799Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-02-05T04:36:50.799Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has left the cluster","timestamp":"2016-02-05T04:36:50.803Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-02-05T04:36:50.978Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-05T04:38:11.541Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-05T04:38:11.596Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has joined the cluster","timestamp":"2016-02-05T04:38:11.622Z"}
+{"level":"notice","message":"pid: 3982","timestamp":"2016-02-05T04:38:12.273Z"}
+{"level":"notice","message":"server ID: 172.17.1.200","timestamp":"2016-02-05T04:38:12.275Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-05T04:38:12.276Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-05T04:38:12.278Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-05T04:38:12.289Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-05T04:38:12.300Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-05T04:38:13.356Z"}
+{"level":"notice","message":"*** Server Started @ Fri Feb 05 2016 04:38:13 GMT+0000 (UTC) ***","timestamp":"2016-02-05T04:38:13.390Z"}
+{"to":"181.174.106.61","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":175,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTQ2NDcxMTMsImV4cCI6MTQ1NDY0NzE3M30.9b-He7ueYIPPvOepay_Erh8eWvFgudxD2ajzGZ6OM9A\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-02-05T04:38:33.919Z"}
+{"level":"error","message":"! uncaught error from action: action:getApps","timestamp":"2016-02-05T04:38:36.810Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-02-05T04:38:36.811Z"}
+{"level":"error","message":"!     remoteIP: \"181.174.106.61\"","timestamp":"2016-02-05T04:38:36.811Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-02-05T04:38:36.811Z"}
+{"level":"error","message":"!     params: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTQ2NDcxMTMsImV4cCI6MTQ1NDY0NzE3M30.9b-He7ueYIPPvOepay_Erh8eWvFgudxD2ajzGZ6OM9A\",\"action\":\"getApps\",\"apiVersion\":1}","timestamp":"2016-02-05T04:38:36.812Z"}
+{"level":"error","message":"! TypeError: Cannot read property 'sub' of undefined","timestamp":"2016-02-05T04:38:36.813Z"}
+{"level":"error","message":"!     at Object.api.tokenInit.validateToken (/home/ubuntu/workspace/initializers/tokenInit.js:28:34)","timestamp":"2016-02-05T04:38:36.813Z"}
+{"level":"error","message":"!     at Object.exports.getApps.run (/home/ubuntu/workspace/actions/appActions.js:16:23)","timestamp":"2016-02-05T04:38:36.814Z"}
+{"level":"error","message":"!     at /home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-02-05T04:38:36.814Z"}
+{"level":"error","message":"!     at /home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-02-05T04:38:36.815Z"}
+{"level":"error","message":"!     at /home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-02-05T04:38:36.816Z"}
+{"level":"error","message":"!     at /home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-02-05T04:38:36.816Z"}
+{"level":"error","message":"!     at iterate (/home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-02-05T04:38:36.818Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-02-05T04:38:36.818Z"}
+{"level":"error","message":"!     at _parallel (/home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-02-05T04:38:36.818Z"}
+{"level":"error","message":"!     at Object.async.series (/home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-02-05T04:38:36.819Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-02-05T04:38:36.819Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-02-05T04:38:36.820Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-02-05T04:38:36.820Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:228:14)","timestamp":"2016-02-05T04:38:36.820Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-02-05T04:38:36.821Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/ubuntu/workspace/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-02-05T04:38:36.821Z"}
+{"level":"error","message":"*","timestamp":"2016-02-05T04:38:36.821Z"}
+{"to":"181.174.106.61","action":"getApps","params":"{\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTQ2NDcxMTM\",\"action\":\"getApps\",\"apiVersion\":1}","duration":14,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-02-05T04:38:36.823Z"}
+{"level":"error","message":"! uncaught error from action: action:getApps","timestamp":"2016-02-05T04:38:45.570Z"}
+{"level":"error","message":"! connection details:","timestamp":"2016-02-05T04:38:45.571Z"}
+{"level":"error","message":"!     remoteIP: \"181.174.106.61\"","timestamp":"2016-02-05T04:38:45.571Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2016-02-05T04:38:45.572Z"}
+{"level":"error","message":"!     params: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTQ2NDcxMTMsImV4cCI6MTQ1NDY0NzE3M30.9b-He7ueYIPPvOepay_Erh8eWvFgudxD2ajzGZ6OM9A\",\"action\":\"getApps\",\"apiVersion\":1}","timestamp":"2016-02-05T04:38:45.574Z"}
+{"level":"error","message":"! TypeError: Cannot read property 'sub' of undefined","timestamp":"2016-02-05T04:38:45.575Z"}
+{"level":"error","message":"!     at Object.api.tokenInit.validateToken (/home/ubuntu/workspace/initializers/tokenInit.js:28:34)","timestamp":"2016-02-05T04:38:45.575Z"}
+{"level":"error","message":"!     at Object.exports.getApps.run (/home/ubuntu/workspace/actions/appActions.js:16:23)","timestamp":"2016-02-05T04:38:45.576Z"}
+{"level":"error","message":"!     at /home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:285:31","timestamp":"2016-02-05T04:38:45.576Z"}
+{"level":"error","message":"!     at /home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:152:9","timestamp":"2016-02-05T04:38:45.577Z"}
+{"level":"error","message":"!     at /home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:726:13","timestamp":"2016-02-05T04:38:45.577Z"}
+{"level":"error","message":"!     at /home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:52:16","timestamp":"2016-02-05T04:38:45.577Z"}
+{"level":"error","message":"!     at iterate (/home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:260:24)","timestamp":"2016-02-05T04:38:45.578Z"}
+{"level":"error","message":"!     at async.forEachOfSeries.async.eachOfSeries (/home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:281:9)","timestamp":"2016-02-05T04:38:45.579Z"}
+{"level":"error","message":"!     at _parallel (/home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:717:9)","timestamp":"2016-02-05T04:38:45.580Z"}
+{"level":"error","message":"!     at Object.async.series (/home/ubuntu/workspace/node_modules/actionhero/node_modules/async/lib/async.js:739:9)","timestamp":"2016-02-05T04:38:45.581Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:151:13)","timestamp":"2016-02-05T04:38:45.583Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:274:12)","timestamp":"2016-02-05T04:38:45.583Z"}
+{"level":"error","message":"!     at Domain.<anonymous> (/home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:262:18)","timestamp":"2016-02-05T04:38:45.584Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:228:14)","timestamp":"2016-02-05T04:38:45.584Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/home/ubuntu/workspace/node_modules/actionhero/initializers/actionProcessor.js:261:29)","timestamp":"2016-02-05T04:38:45.584Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/home/ubuntu/workspace/node_modules/actionhero/initializers/genericServer.js:92:23)","timestamp":"2016-02-05T04:38:45.584Z"}
+{"level":"error","message":"*","timestamp":"2016-02-05T04:38:45.585Z"}
+{"to":"181.174.106.61","action":"getApps","params":"{\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTQ2NDcxMTM\",\"action\":\"getApps\",\"apiVersion\":1}","duration":16,"error":"Error: The server experienced an internal error","level":"info","message":"[ action @ web ]","timestamp":"2016-02-05T04:38:45.586Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2016-02-05T04:41:49.034Z"}
+{"level":"notice","message":"stopping server: web","timestamp":"2016-02-05T04:41:49.039Z"}
+{"level":"notice","message":"stopping server: websocket","timestamp":"2016-02-05T04:41:49.040Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has left the cluster","timestamp":"2016-02-05T04:41:49.046Z"}
+{"level":"alert","message":"The actionhero has been stopped","timestamp":"2016-02-05T04:41:49.169Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2016-02-05T04:41:53.842Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2016-02-05T04:41:53.912Z"}
+{"level":"info","message":"actionhero member 172.17.1.200 has joined the cluster","timestamp":"2016-02-05T04:41:53.943Z"}
+{"level":"notice","message":"pid: 4044","timestamp":"2016-02-05T04:41:54.721Z"}
+{"level":"notice","message":"server ID: 172.17.1.200","timestamp":"2016-02-05T04:41:54.723Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2016-02-05T04:41:54.724Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2016-02-05T04:41:54.725Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2016-02-05T04:41:54.739Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2016-02-05T04:41:54.754Z"}
+{"level":"notice","message":"environment: development","timestamp":"2016-02-05T04:41:55.912Z"}
+{"level":"notice","message":"*** Server Started @ Fri Feb 05 2016 04:41:55 GMT+0000 (UTC) ***","timestamp":"2016-02-05T04:41:55.943Z"}
+{"to":"181.174.106.61","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":213,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTQ2NDc1NzcsImV4cCI6MTQ1NDY0NzYzN30.mideV5-DHDUA9ckuWtmecTa0d1ybC9EQTy9aEjeOiQ4\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-02-05T04:46:17.237Z"}
+{"to":"181.174.106.61","action":"authGoogle","params":"{\"user_id\":\"110220430752610809704\",\"email\":\"k3n3th@gmail.com\",\"image\":\"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\"lastName\":\"keua\",\"firstName\":\"keneth\",\"action\":\"authGoogle\",\"apiVersion\":1}","duration":24,"error":"Error: {\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMTAyMjA0MzA3NTI2MTA4MDk3MDQiLCJpYXQiOjE0NTQ2NDc3MTgsImV4cCI6MTQ1NDY0Nzc3OH0.4w1P0wZGXsWwH6XH5kzPXz2y_eK4A5lUlmXrySNa6G4\",\"created\":false,\"req\":true}","level":"info","message":"[ action @ web ]","timestamp":"2016-02-05T04:48:38.976Z"}
