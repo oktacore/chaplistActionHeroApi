@@ -66,11 +66,14 @@ exports.getStores = {
     inputs: {
         token: {
             required: false
+        },
+        supermarketId: {
+            required: true
         }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getStores(1, data.params.token,function (res, error) {
+        api.chaplistInit.getStores(data.params.supermarketId, data.params.token, function (res, error) {
             data.response = res;
             next(data.response, error);
         });
