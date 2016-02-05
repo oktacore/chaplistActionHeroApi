@@ -34,21 +34,24 @@ module.exports = {
                     }
                 });
             },
-        
-            getStores: function (supermarket, token,next) {
-                var retorno = {};
-                api.models.supermarket.findById(1)
-                    .then(function (supermarket) {
-                        retorno.image = supermarket.image;
-                        supermarket.getStores()
-                        .then(function(stores){
-                            retorno.stores = stores
-                           next(JSON.stringify(retorno), true); 
-                        });                        
-                    })
-                    .catch(function (error) {
-                        next(JSON.stringify(error), error);
-                    });
+
+            getStores: function (supermarketId, token, next) {
+                api.tokenInit.validateTokenApp(token, function (res, error) {
+                    if (res.valid) {
+                        api.models.supermarket.findById(supermarketId)
+                            .then(function (supermarket) {
+                                supermarket.getStores()
+                                    .then(function (stores) {
+                                        next(JSON.stringify(stores), true);
+                                    });
+                            })
+                            .catch(function (error) {
+                                next(JSON.stringify(error), error);
+                            });
+                    } else {
+                        next(JSON.stringify(res), error);
+                    }
+                });
             }
         };
 

@@ -29,7 +29,7 @@ exports.default = {
       get: [
         { path: '/Apps/:token', action: 'getApps' },
         { path: '/Chap/Supermarkets/:token', action: 'getSupermarkets' },
-        { path: '/Chap/Stores/:token', action: 'getStores' }
+        { path: '/Chap/Stores/:supermarketId/:token', action: 'getStores' }
       ],
       post: [
         { path: '/auth/google', action: 'authGoogle' },
