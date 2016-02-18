@@ -79,3 +79,36 @@ exports.getStores = {
         });
     }
 };
+
+///////////////////////////////////////////////////////
+exports.test = {
+    name: 'test',
+    description: 'test',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+
+    inputs: {
+        token: {
+            required: false
+        },
+        supermarketId: {
+            required: true
+        }
+    },
+
+    run: function (api, data, next) {
+        api.chaplistInit.getProductsInOffer(data.params.supermarketId, function (res, error) {
+            if(error){
+                data.error = res;
+                next(data.error, true);
+            }else{
+                data.response = res;
+                next(data.response, true);
+            }
+        });
+    }
+};

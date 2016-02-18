@@ -62,10 +62,32 @@ module.exports = {
             /*
                 Devuleve todos los producto de la oferta vigente para un supermercado específico
             */
-            getProductsInOffer: function(supermarketId, next){
-
+            getProductsInOffer: function (supermarketId, next) {
+                getActualOffer(supermarketId, function(res, error){
+                    if(res == 'null')//compruebo que exista alguna oferta vigente
+                        next(res, true);
+                    else
+                        next(res, error);
+                });
             }
         };
+        /*
+            Función que retorna una oferta vigente para un supermercado en específico
+        */
+        function getActualOffer(supermarketId, next) {
+            api.models.offer.findOne({
+                    where: {
+                        supermarketId: supermarketId,
+                        current: 1
+                    }
+                })
+                .then(function (offer) {
+                    next(JSON.stringify(offer), false);
+                })
+                .catch(function (error) {
+                    next(JSON.stringify(error.message), true);
+                });
+        }
 
         next();
     },
