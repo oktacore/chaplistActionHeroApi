@@ -86,7 +86,7 @@ angular.module('factories', [])
     }
 
     comun.getApps = function () {
-        if (comun.apps.length < 1) {
+        if (comun.apps && comun.apps.length < 1) {
             comun.apps = localStorageService.get('apps');
             return comun.apps;
         } else

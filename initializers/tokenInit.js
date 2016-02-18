@@ -14,7 +14,7 @@ module.exports = {
                 var payload = {
                     sub: user_id,
                     iat: moment().unix(),
-                    exp: moment().add(1, "minutes").unix(),
+                    exp: moment().add(1, "days").unix(),
                 };
                 callback(jwt.encode(payload, api.config.general.TOKEN_SECRET), true);
             },
@@ -23,24 +23,16 @@ module.exports = {
                 Función que valida un token determinado retornanod su estado y su id_user
             */
             validateToken: function (token, next) {
-                var payload ;
+                var payload = jwt.decode(token, api.config.general.TOKEN_SECRET);;
                 var res = {
-                    data: payload.sub,
-                    valid: true
+                        data: payload.sub,
+                        valid: true
                 };
-                try{
-                    payload = jwt.decode(token, api.config.general.TOKEN_SECRET);
-                    if (payload.exp <= moment().unix()) {
-                        res.valid = false;
-                        res.data = 'token no válido'
-                    }
-                    next(JSON.stringify(res), true);
-                    var error = new Error('example')
-                    throw error
-                }catch(error){
-                    next(JSON.stringify(res), true);
-                    console.log(error,'errorazo\n\n\n\n');
-                };
+                if (payload.exp <= moment().unix()) {
+                    res.valid = false;
+                    res.data = 'token no válido'
+                }
+                next(JSON.stringify(res), true);
             },
             /*
                 Función que valida un token determinado de una app
