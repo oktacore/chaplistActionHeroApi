@@ -125,7 +125,7 @@ function process_wb(wb) {
         out.innerText = JSON.stringify(output, 2, 2);
         
         // supermercado
-        var superm = document.getElementsByName('super');
+        var superm = document.getElementById('super');
         var indexSuperm = superm.selectedIndex;
         var valSuperm = superm.options[indexSuperm].value;
         // inicio
@@ -133,26 +133,30 @@ function process_wb(wb) {
         // fin
         var ffin = document.getElementsByName("fFin")[0].value; 
         
-        var complemento = '{"supermarket":"'.valSuperm.',"initDate":"'.finicio.',"'.finishDate.'":ffin}';
+        var url = "/api/uploadOffer/super/"+valSuperm+"/inicio/"+finicio+"/fin/"+ffin;
         
         // construct an HTTP request
         var xhr = new XMLHttpRequest();
-        xhr.open("post", "/api/uploadOffer/", true);
-        //xhr.open("post", "/api/uploadStore/", true);
-        xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-
-        // send the collected data as JSON
-        xhr.send(JSON.stringify(output));
-
-        xhr.onloadend = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-                alert(xhr.status+" "+xhr.responseText);
-                out.innerText = "";
-            } else {
-                alert(xhr.status+""+xhr.responseText);
-                out.innerText = "";
-            }
-        };
+        if ((ffin > finicio) && finicio && valSuperm && output) {
+            xhr.open("post", url, true);
+            //xhr.open("post", "/api/uploadStore/", true);
+            xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    
+            // send the collected data as JSON
+            xhr.send(JSON.stringify(output));
+    
+            xhr.onloadend = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    alert(xhr.status+" "+xhr.responseText);
+                    out.innerText = "";
+                } else {
+                    alert(xhr.status+""+xhr.responseText);
+                    out.innerText = "";
+                }
+            };
+        }else{
+            alert("porfavor ingresar toda la informacion")
+        }
     }
     if (typeof console !== 'undefined') console.log("output", new Date());
 }

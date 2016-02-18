@@ -1,6 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700);
-@import url("http://weloveiconfonts.com/api/?family=entypo");
-@import url("http://weloveiconfonts.com/api/?family=zocial");
+@import url(//fonts.googleapis.com/css?family=Quattrocento+Sans:400,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url("//weloveiconfonts.com/api/?family=entypo");
+@import url("//weloveiconfonts.com/api/?family=zocial");
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +158,6 @@ body {
     color: #c235c2;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 *{margin:0;padding:0;}
 
