@@ -123,9 +123,22 @@ function process_wb(wb) {
     if (out.innerText === undefined) out.textContent = output;
     else {
         out.innerText = JSON.stringify(output, 2, 2);
+        
+        // supermercado
+        var superm = document.getElementsByName('super');
+        var indexSuperm = superm.selectedIndex;
+        var valSuperm = superm.options[indexSuperm].value;
+        // inicio
+        var finicio = document.getElementsByName("fInicio")[0].value;
+        // fin
+        var ffin = document.getElementsByName("fFin")[0].value; 
+        
+        var complemento = '{"supermarket":"'.valSuperm.',"initDate":"'.finicio.',"'.finishDate.'":ffin}';
+        
         // construct an HTTP request
         var xhr = new XMLHttpRequest();
-        xhr.open("post", "/api/uploadStore", true);
+        xhr.open("post", "/api/uploadOffer/", true);
+        //xhr.open("post", "/api/uploadStore/", true);
         xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
         // send the collected data as JSON
