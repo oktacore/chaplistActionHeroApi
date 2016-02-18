@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
     up: function (queryInterface, Sequelize) {
-        return queryInterface.createTable('productStores', {
+        return queryInterface.createTable('ProductStores', {
             productId: {
                 type: Sequelize.INTEGER,
                 references: {
@@ -20,21 +20,16 @@ module.exports = {
                 allowNull: false,
                 primaryKey: true
             },
-            storeId: {
-                type: Sequelize.INTEGER,
-                references: {
-                    model: "Stores",
-                    key: "id"
-                },
-                allowNull: false,
-                primaryKey: true
-            },
             normalPrice: {
                 type: Sequelize.FLOAT,
                 allowNull: false
             },
             offerPrice: {
                 type: Sequelize.FLOAT,
+                allowNull: false
+            },
+            likes: {
+                type: Sequelize.INTEGER,
                 allowNull: false
             },
             createdAt: {
@@ -48,6 +43,6 @@ module.exports = {
         });
     },
     down: function (queryInterface, Sequelize) {
-        return queryInterface.dropTable('productStores');
+        return queryInterface.dropTable('ProductStores');
     }
 };

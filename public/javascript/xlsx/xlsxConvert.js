@@ -123,7 +123,7 @@ function process_wb(wb) {
     if (out.innerText === undefined) out.textContent = output;
     else {
         out.innerText = JSON.stringify(output, 2, 2);
-        
+
         // supermercado
         var superm = document.getElementById('super');
         var indexSuperm = superm.selectedIndex;
@@ -131,10 +131,17 @@ function process_wb(wb) {
         // inicio
         var finicio = document.getElementsByName("fInicio")[0].value;
         // fin
+<<<<<<< HEAD
         var ffin = document.getElementsByName("fFin")[0].value; 
         
         var url = "/api/uploadOffer/super/"+valSuperm+"/inicio/"+finicio+"/fin/"+ffin;
         
+=======
+        var ffin = document.getElementsByName("fFin")[0].value;
+
+        var complemento = '{"supermarket":"'.valSuperm.',"initDate":"'.finicio.',"'.finishDate.'":ffin}';
+
+>>>>>>> 7bbc91cfba88689c242368dbf938040d0d4cc083
         // construct an HTTP request
         var xhr = new XMLHttpRequest();
         if ((ffin > finicio) && finicio && valSuperm && output) {

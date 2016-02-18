@@ -6,7 +6,7 @@ exports.default = {
             "database"    : "c9",
             "dialect"     : "mysql",
             "port"        : 3306,
-            "host"        : process.env.IP,
+            "host"        : "127.0.0.1",
             "username"    : "kuan",
             "password"    : ""
         };
