@@ -9,6 +9,10 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: false
         },
+        likes: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
         normalPrice: {
             type: DataTypes.FLOAT,
             allowNull: false
