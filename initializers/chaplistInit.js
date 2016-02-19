@@ -74,7 +74,7 @@ module.exports = {
                             })
                             .then(function (offer) {
                                 if (!offer) { //compruebo que exista alguna oferta vigente
-                                    next(JSON.stringfy(offer), true);
+                                    next('null', true);
                                 } else { //si existe una oferta válida entonces se obtienen todos los productos
                                     offer.getProducts()
                                         .then(function (products) {
