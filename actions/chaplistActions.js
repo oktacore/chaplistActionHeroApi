@@ -47,8 +47,13 @@ exports.getSupermarkets = {
 
     run: function (api, data, next) {
         api.chaplistInit.getSupermarkets(data.params.token,function (res, error) {
-            data.response = res;
-            next(data.response, error);
+             if(error){
+                data.error = res;
+                next(data.error, true);
+            }else{
+                data.response = res;
+                next(data.response, true);
+            }
         });
     }
 };
@@ -74,16 +79,21 @@ exports.getStores = {
 
     run: function (api, data, next) {
         api.chaplistInit.getStores(data.params.supermarketId, data.params.token, function (res, error) {
-            data.response = res;
-            next(data.response, error);
+             if(error){
+                data.error = res;
+                next(data.error, true);
+            }else{
+                data.response = res;
+                next(data.response, true);
+            }
         });
     }
 };
 
 ///////////////////////////////////////////////////////
-exports.test = {
-    name: 'test',
-    description: 'test',
+exports.getOffers = {
+    name: 'getOffers',
+    description: 'getOffers',
     blockedConnectionTypes: [],
     outputExample: {},
     matchExtensionMimeType: false,
@@ -93,7 +103,7 @@ exports.test = {
 
     inputs: {
         token: {
-            required: false
+            required: true
         },
         supermarketId: {
             required: true
@@ -101,7 +111,7 @@ exports.test = {
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getProductsInOffer(data.params.supermarketId, function (res, error) {
+        api.chaplistInit.getProductsInOffer(data.params.supermarketId,data.params.token, function (res, error) {
             if(error){
                 data.error = res;
                 next(data.error, true);
