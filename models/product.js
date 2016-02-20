@@ -9,6 +9,10 @@ module.exports = function(sequelize, DataTypes) {
     description: {
         type: DataTypes.TEXT,
         allowNull: false
+    },
+    image: {
+        type: DataTypes.TEXT,
+        allowNull: true
     }
   }, {
     classMethods: {

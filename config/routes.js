@@ -35,7 +35,8 @@ exports.default = {
         { path: '/auth/google', action: 'authGoogle' },
         { path: '/App/:token', action: 'createApp' },
         { path: '/Chap/tokenPetition', action: 'tokenPetition' },
-        { path: '/uploadStore', action: 'uploadStores' }
+        { path: '/uploadStore', action: 'uploadStores' },
+        { path: '/uploadOffer/supermarket/:supermarket/inicio/:finicio/fin/:ffin',action:'uploadOffers'}
           
       ],
       put: [

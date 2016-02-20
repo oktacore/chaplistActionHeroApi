@@ -131,17 +131,10 @@ function process_wb(wb) {
         // inicio
         var finicio = document.getElementsByName("fInicio")[0].value;
         // fin
-<<<<<<< HEAD
         var ffin = document.getElementsByName("fFin")[0].value; 
         
-        var url = "/api/uploadOffer/super/"+valSuperm+"/inicio/"+finicio+"/fin/"+ffin;
+        var url = "/api/uploadOffer/supermarket/"+valSuperm+"/inicio/"+finicio+"/fin/"+ffin;
         
-=======
-        var ffin = document.getElementsByName("fFin")[0].value;
-
-        var complemento = '{"supermarket":"'.valSuperm.',"initDate":"'.finicio.',"'.finishDate.'":ffin}';
-
->>>>>>> 7bbc91cfba88689c242368dbf938040d0d4cc083
         // construct an HTTP request
         var xhr = new XMLHttpRequest();
         if ((ffin > finicio) && finicio && valSuperm && output) {
