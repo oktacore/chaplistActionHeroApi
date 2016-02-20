@@ -52,7 +52,7 @@ exports.getSupermarkets = {
                 next(data.error, true);
             }else{
                 data.response = res;
-                next(data.response, true);
+                next(data.response, false);
             }
         });
     }

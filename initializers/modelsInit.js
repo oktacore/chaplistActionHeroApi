@@ -47,8 +47,8 @@ module.exports = {
             foreignKey: 'supermarketId'
         });
         //many to many offer, product, store
-        api.models.offer.belongsToMany(api.models.product, {through: 'ProductStore'});
-        api.models.product.belongsToMany(api.models.offer, {through: 'ProductStore'});
+        api.models.offer.belongsToMany(api.models.product, {through: 'ProductStore',foreignKey:'productId'});
+        api.models.product.belongsToMany(api.models.offer, {through: 'ProductStore',foreignKey:'offerId'});
         
         next();
     },

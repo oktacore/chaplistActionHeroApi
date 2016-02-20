@@ -1,3 +1,4 @@
+var _= require('lodash');
 module.exports = {
   loadPriority:  1000,
   startPriority: 1000,
@@ -12,15 +13,34 @@ module.exports = {
               current : true,
               $and : {supermarketId : supermarket}
             }
-        }).then(function (offer) {
-            next(JSON.stringify(offer), true);
-        })
-         .catch(function (error) {
-            next(JSON.stringify(error), true);
         });
-      }
+      },
+      createOffer: function (finicio, ffin, supermarket,next) {
+          api.models.offer.create({dateInit:finicio,dateEnd:ffin,supermarketId:supermarket,current:true})
+            .then(function (offer) {
+                 next(offer);                         
+            })
+            .catch(function (error) {
+                 next(error,true);
+            });
+          },
+      addProduct: function(offer,data,next) {
+         api.models.product.findOrCreate({where : {
+                                                    upc : data.upc
+                                                    }, 
+                                                    defaults: {
+                                                      
+                                                      upc : data.upc,
+                                                      description : data.descripcion,
+                                                      image : data.image
+                                                      
+                                                      }  }).spread(function(product1){
+              api.models.productstore.create({productId: product1.id,offerId:offer.id,normalPrice:data.normalPrice,offerPrice:data.offerPrice,likes:0}).then().catch();
+              next(product1);
+           }).catch();
+        
+        }
     };
-
     next();
   },
   start: function(api, next){
