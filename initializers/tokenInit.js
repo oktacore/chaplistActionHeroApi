@@ -10,52 +10,55 @@ module.exports = {
             /*
                 Función para la generación de un nuevo Token, con duración de 1 día
             */
-            createToken: function (user_id, callback) {
+            createToken: function (user_id, next) {
                 var payload = {
                     sub: user_id,
                     iat: moment().unix(),
                     exp: moment().add(1, "days").unix(),
                 };
-                callback(jwt.encode(payload, api.config.general.TOKEN_SECRET), true);
+                next(jwt.encode(payload, api.config.general.TOKEN_SECRET), false);
             },
             
             /*
                 Función que valida un token determinado retornanod su estado y su id_user
             */
             validateToken: function (token, next) {
-                var payload = jwt.decode(token, api.config.general.TOKEN_SECRET);;
+                var payload = jwt.decode(token, api.config.general.TOKEN_SECRET);
+                var error = false;
                 var res = {
                         data: payload.sub,
                         valid: true
                 };
                 if (payload.exp <= moment().unix()) {
+                    error = true;
                     res.valid = false;
                     res.data = 'token no válido'
                 }
-                next(JSON.stringify(res), true);
+                next(JSON.stringify(res), error);
             },
             /*
                 Función que valida un token determinado de una app
             */
-            validateTokenApp: function (token, callback) {
-                var payload = jwt.decode(token, api.config.general.TOKEN_SECRET);
+            validateTokenApp: function (token, next) {
+                var payload;
                 var resp = {
-                    token: token,
-                    valid: true                    
-                };
-                //payload.sub,
-                if(payload.sub){//compruebo que el token cumpla la estructura
+                        token: token,
+                        valid: true
+                    };
+                try{
+                    payload = jwt.decode(token, api.config.general.TOKEN_SECRET);
+
                     if (payload.exp <= moment().unix()) {
                         api.tokenInit.createToken(payload.sub, function(res, error){
                             resp.token = res;
-                            callback(resp, true);   
+                            next(resp, error);
                         });
                     }else
-                        callback(resp, true);                    
-                }else{
+                        next(resp, false);
+                }catch(err){
                     resp.valid= false;
-                    callback(resp, true);
-                }                
+                    next(null, true);
+                }
             }
         };
         next();

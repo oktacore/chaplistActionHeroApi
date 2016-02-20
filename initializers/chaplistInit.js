@@ -24,17 +24,17 @@ module.exports = {
             */
             getSupermarkets: function (token, next) {
                 api.tokenInit.validateTokenApp(token, function (res, error) {
-                    if (res.valid) {
+                    if (!error) {
                         api.models.supermarket.findAll()
                             .then(function (supermarkets) {
                                 res.supermarkets = supermarkets;
-                                next(JSON.stringify(res), true);
+                                next(JSON.stringify(res), false);
                             })
                             .catch(function (error) {
-                                next(JSON.stringify(error), error);
+                                next(JSON.stringify(error), true);
                             });
                     } else {
-                        next(JSON.stringify(res), error);
+                        next(JSON.stringify(res), true);
                     }
                 });
             },
@@ -43,16 +43,16 @@ module.exports = {
             */
             getStores: function (supermarketId, token, next) {
                 api.tokenInit.validateTokenApp(token, function (res, error) {
-                    if (res.valid) {
+                    if (!error) {
                         api.models.supermarket.findById(supermarketId)
                             .then(function (supermarket) {
                                 supermarket.getStores()
                                     .then(function (stores) {
-                                        next(JSON.stringify(stores), true);
+                                        next(JSON.stringify(stores), error);
                                     });
                             })
                             .catch(function (error) {
-                                next(JSON.stringify(error), error);
+                                next(JSON.stringify(error), true);
                             });
                     } else {
                         next(JSON.stringify(res), error);
@@ -60,13 +60,40 @@ module.exports = {
                 });
             },
             /*
-                Devuleve todos los producto de la oferta vigente para un supermercado específico
+                Devuleve todos los productos de la oferta vigente para un supermercado específico
             */
-            getProductsInOffer: function(supermarketId, next){
-
+            getProductsInOffer: function (supermarketId, token, next) {
+                var offer = {};
+                api.tokenInit.validateTokenApp(token, function (res, error) {
+                    if (!error) {
+                        api.models.offer.findOne({
+                                where: {
+                                    supermarketId: supermarketId,
+                                    current: 1
+                                }
+                            })
+                            .then(function (offer) {
+                                if (!offer) { //compruebo que exista alguna oferta vigente
+                                    next('null', true);
+                                } else { //si existe una oferta válida entonces se obtienen todos los productos
+                                    offer.getProducts()
+                                        .then(function (products) {
+                                            next(JSON.stringify(products), false);
+                                        })
+                                        .catch(function (error) {
+                                            next(JSON.stringify(error), true);
+                                        });
+                                }
+                            })
+                            .catch(function (error) {
+                                next(JSON.stringify(error.message), true);
+                            });
+                    } else {
+                        next(JSON.stringify(res), error);
+                    }
+                });
             }
         };
-
         next();
     },
     start: function (api, next) {
