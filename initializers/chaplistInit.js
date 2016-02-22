@@ -76,7 +76,7 @@ module.exports = {
                                 if (!offer) { //compruebo que exista alguna oferta vigente
                                     next('null', true);
                                 } else { //si existe una oferta válida entonces se obtienen todos los productos
-                                    offer.getProducts()
+                                    offer.getProducts({offset: 5, limit: 15})
                                         .then(function (products) {
                                             console.log(offer,products, '*************************************************');
                                             next(JSON.stringify(products), false);
@@ -88,6 +88,65 @@ module.exports = {
                             })
                             .catch(function (error) {
                                 next(JSON.stringify(error.message), true);
+                            });
+                    } else {
+                        next(JSON.stringify(res), error);
+                    }
+                });
+            },
+            /*
+                Función para incrementar los likes a un producto de una oferta específica
+            */
+            addLikeProduct: function(offerId, productId, token, next){
+                 api.tokenInit.validateTokenApp(token, function (res, error) {
+                    if (!error) {
+                        api.models.productstore.findOne({
+                            where: {
+                                offerId: offerId,
+                                productId: productId
+                                }
+                            })
+                            .then(function (offer) {
+                                offer.update({
+                                    likes: offer.likes + 1
+                                    })
+                                    .then(function (offerUpdated) {
+                                        next(JSON.stringify(offerUpdated), false);
+                                    });
+                            })
+                            .catch(function (error) {
+                                next(JSON.stringify(error), true);
+                            });
+                    } else {
+                        next(JSON.stringify(res), error);
+                    }
+                });
+            },
+            /*
+                Función para decrementar los likes a un producto de una oferta específica
+            */
+            removeLikeProduct: function(offerId, productId, token, next){
+                api.tokenInit.validateTokenApp(token, function (res, error) {
+                    if (!error) {
+                        api.models.productstore.findOne({
+                            where: {
+                                offerId: offerId,
+                                productId: productId
+                                }
+                            })
+                            .then(function (offer) {
+                                if(offer.likes > 0){
+                                    offer.update({
+                                    likes: offer.likes - 1
+                                    })
+                                    .then(function (offerUpdated) {
+                                        next(JSON.stringify(offerUpdated), false);
+                                    });
+                                }else
+                                    next(JSON.stringify(offer), false);
+                            })
+                            .catch(function (error) {
+                                next(JSON.stringify(error), true);
                             });
                     } else {
                         next(JSON.stringify(res), error);

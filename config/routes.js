@@ -30,7 +30,9 @@ exports.default = {
         { path: '/Apps/:token', action: 'getApps' },
         { path: '/Chap/Supermarkets/:token', action: 'getSupermarkets' },
         { path: '/Chap/Stores/:supermarketId/:token', action: 'getStores' },
-        { path: '/Chap/Offer/:supermarketId/:token', action: 'getOffers' }
+        { path: '/Chap/Offer/:supermarketId/:token', action: 'getOffers' },
+        { path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' },
+        { path: '/Chap/Offer/removeLike/:offerId/:productId', action: 'removeLikes' }
       ],
       post: [
         { path: '/auth/google', action: 'authGoogle' },

@@ -122,3 +122,73 @@ exports.getOffers = {
         });
     }
 };
+
+exports.addLikes = {
+    name: 'addLikes',
+    description: 'addLikes',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+
+    inputs: {
+        token: {
+            required: false
+        },
+        offerId: {
+            required: true
+        },
+        productId: {
+            required: true
+        }
+    },
+
+    run: function (api, data, next) {
+        api.chaplistInit.addLikeProduct(data.params.offerId, data.params.productId, data.params.token, function (res, error) {
+            if(error){
+                data.error = res;
+                next(data.error, true);
+            }else{
+                data.response = res;
+                next(data.response, true);
+            }
+        });
+    }
+};
+
+exports.addLikes = {
+    name: 'addLikes',
+    description: 'addLikes',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+
+    inputs: {
+        token: {
+            required: true
+        },
+        offerId: {
+            required: true
+        },
+        productId: {
+            required: true
+        }
+    },
+
+    run: function (api, data, next) {
+        api.chaplistInit.removeLikeProduct(data.params.offerId, data.params.productId, data.params.token, function (res, error) {
+            if(error){
+                data.error = res;
+                next(data.error, true);
+            }else{
+                data.response = res;
+                next(data.response, true);
+            }
+        });
+    }
+};
