@@ -78,6 +78,7 @@ module.exports = {
                                 } else { //si existe una oferta válida entonces se obtienen todos los productos
                                     offer.getProducts()
                                         .then(function (products) {
+                                            console.log(offer,products, '*************************************************');
                                             next(JSON.stringify(products), false);
                                         })
                                         .catch(function (error) {
