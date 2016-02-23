@@ -17,7 +17,7 @@ exports.default = {
       // how long will a lock last before it exipres (ms)?
       lockDuration: 1000 * 10, // 10 seconds
       // Watch for changes in actions and tasks, and reload/restart them on the fly
-      developmentMode: false,
+      developmentMode: true,
       // Should we run each action within a domain? Makes your app safer but slows it down
       actionDomains: true,
       // How many pending actions can a single connection be working on

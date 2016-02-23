@@ -123,9 +123,9 @@ exports.getOffers = {
     }
 };
 
-exports.addLikes = {
-    name: 'addLikes',
-    description: 'addLikes',
+exports.addOrRemoveLikes = {
+    name: 'addOrRemoveLikes',
+    description: 'addOrRemoveLikes',
     blockedConnectionTypes: [],
     outputExample: {},
     matchExtensionMimeType: false,
@@ -135,53 +135,21 @@ exports.addLikes = {
 
     inputs: {
         token: {
-            required: false
+            required: token
         },
         offerId: {
             required: true
         },
         productId: {
             required: true
-        }
-    },
-
-    run: function (api, data, next) {
-        api.chaplistInit.addLikeProduct(data.params.offerId, data.params.productId, data.params.token, function (res, error) {
-            if(error){
-                data.error = res;
-                next(data.error, true);
-            }else{
-                data.response = res;
-                next(data.response, true);
-            }
-        });
-    }
-};
-
-exports.addLikes = {
-    name: 'addLikes',
-    description: 'addLikes',
-    blockedConnectionTypes: [],
-    outputExample: {},
-    matchExtensionMimeType: false,
-    version: 1.0,
-    toDocument: true,
-    middleware: [],
-
-    inputs: {
-        token: {
-            required: true
         },
-        offerId: {
-            required: true
-        },
-        productId: {
+        type: {
             required: true
         }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.removeLikeProduct(data.params.offerId, data.params.productId, data.params.token, function (res, error) {
+        api.chaplistInit.addLikeProduct(data.params.offerId, data.params.productId,data.params.type, data.params.token, function (res, error) {
             if(error){
                 data.error = res;
                 next(data.error, true);

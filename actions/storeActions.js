@@ -21,9 +21,14 @@ exports.uploadStores = {
         var i;
         for (i = 0; i < size; i++) {
             api.storeInit.createStore(params.stores[i], function (res, error) {
-                data.response = res+" \n ";
+                if (error) {
+                    data.response = res + "\n" + "por favor revise su archivo de entrada o comuniquese con el administrador del sistema";
+                    next(error, true);
+                } else if (i == size - 1) {
+                    data.response("carga efectuada exitosamente");
+                    next();
+                }
             });
         }
-        next(error);
     }
 };

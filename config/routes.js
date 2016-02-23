@@ -31,15 +31,15 @@ exports.default = {
         { path: '/Chap/Supermarkets/:token', action: 'getSupermarkets' },
         { path: '/Chap/Stores/:supermarketId/:token', action: 'getStores' },
         { path: '/Chap/Offer/:supermarketId/:token', action: 'getOffers' },
-        { path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' },
-        { path: '/Chap/Offer/removeLike/:offerId/:productId', action: 'removeLikes' }
+        { path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' }
       ],
       post: [
         { path: '/auth/google', action: 'authGoogle' },
         { path: '/App/:token', action: 'createApp' },
         { path: '/Chap/tokenPetition', action: 'tokenPetition' },
         { path: '/uploadStore', action: 'uploadStores' },
-        { path: '/uploadOffer/supermarket/:supermarket/inicio/:finicio/fin/:ffin',action:'uploadOffers'}
+        { path: '/uploadOffer/supermarket/:supermarket/inicio/:finicio/fin/:ffin',action:'uploadOffers'},
+        { path: '/Chap/Offer/likes/:offerId/:productId/:type/:token', action: 'addOrRemoveLikes' }
           
       ],
       put: [

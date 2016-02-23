@@ -95,37 +95,11 @@ module.exports = {
                 });
             },
             /*
-                Función para incrementar los likes a un producto de una oferta específica
+                Función para incrementar o decrementar los likes a un producto de una oferta específica
+                1: incrementar y 2: decrementar
             */
-            addLikeProduct: function(offerId, productId, token, next){
-                 api.tokenInit.validateTokenApp(token, function (res, error) {
-                    if (!error) {
-                        api.models.productstore.findOne({
-                            where: {
-                                offerId: offerId,
-                                productId: productId
-                                }
-                            })
-                            .then(function (offer) {
-                                offer.update({
-                                    likes: offer.likes + 1
-                                    })
-                                    .then(function (offerUpdated) {
-                                        next(JSON.stringify(offerUpdated), false);
-                                    });
-                            })
-                            .catch(function (error) {
-                                next(JSON.stringify(error), true);
-                            });
-                    } else {
-                        next(JSON.stringify(res), error);
-                    }
-                });
-            },
-            /*
-                Función para decrementar los likes a un producto de una oferta específica
-            */
-            removeLikeProduct: function(offerId, productId, token, next){
+            addOrRemoveLikeProduct: function(offerId, productId, tipo, token, next){
+                var count = 0;
                 api.tokenInit.validateTokenApp(token, function (res, error) {
                     if (!error) {
                         api.models.productstore.findOne({
@@ -135,15 +109,24 @@ module.exports = {
                                 }
                             })
                             .then(function (offer) {
-                                if(offer.likes > 0){
-                                    offer.update({
-                                    likes: offer.likes - 1
+                                if(tipo == 1){
+                                    count = offer.likes +1;
+                                }
+                                else if(tipo ==2){
+                                    if(offer.likes == 0){
+                                         next(JSON.stringify(offer), false);
+                                    }else{
+                                        count = offer.likes -1;
+                                    }
+                                }else{
+                                    next('El parámetro tipo, debe ser 1 o 0', true);
+                                }
+                                offer.update({
+                                    likes: count
                                     })
                                     .then(function (offerUpdated) {
                                         next(JSON.stringify(offerUpdated), false);
                                     });
-                                }else
-                                    next(JSON.stringify(offer), false);
                             })
                             .catch(function (error) {
                                 next(JSON.stringify(error), true);

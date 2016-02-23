@@ -12,7 +12,7 @@ module.exports = {
                     .then(function (supermarket) {
                         supermarket.createStore(params)
                             .then(function (store) {
-                                next(JSON.stringify(store), true);
+                                next(JSON.stringify(store), false);
                             })
                             .catch(function (error) {
                                 next(JSON.stringify(error), true);
