@@ -135,7 +135,7 @@ exports.addOrRemoveLikes = {
 
     inputs: {
         token: {
-            required: token
+            required: true
         },
         offerId: {
             required: true
