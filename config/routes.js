@@ -30,7 +30,7 @@ exports.default = {
         { path: '/Apps/:token', action: 'getApps' },
         { path: '/Chap/Supermarkets/:token', action: 'getSupermarkets' },
         { path: '/Chap/Stores/:supermarketId/:token', action: 'getStores' },
-        { path: '/Chap/Offer/:supermarketId/:token', action: 'getOffers' },
+        { path: '/Chap/Offer/:supermarketId/:offset/:token', action: 'getOffers' },
         { path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' }
       ],
       post: [
@@ -39,7 +39,7 @@ exports.default = {
         { path: '/Chap/tokenPetition', action: 'tokenPetition' },
         { path: '/uploadStore', action: 'uploadStores' },
         { path: '/uploadOffer/supermarket/:supermarket/inicio/:finicio/fin/:ffin',action:'uploadOffers'},
-        { path: '/Chap/Offer/likes/:offerId/:productId/:type/:token', action: 'addOrRemoveLikes' }
+        { path: '/Chap/Offer/likes/:token', action: 'addOrRemoveLikes' }
           
       ],
       put: [

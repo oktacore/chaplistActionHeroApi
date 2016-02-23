@@ -12,6 +12,18 @@ module.exports = function (sequelize, DataTypes) {
         offerPrice: {
             type: DataTypes.FLOAT,
             allowNull: false
+        },
+        image: {
+            type: DataTypes.TEXT,
+            allowNull: true
+        },
+        image1: {
+            type: DataTypes.TEXT,
+            allowNull: true
+        },
+        image2: {
+            type: DataTypes.TEXT,
+            allowNull: true
         }
     }, {
         classMethods: {

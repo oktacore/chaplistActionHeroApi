@@ -105,13 +105,16 @@ exports.getOffers = {
         token: {
             required: true
         },
+        offset: {
+            required: true
+        },
         supermarketId: {
             required: true
         }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getProductsInOffer(data.params.supermarketId,data.params.token, function (res, error) {
+        api.chaplistInit.getProductsInOffer(data.params.supermarketId, data.params.offset, data.params.token, function (res, error) {
             if(error){
                 data.error = res;
                 next(data.error, true);
@@ -149,7 +152,7 @@ exports.addOrRemoveLikes = {
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.addLikeProduct(data.params.offerId, data.params.productId,data.params.type, data.params.token, function (res, error) {
+        api.chaplistInit.addOrRemoveLikeProduct(data.params.offerId, data.params.productId,data.params.type, data.params.token, function (res, error) {
             if(error){
                 data.error = res;
                 next(data.error, true);

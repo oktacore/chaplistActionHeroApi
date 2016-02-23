@@ -62,7 +62,7 @@ module.exports = {
             /*
                 Devuleve todos los productos de la oferta vigente para un supermercado específico
             */
-            getProductsInOffer: function (supermarketId, token, next) {
+            getProductsInOffer: function (supermarketId, offset, token, next) {
                 var offer = {};
                 api.tokenInit.validateTokenApp(token, function (res, error) {
                     if (!error) {
@@ -76,7 +76,7 @@ module.exports = {
                                 if (!offer) { //compruebo que exista alguna oferta vigente
                                     next('null', true);
                                 } else { //si existe una oferta válida entonces se obtienen todos los productos
-                                    offer.getProducts({offset: 5, limit: 15})
+                                    offer.getProducts({offset: parseInt(offset), limit: 10})
                                         .then(function (products) {
                                             console.log(offer,products, '*************************************************');
                                             next(JSON.stringify(products), false);

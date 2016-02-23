@@ -147,15 +147,26 @@ function process_wb(wb) {
     
             xhr.onloadend = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
-                    alert(xhr.status+" "+xhr.responseText);
+                    var response = JSON.parse(xhr.response);
+                    alert(xhr.responseText);
                     out.innerText = "";
+                    document.getElementById("xlf").value = "";
+                    document.getElementById("fdate").value = "";
+                    document.getElementById("idate").value = "";
                 } else {
-                    alert(xhr.status+""+xhr.responseText);
+                    alert("Ocurrio algun erro, por favor verifique su archivo de entrada o comuniquese con el administrador");
                     out.innerText = "";
+                    document.getElementById("xlf").value = "";
+                    document.getElementById("idate").value = "";
+                    document.getElementById("fdate").value = "";
                 }
             };
         }else{
-            alert("porfavor ingresar toda la informacion")
+            alert("porfavor ingresar toda la informacion");
+            out.innerText = "";
+            document.getElementById("xlf").value = "";
+            document.getElementById("fdate").value = "";
+            document.getElementById("idate").value = "";
         }
     }
     if (typeof console !== 'undefined') console.log("output", new Date());

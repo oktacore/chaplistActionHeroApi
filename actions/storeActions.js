@@ -1,7 +1,7 @@
 exports.uploadStores = {
     name: 'uploadStores',
     description: 'upload stores that exist in the differents supermarkets',
-    blockedConnectionTypes: [],
+    blockedConnectionTypes: ['http'],
     outputExample: {},
     matchExtensionMimeType: false,
     version: 1.0,

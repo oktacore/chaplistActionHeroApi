@@ -8,6 +8,14 @@ module.exports = function(sequelize, DataTypes) {
     image: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    categoriesImage: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    otherImage: {
+        type: DataTypes.STRING,
+        allowNull: true
     }
   }, {
     classMethods: {
