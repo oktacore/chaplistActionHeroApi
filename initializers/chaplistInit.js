@@ -48,7 +48,8 @@ module.exports = {
                             .then(function (supermarket) {
                                 supermarket.getStores()
                                     .then(function (stores) {
-                                        next(JSON.stringify(stores), error);
+                                        res.stores = stores;
+                                        next(JSON.stringify(res), error);
                                     });
                             })
                             .catch(function (error) {
@@ -78,8 +79,8 @@ module.exports = {
                                 } else { //si existe una oferta válida entonces se obtienen todos los productos
                                     offer.getProducts({offset: parseInt(offset), limit: 10})
                                         .then(function (products) {
-                                            console.log(offer,products, '*************************************************');
-                                            next(JSON.stringify(products), false);
+                                            res.products = products
+                                            next(JSON.stringify(res), false);
                                         })
                                         .catch(function (error) {
                                             next(JSON.stringify(error), true);
@@ -135,6 +136,61 @@ module.exports = {
                         next(JSON.stringify(res), error);
                     }
                 });
+            },
+            /*
+                Función para obtener una oferta espé
+            */
+            getActualProductInOffer: function(supermarketId, productId, offerId, token,next){
+                api.tokenInit.validateTokenApp(token, function (res, error) {
+                    if (!error) {
+                        api.models.offer.findOne({
+                            where:{
+                                supermarketId: supermarketId,
+                                current: 1,
+                                id:{
+                                    $ne: offerId
+                                }
+                                
+                            }
+                        })
+                        .then(function(offer) {
+                            if(offer){
+                                offer.getProducts({
+                                    where:{
+                                        id: productId
+                                    }
+                                })
+                                .then(function(product){
+                                    product[0].dataValues.supermarketId = supermarketId;
+                                    next(product, false);
+                                })
+                            }                            
+                            else
+                                next('null', true);
+                        });
+                    } else {
+                        next(JSON.stringify(res), error);
+                    }
+                });
+            },
+            getTopFavoritesOffers: function(token, next){
+                api.models.product.findAll({
+                    offset: 0,
+                    limit: 5,
+                    order: 'likes DESC',
+                    include: [{model: api.models.offer, where:{current: 1}, through: {attributes: ['likes','normalPrice','offerPrice']}}]
+                })
+                .then(function(data){
+                    next(JSON.stringify(data), false);
+                });
+                
+                /*api.models.productstore.findAll({
+                    limit: 5,
+                    order: 'likes DESC'
+                })
+                .then(function(data){
+                    next(data, false);
+                });*/
             }
         };
         next();

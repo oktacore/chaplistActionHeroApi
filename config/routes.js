@@ -31,7 +31,9 @@ exports.default = {
         { path: '/Chap/Supermarkets/:token', action: 'getSupermarkets' },
         { path: '/Chap/Stores/:supermarketId/:token', action: 'getStores' },
         { path: '/Chap/Offer/:supermarketId/:offset/:token', action: 'getOffers' },
-        { path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' }
+        { path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' },
+        { path: '/Chap/Offer/topfavs', action: 'topOffers' }
+        
       ],
       post: [
         { path: '/auth/google', action: 'authGoogle' },
@@ -39,7 +41,8 @@ exports.default = {
         { path: '/Chap/tokenPetition', action: 'tokenPetition' },
         { path: '/uploadStore', action: 'uploadStores' },
         { path: '/uploadOffer/supermarket/:supermarket/inicio/:finicio/fin/:ffin',action:'uploadOffers'},
-        { path: '/Chap/Offer/likes/:token', action: 'addOrRemoveLikes' }
+        { path: '/Chap/Offer/likes/:token', action: 'addOrRemoveLikes' },
+        { path: '/Chap/Offer/favproducts/:token', action: 'getFavInOffer' }
           
       ],
       put: [

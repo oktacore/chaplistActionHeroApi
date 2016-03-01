@@ -22,8 +22,7 @@ exports.tokenPetition = {
 
     run: function (api, data, next) {
         api.chaplistInit.tokenPetition(data.params.secretKey, data.params.packageName, data.params.uuid, function (res, error) {
-            data.response = res;
-            next(data.response, error);
+            sendInfo(res, error, data, next);
         });
     }
 };
@@ -47,13 +46,7 @@ exports.getSupermarkets = {
 
     run: function (api, data, next) {
         api.chaplistInit.getSupermarkets(data.params.token,function (res, error) {
-             if(error){
-                data.error = res;
-                next(data.error, true);
-            }else{
-                data.response = res;
-                next(data.response, false);
-            }
+            sendInfo(res, error, data, next);
         });
     }
 };
@@ -79,13 +72,7 @@ exports.getStores = {
 
     run: function (api, data, next) {
         api.chaplistInit.getStores(data.params.supermarketId, data.params.token, function (res, error) {
-             if(error){
-                data.error = res;
-                next(data.error, true);
-            }else{
-                data.response = res;
-                next(data.response, true);
-            }
+             sendInfo(res, error, data, next);
         });
     }
 };
@@ -115,13 +102,7 @@ exports.getOffers = {
 
     run: function (api, data, next) {
         api.chaplistInit.getProductsInOffer(data.params.supermarketId, data.params.offset, data.params.token, function (res, error) {
-            if(error){
-                data.error = res;
-                next(data.error, true);
-            }else{
-                data.response = res;
-                next(data.response, true);
-            }
+            sendInfo(res, error, data, next);
         });
     }
 };
@@ -153,13 +134,80 @@ exports.addOrRemoveLikes = {
 
     run: function (api, data, next) {
         api.chaplistInit.addOrRemoveLikeProduct(data.params.offerId, data.params.productId,data.params.type, data.params.token, function (res, error) {
-            if(error){
-                data.error = res;
-                next(data.error, true);
-            }else{
-                data.response = res;
-                next(data.response, true);
-            }
+            sendInfo(res, error, data, next);
         });
     }
 };
+
+
+
+exports.getFavInOffer = {
+    name: 'getFavInOffer',
+    description: 'getFavInOffer',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+    inputs: {
+        token: {
+            required: true
+        },
+        favProducts: {
+            required: true
+        }
+    },
+    run: function (api, data, next) {
+        var newArray = [];
+        var auxArray = data.params.favProducts;
+        var i =0;
+        for(var i = 0; i < auxArray.length; i++){
+            api.chaplistInit.getActualProductInOffer(auxArray[i].supermarketId, auxArray[i].productId, auxArray[i].offerId, data.params.token, function (res, error) {
+                if(!error){
+                    newArray.push(res);
+                }                
+                if(i == auxArray.length){
+                    data.response = JSON.stringify(newArray);
+                    next(data.response, true);
+                }
+            });            
+        }        
+    }
+};
+
+
+exports.topOffers = {
+    name: 'topOffers',
+    description: 'topOffers',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+    inputs: {
+        token: {
+            required: false
+        }
+    },
+    run: function (api, data, next) {
+            api.chaplistInit.getTopFavoritesOffers('abcdef', function (res, error) {
+                sendInfo(res, error, data, next);
+            });           
+    }
+};
+
+/*
+    Función global para que todas las función envíen la información requerida
+*/
+function sendInfo(res, error, data, next){
+    if(error){
+        data.error = res;
+        next(data.error, true);
+    }else{
+        data.response = res;
+        next(data.response, true);
+    }
+    
+}
