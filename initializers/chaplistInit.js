@@ -77,7 +77,10 @@ module.exports = {
                                 if (!offer) { //compruebo que exista alguna oferta vigente
                                     next('null', true);
                                 } else { //si existe una oferta válida entonces se obtienen todos los productos
-                                    offer.getProducts({offset: parseInt(offset), limit: 10})
+                                    offer.getProducts({
+                                            offset: parseInt(offset),
+                                            limit: 10
+                                        })
                                         .then(function (products) {
                                             res.products = products
                                             next(JSON.stringify(res), false);
@@ -96,34 +99,59 @@ module.exports = {
                 });
             },
             /*
+                Devuleve todos los productos de la oferta vigente de todos los supermercados
+            */
+            getAllProductsInOffer: function (offset, value, token, next) {
+                var offer = {};
+                api.tokenInit.validateTokenApp(token, function (res, error) {
+                    if (!error) {
+                        api.sequelize.query(
+                            "select s.name, p.upc, p.description, o.dateInit, o.dateEnd, ps.normalPrice, ps.offerPrice, ps.likes, ps.image" +
+                            "from Offers o, Products p, ProductStores ps, Supermarkets s" +
+                            "where o.id = ps.offerId" +
+                            "and p.if = ps.productId" +
+                            "and s.id = o.supermarketId" +
+                            "and o.current = 1" +
+                            "and p.description like '%?%';", {
+                                replacements: [value],
+                                type: sequelize.QueryTypes.SELECT
+                            }).then(function (products) {
+                            res.products = products
+                            next(JSON.stringify(res), false);
+                        });
+                    } else {
+                        next(JSON.stringify(res), error);
+                    }
+                });
+            },
+            /*
                 Función para incrementar o decrementar los likes a un producto de una oferta específica
                 1: incrementar y 2: decrementar
             */
-            addOrRemoveLikeProduct: function(offerId, productId, tipo, token, next){
+            addOrRemoveLikeProduct: function (offerId, productId, tipo, token, next) {
                 var count = 0;
                 api.tokenInit.validateTokenApp(token, function (res, error) {
                     if (!error) {
                         api.models.productstore.findOne({
-                            where: {
-                                offerId: offerId,
-                                productId: productId
+                                where: {
+                                    offerId: offerId,
+                                    productId: productId
                                 }
                             })
                             .then(function (offer) {
-                                if(tipo == 1){
-                                    count = offer.likes +1;
-                                }
-                                else if(tipo ==2){
-                                    if(offer.likes == 0){
-                                         next(JSON.stringify(offer), false);
-                                    }else{
-                                        count = offer.likes -1;
+                                if (tipo == 1) {
+                                    count = offer.likes + 1;
+                                } else if (tipo == 2) {
+                                    if (offer.likes == 0) {
+                                        next(JSON.stringify(offer), false);
+                                    } else {
+                                        count = offer.likes - 1;
                                     }
-                                }else{
+                                } else {
                                     next('El parámetro tipo, debe ser 1 o 0', true);
                                 }
                                 offer.update({
-                                    likes: count
+                                        likes: count
                                     })
                                     .then(function (offerUpdated) {
                                         next(JSON.stringify(offerUpdated), false);
@@ -140,50 +168,68 @@ module.exports = {
             /*
                 Función para obtener una oferta espé
             */
-            getActualProductInOffer: function(supermarketId, productId, offerId, token,next){
+            getActualProductInOffer: function (supermarketId, productId, offerId, token, next) {
                 api.tokenInit.validateTokenApp(token, function (res, error) {
                     if (!error) {
                         api.models.offer.findOne({
-                            where:{
-                                supermarketId: supermarketId,
-                                current: 1,
-                                id:{
-                                    $ne: offerId
-                                }
-                                
-                            }
-                        })
-                        .then(function(offer) {
-                            if(offer){
-                                offer.getProducts({
-                                    where:{
-                                        id: productId
+                                where: {
+                                    supermarketId: supermarketId,
+                                    current: 1,
+                                    id: {
+                                        $ne: offerId
                                     }
-                                })
-                                .then(function(product){
-                                    product[0].dataValues.supermarketId = supermarketId;
-                                    next(product, false);
-                                })
-                            }                            
-                            else
-                                next('null', true);
-                        });
+
+                                }
+                            })
+                            .then(function (offer) {
+                                if (offer) {
+                                    offer.getProducts({
+                                            where: {
+                                                id: productId
+                                            }
+                                        })
+                                        .then(function (product) {
+                                            product[0].dataValues.supermarketId = supermarketId;
+                                            next(product, false);
+                                        })
+                                } else
+                                    next('null', true);
+                            });
                     } else {
                         next(JSON.stringify(res), error);
                     }
                 });
             },
-            getTopFavoritesOffers: function(token, next){
-                api.models.product.findAll({
-                    offset: 0,
-                    limit: 5,
-                    order: 'likes DESC',
-                    include: [{model: api.models.offer, where:{current: 1}, through: {attributes: ['likes','normalPrice','offerPrice','image']}}]
-                })
-                .then(function(data){
-                    next(JSON.stringify(data), false);
-                });
-                
+            getTopFavoritesOffers: function (token, next) {
+                /*api.models.product.findAll({
+                        offset: 0,
+                        limit: 5,
+                        order: 'likes DESC',
+                        include: [{
+                            model: api.models.offer,
+                            where: {
+                                current: 1
+                            },
+                            through: {
+                                attributes: ['likes', 'normalPrice', 'offerPrice', 'image']
+                            }
+                        }]
+                    })*/
+                api.sequelize.query(
+                        "select s.name, p.upc, p.description, o.dateInit, o.dateEnd, ps.normalPrice, ps.offerPrice, ps.likes, ps.image" +
+                        "from Offers o, Products p, ProductStores ps, Supermarkets s" +
+                        "where o.id = ps.offerId" +
+                        "and p.if = ps.productId" +
+                        "and s.id = o.supermarketId" +
+                        "and o.current = 1" +
+                        "order by ps.likes" +
+                        "limit 5;", {
+                            type: sequelize.QueryTypes.SELECT
+                        })
+                    .then(function (data) {
+                        next(JSON.stringify(data), false);
+                    });
+
                 /*api.models.productstore.findAll({
                     limit: 5,
                     order: 'likes DESC'
