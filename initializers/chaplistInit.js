@@ -178,7 +178,7 @@ module.exports = {
                     offset: 0,
                     limit: 5,
                     order: 'likes DESC',
-                    include: [{model: api.models.offer, where:{current: 1}, through: {attributes: ['likes','normalPrice','offerPrice']}}]
+                    include: [{model: api.models.offer, where:{current: 1}, through: {attributes: ['likes','normalPrice','offerPrice','image']}}]
                 })
                 .then(function(data){
                     next(JSON.stringify(data), false);

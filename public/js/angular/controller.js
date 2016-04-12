@@ -1,7 +1,7 @@
 angular.module('controllers', [])
 
 .controller('ctrlLogin', function ($scope, $state, $window, factory, jrgGoogleAuth) {
-        var googleClientId = '394841887046-6rq45ur9l6avdrlrhgfjd118f85d9ia7.apps.googleusercontent.com';
+        var googleClientId = '806278964905-sr5fjjh0hd2figvt0oorgvg9vpcammdh.apps.googleusercontent.com';
         var evtGoogleLogin = "evtGoogleLogin";
 
         $scope.headerHome = false;

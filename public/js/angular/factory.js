@@ -123,6 +123,7 @@ angular.module('factories', [])
 
     function addAppLS(res) {
         res = JSON.parse(res.data);
+	if(comun.apps){comun.apps = [];}
         comun.apps.push(res);
         localStorageService.set('apps', comun.apps);
     }
