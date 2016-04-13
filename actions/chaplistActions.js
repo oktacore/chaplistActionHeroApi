@@ -107,6 +107,35 @@ exports.getOffers = {
     }
 };
 
+exports.getAllOffers = {
+    name: 'getAllOffers',
+    description: 'getAllOffers',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+
+    inputs: {
+        token: {
+            required: true
+        },
+        offset: {
+            required: false
+        },
+        value:  {
+            requeried: true
+        }
+    },
+
+    run: function (api, data, next) {
+        api.chaplistInit.getAllProductsInOffer(data.params.offset, data.params.value, data.params.token, function (res, error) {
+            sendInfo(res, error, data, next);
+        });
+    }
+};
+
 exports.addOrRemoveLikes = {
     name: 'addOrRemoveLikes',
     description: 'addOrRemoveLikes',
