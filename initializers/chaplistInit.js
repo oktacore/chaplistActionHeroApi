@@ -112,8 +112,8 @@ module.exports = {
                             "and p.id = ps.productId " +
                             "and s.id = o.supermarketId " +
                             "and o.current = 1 " +
-                            "and p.description like '%?%'; ", {
-                                replacements: [value],
+                            "and p.description like ?; ", {
+                                replacements: ['%'+value+'%'],
                                 type: api.sequelize.QueryTypes.SELECT
                             }).then(function (products) {
                             res.products = products
