@@ -33,7 +33,7 @@ exports.default = {
         { path: '/Chap/Offer/:supermarketId/:offset/:token', action: 'getOffers' },
         { path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' },
         { path: '/Chap/Offer/topfavs', action: 'topOffers' },
-        { path: '/Chap/getAllOffers/:offset/:token', action: 'getAllOffers'}
+        { path: '/Chap/getAllOffers/:value/:offset/:token', action: 'getAllOffers'}
         
       ],
       post: [
