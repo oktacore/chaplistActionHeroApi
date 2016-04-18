@@ -82,9 +82,7 @@ module.exports = {
                                             limit: 10
                                         })
                                         .then(function (products) {
-                                            res.products = products;
-					    res.products[0].dataValues.dateInit = offer.dateInit;
-					    res.products[0].dataValues.dateEnd = offer.dateEnd;
+                                            res.products = products
                                             next(JSON.stringify(res), false);
                                         })
                                         .catch(function (error) {
@@ -114,8 +112,8 @@ module.exports = {
                             "and p.id = ps.productId " +
                             "and s.id = o.supermarketId " +
                             "and o.current = 1 " +
-                            "and p.description like ?; ", {
-                                replacements: ['%'+value+'%'],
+                            "and p.description like '?'; ", {
+                                replacements: ['$'+value+'')],
                                 type: api.sequelize.QueryTypes.SELECT
                             }).then(function (products) {
                             res.products = products
@@ -192,8 +190,6 @@ module.exports = {
                                         })
                                         .then(function (product) {
                                             product[0].dataValues.supermarketId = supermarketId;
-					    product[0].dataValues.dateInit = offer.dateInit;
-				            product[0].dataValues.dateEnd = offer.dateEnd;
                                             next(product, false);
                                         })
                                 } else
