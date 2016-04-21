@@ -108,7 +108,7 @@ module.exports = {
                 api.tokenInit.validateTokenApp(token, function (res, error) {
                     if (!error) {
                         api.sequelize.query(
-                            "select s.name, p.upc, p.description, o.dateInit, o.dateEnd, ps.normalPrice, ps.offerPrice, ps.likes, ps.image " +
+                            "select s.name,p.id as productId,o.id as offerId, p.upc, p.description, o.dateInit, o.dateEnd, ps.normalPrice, ps.offerPrice, ps.likes, ps.image " +
                             "from Offers o, Products p, ProductStores ps, Supermarkets s " +
                             "where o.id = ps.offerId " +
                             "and p.id = ps.productId " +
@@ -220,7 +220,7 @@ module.exports = {
                         }]
                     })*/
                 api.sequelize.query(
-                        "select s.name, p.upc, p.description, o.dateInit, o.dateEnd, ps.normalPrice, ps.offerPrice, ps.likes, ps.image " +
+                        "select s.name, p.upc, p.description,p.id as productId, o.id as offerId, o.dateInit, o.dateEnd, ps.normalPrice, ps.offerPrice, ps.likes, ps.image " +
                         "from Offers o, Products p, ProductStores ps, Supermarkets s " +
                         "where o.id = ps.offerId " +
                         "and p.id = ps.productId " +
