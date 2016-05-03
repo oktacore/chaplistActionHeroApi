@@ -114,7 +114,8 @@ module.exports = {
                             "and p.id = ps.productId " +
                             "and s.id = o.supermarketId " +
                             "and o.current = 1 " +
-                            "and p.description like ?; ", {
+                            "and p.description like ? "+
+			    "order by ps.offerPrice ASC;", {
                                 replacements: ['%'+value+'%'],
                                 type: api.sequelize.QueryTypes.SELECT
                             }).then(function (products) {
@@ -226,7 +227,7 @@ module.exports = {
                         "and p.id = ps.productId " +
                         "and s.id = o.supermarketId " +
                         "and o.current = 1 " +
-                        "order by ps.likes DESC " +
+                        "order by ps.likes DESC, ps.offerPrice ASC " +
                         "limit 5;", {
                             type: api.sequelize.QueryTypes.SELECT
                         })
