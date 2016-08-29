@@ -25,31 +25,18 @@ exports.action = {
 
     run: function (api, data, next) {
         var error = null;
-        api.offerInit.updateOffer(data.params.supermarket, function (res, error) {
-            api.offerInit.createOffer(data.params.finicio, data.params.ffin, data.params.supermarket, function (offer, error) {
-                var size = data.params.offers.length;
-                var i;
-                for (i = 0; i < size; i++) {
-                    api.offerInit.addProduct(offer, data.params.offers[i], function (res, error) {
-                        if (error) {
-                            data.response = res + "\n" + "por favor revise su archivo de entrada o comuniquese con el administrador del sistema";
-                            next(res, error);
-                        } else if (i == size - 1) {
-                            data.response("carga efectuada exitosamente");
-                            next(data.response);
-                        }
-                    });
-                }
-                data.response = offer + "\n" + "por favor revise su archivo de entrada o comuniquese con el administrador del sistema";
-                next(offer, error);
-            });
-            if (error){
-                data.response = res + "\n" + "por favor revise su archivo de entrada o comuniquese con el administrador del sistema";
-            }
-            if(error){
-                next(res, error);
-            }
-        });
+        const cassandraD = require('cassandra-driver');
+         const cliente = new cassandraD.Client({ contactPoints: ['127.0.0.1'], keyspace: 'chaplist'});
+         var size = data.params.offers.length;
+         for (i = 0; i < size; i++) {
+           const query = 'INSERT INTO Oferta_por_id(bucket, id_oferta, imagenes, fecha_inicio, fecha_final, '
+             + 'precio_normal, precio_oferta, upcs, nombre, descuento, categorias, sucursales, puntuacion)'
+             + 'VALUES(1,uuid(),{\''+data.params.offers[i].image+'\'}, \''+data.params.finicio+'\', \''
+             +data.params.ffin+'\', '+data.params.offers[i].normalPrice+', '+data.params.offers[i].offerPrice+', {\''+data.params.offers[i].upc
+             +'\'}, \''+data.params.offers[i].descripcion+'\', 0, {\'categoria\'}, {\'sucursales\'}, 0);';
+             cliente.execute(query, function(err, result) {
+             });
+         }
         next(error);
     }
 };
