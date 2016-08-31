@@ -39,14 +39,24 @@ exports.getSupermarkets = {
     middleware: [],
 
     inputs: {
-        token: {
+        pais: {
             required: true
+        },
+        lastUuidSupermercado: {
+          required: false
         }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getSupermarkets(data.params.token,function (res, error) {
-            sendInfo(res, error, data, next);
+        // data.response.params = data.params;
+        const uuidSupermercado = api.cassandra.types.Uuid.fromString(data.params.lastUuidSupermercado || '00000000-0000-0000-0000-000000000000');
+        const nombrePais = 'guatemala';
+        // console.log(uuidSupermercado);
+        api.cassandra.client.execute('SELECT * FROM supermercado_por_pais WHERE nombre_pais = ? AND id_super > ? limit 10', [nombrePais, uuidSupermercado], {prepare: true}, function (err, res) {
+          // console.log(require('util').inspect(res, { depth: 2 }));
+          data.response.err = err;
+          data.response.supermercados = res.rows;
+          next();
         });
     }
 };
@@ -62,17 +72,16 @@ exports.getStores = {
     middleware: [],
 
     inputs: {
-        token: {
-            required: false
-        },
-        supermarketId: {
-            required: true
-        }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getStores(data.params.supermarketId, data.params.token, function (res, error) {
-             sendInfo(res, error, data, next);
+        // data.response.params = data.params;
+        api.cassandra.client.execute('SELECT * FROM Sucursales', [], {prepare: true, consistency: api.cassandra.types.consistencies.quorum }, function (err, res) {
+          data.response.err = err;
+          if (res) {
+            data.response.supermercados = res.rows;
+          }
+          next();
         });
     }
 };
@@ -89,21 +98,20 @@ exports.getOffers = {
     middleware: [],
 
     inputs: {
-        token: {
-            required: true
+        uuidSupermercado: {
+          required: true
         },
-        offset: {
-            required: true
-        },
-        supermarketId: {
-            required: true
+        lastUuidOferta: {
+          required: false
         }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getProductsInOffer(data.params.supermarketId, data.params.offset, data.params.token, function (res, error) {
-            sendInfo(res, error, data, next);
-        });
+        // api.chaplistInit.getProductsInOffer(data.params.supermarketId, data.params.offset, data.params.token, function (res, error) {
+        //     sendInfo(res, error, data, next);
+        // });
+        data.response.params = data.params;
+        next();
     }
 };
 
@@ -195,13 +203,13 @@ exports.getFavInOffer = {
             api.chaplistInit.getActualProductInOffer(auxArray[i].supermarketId, auxArray[i].productId, auxArray[i].offerId, data.params.token, function (res, error) {
                 if(!error){
                     newArray.push(res);
-                }                
+                }
                 if(i == auxArray.length){
                     data.response = JSON.stringify(newArray);
                     next(data.response, true);
                 }
-            });            
-        }        
+            });
+        }
     }
 };
 
@@ -223,7 +231,7 @@ exports.topOffers = {
     run: function (api, data, next) {
             api.chaplistInit.getTopFavoritesOffers('abcdef', function (res, error) {
                 sendInfo(res, error, data, next);
-            });           
+            });
     }
 };
 
@@ -238,5 +246,5 @@ function sendInfo(res, error, data, next){
         data.response = res;
         next(data.response, true);
     }
-    
+
 }
