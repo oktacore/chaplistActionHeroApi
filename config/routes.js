@@ -41,8 +41,8 @@ exports.default = {
         { path: '/Chap/favorites/:userId', action: 'getFavorites'}, //Q9-10 no existe
         { path: '/Chap/categories/', action: 'getCategories'}, //Q11.1 (insertar quemado)
         { path: '/Chap/offersCategory/:category', action: 'getOffersByCategory'}, //Q12
-        { path: '/Chap/offersPrice/:max', action: 'getOffersByPrice'}, //Q11
-        { path: '/Chap/offersDiscount/:max', action: 'getOffersByDiscount'}, //Q13
+        { path: '/Chap/offersPrice/:max/:min', action: 'getOffersByPrice'}, //Q11
+        { path: '/Chap/offersDiscount/:max/:min', action: 'getOffersByDiscount'}, //Q13
         { path: '/Admin/visitas/usuario/:offerId/:userId', action: 'getVisitasUsuario'}, //Q15,
         { path: '/Admin/visitas/pais/:offerId/:pais', action: 'getVisitasPais'}, //Q16,
 

@@ -15,8 +15,8 @@ exports.getOffersByProduct = {
     },
 
     run: function (api, data, next) {
-      var d = new Date();
-      api.cassandra.client.execute('select * from Ofertas_por_producto where upc=? and fecha_fin>?', [data.params.upc, d], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
+      //var d = new Date();
+      api.cassandra.client.execute('select * from Ofertas_por_producto where upc=?', [data.params.upc], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
         data.response.err = err;
         if (result) {
             data.response.oferta = result.rows;
@@ -95,8 +95,8 @@ exports.getOffersByCategory = {
     },
 
     run: function (api, data, next) {
-      var d = new Date();
-      api.cassandra.client.execute('select * from Ofertas_por_categoria where categoria=? and fecha_final>?', [data.params.category, d], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
+      //var d = new Date();
+      api.cassandra.client.execute('select * from Ofertas_por_categoria where categoria=?', [data.params.category], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
         data.response.err = err;
         if (result) {
             data.response.oferta = result.rows;
@@ -119,13 +119,49 @@ exports.getOffersByPrice = {
     inputs: {
       max: {
         required: true
+      },
+      min: {
+        required: true
       }
     },
 
     run: function (api, data, next) {
-      var d = new Date();
-      api.cassandra.client.execute('select * from Ofertas_por_precio where (fecha_final, precio_oferta) <= (\'3015-08-30\', '+data.params.max+')  allow filtering'
-      //, ['3015-08-30', data.params.max, d, -1]
+      //var d = new Date();
+      api.cassandra.client.execute('select * from Ofertas_por_precio where precio_oferta <= ? and precio_oferta>=?'
+      , [data.params.max, data.params.min]
+      , {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
+        data.response.err = err;
+        if (result) {
+            data.response.oferta = result.rows;
+        }
+        next();
+      });
+    }
+};
+
+exports.getOffersByDiscount = {
+  name: 'getOffersByDiscount',
+  description: 'getOffersByDiscount',
+  blockedConnectionTypes: [],
+  outputExample: {},
+  matchExtensionMimeType: false,
+  version: 1.0,
+  toDocument: true,
+  middleware: [],
+
+    inputs: {
+      max: {
+        required: true
+      },
+      min: {
+        required: true
+      }
+    },
+
+    run: function (api, data, next) {
+      //var d = new Date();
+      api.cassandra.client.execute('select * from Ofertas_por_descuento where descuento <= ? and descuento>=?'
+      , [data.params.max, data.params.min]
       , {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
         data.response.err = err;
         if (result) {
@@ -187,6 +223,94 @@ exports.getVisitasPais = {
 
     run: function (api, data, next) {
       api.cassandra.client.execute('select * from Oferta_visita_por_usuario_pais where id_oferta=? and id_pais', [data.params.offerId, data.params.pais], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
+        data.response.err = err;
+        if (result) {
+            data.response.oferta = result.rows;
+        }
+        next();
+      });
+    }
+};
+
+exports.createComment = {
+  name: 'createComment',
+  description: 'createComment',
+  blockedConnectionTypes: [],
+  outputExample: {},
+  matchExtensionMimeType: false,
+  version: 1.0,
+  toDocument: true,
+  middleware: [],
+
+    inputs: {
+      offerId: {
+        required: true
+      },
+      userId:{
+        required: true
+      },
+      comment:{
+        required: true
+      }
+    },
+
+    run: function (api, data, next) {
+      var d = new Date();
+      api.cassandra.client.execute('insert into comentario_oferta(id_oferta, id_usuario, comentario, fecha) values(?,?,?,?)', [data.params.offerId, data.params.user_id, data.params.comment, d], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
+        data.response.err = err;
+        if (result) {
+            data.response.oferta = result.rows;
+        }
+        next();
+      });
+    }
+};
+
+exports.getUserInfo = {
+  name: 'getUserInfo',
+  description: 'getUserInfo',
+  blockedConnectionTypes: [],
+  outputExample: {},
+  matchExtensionMimeType: false,
+  version: 1.0,
+  toDocument: true,
+  middleware: [],
+
+    inputs: {
+      userId: {
+        required: true
+      }
+    },
+
+    run: function (api, data, next) {
+      api.cassandra.client.execute('select * from Usuario where id=?', [data.params.userId], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
+        data.response.err = err;
+        if (result) {
+            data.response.oferta = result.rows;
+        }
+        next();
+      });
+    }
+};
+
+exports.getComments = {
+  name: 'getComments',
+  description: 'getComments',
+  blockedConnectionTypes: [],
+  outputExample: {},
+  matchExtensionMimeType: false,
+  version: 1.0,
+  toDocument: true,
+  middleware: [],
+
+    inputs: {
+      offerId: {
+        required: true
+      }
+    },
+
+    run: function (api, data, next) {
+      api.cassandra.client.execute('select * from comentario_oferta where id_oferta=?', [data.params.offerId], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
         data.response.err = err;
         if (result) {
             data.response.oferta = result.rows;
