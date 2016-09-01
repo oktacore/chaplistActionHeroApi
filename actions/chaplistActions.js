@@ -39,14 +39,24 @@ exports.getSupermarkets = {
     middleware: [],
 
     inputs: {
-        token: {
+        pais: {
             required: true
+        },
+        lastUuidSupermercado: {
+          required: false
         }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getSupermarkets(data.params.token,function (res, error) {
-            sendInfo(res, error, data, next);
+        // data.response.params = data.params;
+        const uuidSupermercado = api.cassandra.types.Uuid.fromString(data.params.lastUuidSupermercado || '00000000-0000-0000-0000-000000000000');
+        const nombrePais = 'Guatemala';
+        // console.log(uuidSupermercado);
+        api.cassandra.client.execute('SELECT * FROM supermercado_por_pais WHERE nombre_pais = ? AND id_super > ? limit 10', [nombrePais, uuidSupermercado], {prepare: true}, function (err, res) {
+          // console.log(require('util').inspect(res, { depth: 2 }));
+          data.response.err = err;
+          data.response.res = res.rows;
+          next();
         });
     }
 };
@@ -62,17 +72,16 @@ exports.getStores = {
     middleware: [],
 
     inputs: {
-        token: {
-            required: false
-        },
-        supermarketId: {
-            required: true
-        }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getStores(data.params.supermarketId, data.params.token, function (res, error) {
-             sendInfo(res, error, data, next);
+        // data.response.params = data.params;
+        api.cassandra.client.execute('SELECT * FROM Sucursales', [], {prepare: true, consistency: api.cassandra.types.consistencies.quorum }, function (err, res) {
+          data.response.err = err;
+          if (res) {
+            data.response.res = res.rows;
+          }
+          next();
         });
     }
 };
@@ -89,20 +98,31 @@ exports.getOffers = {
     middleware: [],
 
     inputs: {
-        token: {
-            required: true
+        nombreSupermercado: {
+          required: true
         },
-        offset: {
-            required: true
-        },
-        supermarketId: {
-            required: true
+        lastUuidOferta: {
+          required: false
         }
     },
 
     run: function (api, data, next) {
-        api.chaplistInit.getProductsInOffer(data.params.supermarketId, data.params.offset, data.params.token, function (res, error) {
-            sendInfo(res, error, data, next);
+        // api.chaplistInit.getProductsInOffer(data.params.supermarketId, data.params.offset, data.params.token, function (res, error) {
+        //     sendInfo(res, error, data, next);
+        // });
+        data.response.params = data.params;
+        // console.log('UUID: ' + data.params.lastUuidOferta);
+        // console.error(new Error('UUID: ' + data.params.lastUuidOferta));
+        // const uuidSupermercado = api.cassandra.types.Uuid.fromString(data.params.lastUuidSupermercado);
+
+        const uuidOferta = api.cassandra.types.Uuid.fromString(data.params.lastUuidOferta || '00000000-0000-0000-0000-000000000001');
+        const fecha = new Date();
+        // console.log(uuidSupermercado);
+        api.cassandra.client.execute('SELECT * FROM Ofertas_por_supermercado WHERE supermercado_nombre = ? AND id_oferta > ? limit 10', [data.params.nombreSupermercado, uuidOferta], {prepare: true}, function (err, res) {
+          // console.log(require('util').inspect(res, { depth: 2 }));
+          data.response.err = err;
+          data.response.res = res.rows;
+          next();
         });
     }
 };
@@ -195,13 +215,13 @@ exports.getFavInOffer = {
             api.chaplistInit.getActualProductInOffer(auxArray[i].supermarketId, auxArray[i].productId, auxArray[i].offerId, data.params.token, function (res, error) {
                 if(!error){
                     newArray.push(res);
-                }                
+                }
                 if(i == auxArray.length){
                     data.response = JSON.stringify(newArray);
                     next(data.response, true);
                 }
-            });            
-        }        
+            });
+        }
     }
 };
 
@@ -216,16 +236,53 @@ exports.topOffers = {
     toDocument: true,
     middleware: [],
     inputs: {
-        token: {
-            required: false
-        }
     },
     run: function (api, data, next) {
-            api.chaplistInit.getTopFavoritesOffers('abcdef', function (res, error) {
-                sendInfo(res, error, data, next);
-            });           
+      // TODO: terminar
+      api.cassandra.client.execute('SELECT * FROM Ofertas_top WHERE puntuacion=5 LIMIT 10', [], {prepare: true}, function (err, res) {
+        // console.log(require('util').inspect(res, { depth: 2 }));
+        data.response.err = err;
+        data.response.res = res.rows;
+        next();
+      });
     }
 };
+
+
+exports.getComments = {
+    name: 'getComments',
+    description: 'getComments',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+    inputs: {
+      inputs: {
+          offerId: {
+              required: true
+          },
+          lastDate: {
+            required: false
+          }
+      },
+    },
+    run: function (api, data, next) {
+      const uuidOferta = api.cassandra.types.Uuid.fromString(data.params.offerId);
+      const ultimaFecha = new Date(lastDate);
+
+      api.cassandra.client.execute('SELECT * FROM Ofertas WHERE id_oferta = ? AND fecha >= ? limit 10', [uuidOferta, fecha], {prepare: true}, function (err, res) {
+        // console.log(require('util').inspect(res, { depth: 2 }));
+        data.response.err = err;
+        if (res) {
+          data.response.res = res.rows;
+        }
+        next();
+      });
+    }
+};
+
 
 /*
     Función global para que todas las función envíen la información requerida
@@ -238,5 +295,5 @@ function sendInfo(res, error, data, next){
         data.response = res;
         next(data.response, true);
     }
-    
+
 }

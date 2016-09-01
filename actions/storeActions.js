@@ -9,26 +9,51 @@ exports.uploadStores = {
     middleware: [],
 
     inputs: {
-        stores: {
-            required: true
-        }
+        uuidSupermercado: {required: false},
+        nombre: {required: true},
+        imagen: {required: true},
+        longitud: {required: true},
+        latitud: {required: true},
+        calle: {required: true},
+        numero: {required: true},
+        zona: {required: true},
+        ciudad: {required: true},
+        pais: {required: true},
+        telefono: {required: true},
     },
 
     run: function (api, data, next) {
-        var error = null;
-        var params = data.params;
-        var size = data.params.stores.length;
-        var i;
-        for (i = 0; i < size; i++) {
-            api.storeInit.createStore(params.stores[i], function (res, error) {
-                if (error) {
-                    data.response = res + "\n" + "por favor revise su archivo de entrada o comuniquese con el administrador del sistema";
-                    next(error, true);
-                } else if (i == size - 1) {
-                    data.response("carga efectuada exitosamente");
-                    next();
-                }
-            });
+      const uuid = data.params.uuidSupermercado ?
+        api.cassandra.types.Uuid.fromString(data.params.uuidSupermercado) :
+        api.casssandra.Uuid.random();
+
+      const supermercado = {
+        uuid: uuid,
+        nombre: data.params.nombre,
+        imagen: data.params.imagen,
+        coordenadas: {
+          longitud: data.params.longitud,
+          latitud: data.params.latitud
+        },
+        direccion: {
+          calle: data.params.calle,
+          numero: data.params.numero,
+          zona: data.params.zona,
+          ciudad: data.params.ciudad,
+          pais: data.params.pais,
+        },
+        telefono: [data.params.telefono]
+      };
+
+      const query = 'INSERT INTO Sucursales (id, nombre, imagen, coordenadas, direccion, telefono) VALUES (?, ?, ?, ?, ?, ?)';
+      const params = [supermercado.uuid, supermercado.nombre, supermercado.imagen, supermercado.coordenadas, supermercado.direccion, supermercado.telefono];
+
+      api.cassandra.client.execute(query, params, {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
+        data.response.err = err;
+        if (result) {
+            data.response.res = result.rows;
         }
+        next();
+      });
     }
 };

@@ -159,3 +159,49 @@ exports.post = {
 };
 
 
+exports.upsertUser = {
+    name: 'upsertUser',
+    description: 'upsertUser',
+    blockedConnectionTypes: [],
+    outputExample: {},
+    matchExtensionMimeType: false,
+    version: 1.0,
+    toDocument: true,
+    middleware: [],
+
+    inputs: {
+      uuidUsuario: {required: false},
+      nombre: {required: true},
+      fechaRegistro: {required: false},
+      correo: {required: true},
+      imagen: {required: true}
+    },
+
+    run: function (api, data, next) {
+      const uuid = data.params.uuidUsuario ?
+          api.cassandra.types.Uuid.fromString(data.params.uuidUsuario) :
+          api.casssandra.Uuid.random();
+      const fechaRegistro = data.params.fechaRegistro ?
+          new Date(data.params.fechaRegistro) :
+          new Date();
+
+      const usuario = {
+        uuid: uuid,
+        nombre: data.params.nombre,
+        fechaRegistro: fechaRegistro,
+        correo: data.params.correo,
+        imagen: data.params.imagen
+      };
+
+      const query = 'INSERT INTO Usuario (id, nombre, fechaRegistro, correo, imagen) VALUES (?, ?, ?, ?, ?)';
+      const params = [usuario.uuid, usuario.nombre, usuario.fechaRegistro, usuario.correo, usuario.imagen];
+
+      api.cassandra.client.execute(query, params, {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
+        data.response.err = err;
+        if (result) {
+            data.response.res = result.rows;
+        }
+        next();
+      });
+    }
+};

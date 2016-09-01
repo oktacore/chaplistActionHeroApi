@@ -9,10 +9,10 @@ exports.default = {
         serverOptions: {},
         // Port or Socket Path
         //port: process.env.PORT || 80,
-        port: 8080,
+        port: 8081,
         // Which IP to listen on (use '0.0.0.0' for all; '::' for all on ipv4 and ipv6)
         // Set to `null` when listening to socket
-        bindIP: '127.0.0.1',
+        bindIP: '192.9.200.24',
         // Any additional headers you want actionhero to respond with
         httpHeaders : {
           'X-Powered-By'                : api.config.general.serverName,
@@ -25,7 +25,7 @@ exports.default = {
         urlPathForActions : 'api',
         // Route that static files will be served from;
         //  path (relative to your project root) to serve static content from
-        //  set to `null` to disable the file server entirely 
+        //  set to `null` to disable the file server entirely
         urlPathForFiles : 'public',
         // When visiting the root URL, should visitors see 'api' or 'file'?
         //  Visitors can always visit /api and /public as normal
@@ -78,7 +78,7 @@ exports.default = {
   }
 }
 
-exports.production = { 
+exports.production = {
   servers: {
     web: function(api){
       return {
@@ -93,7 +93,7 @@ exports.production = {
 }
 
 exports.test = {
-  servers: { 
+  servers: {
     web: function(api){
       return {
         secure: false,
