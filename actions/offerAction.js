@@ -24,22 +24,6 @@ exports.uploadOffers = {
     },
 
     run: function (api, data, next) {
-        var error = null;
-        var size = data.params.offers.length;
-        for (i = 0; i < size; i++) {
-            api.offerInit.createOffer(data.params.finicio, data.params.ffin, data.params.supermarket, data.params.offers[i], function (error) {
-              if (error) {
-                data.response = res + "\n" + "por favor revise su archivo de entrada o comuniquese con el administrador del sistema";
-                next(error);
-              } else if (i == size - 1) {
-                data.response("carga de "+data.params.offer[i].descripcion+" efectuada exitosamente");
-                next(data.response);
-              }
-              data.response = offer + "\n" + "por favor revise su archivo de entrada o comuniquese con el administrador del sistema";
-              next(error);
-            });
-        }
-        next(error);
 
       var error = null;
       var size = data.params.offers.length;
@@ -51,29 +35,28 @@ exports.uploadOffers = {
         //  if (result) {
               //data.response.oferta = result.rows;
               //count = result.rows[0].count;
-              var bucket = 1;//Math.trunc(count/100);
 
-              var Uuid = require('cassandra-driver').types.Uuid;
-              var id = Uuid.random();
+              var id = api.cassandra.types.Uuid.random();
+              var bucket = parseInt(id.toString()[id.toString().length-1], 16);//Math.trunc(count/100);
               api.cassandra.client.execute('INSERT INTO Oferta_por_id(bucket, id_oferta, imagenes, fecha_inicio, fecha_final,'
                 + 'precio_normal, precio_oferta, upcs, nombre, descuento, categoria, sucursales, puntuacion, supermercado_nombre)'
                 + ' VALUES(?,?,?,?,?,?,?,?,?,?,?,'+offer.sucursales+',?,?)'
               , [bucket, id, [offer.image], data.params.finicio, data.params.ffin
                 , parseFloat(offer.normalPrice), parseFloat(offer.offerPrice), [offer.upc], '\''+offer.descripcion+'\'', 0
-                , offer.category, 0, data.params.supermarket]
+                , offer.category, 5, data.params.supermarket]
               , {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
                 console.error(new Error(err));
                 data.response.err = err;
                 if (result) {
                     //data.response.oferta = data.params.offers[i].descripcion + " insertada";
                 }
-                  next();
+                  //next();
                 });
 
                 api.cassandra.client.execute('INSERT INTO Ofertas_por_producto(upc, id_oferta, nombre, precio_oferta, '
                     + 'fecha_fin, imagen, puntuacion, descuento) VALUES(?,?,?,?,?,?,?,?)'
                   , [offer.upc, id, offer.descripcion, parseFloat(offer.offerPrice)
-                    , data.params.ffin, offer.image, 0, 0]
+                    , data.params.ffin, offer.image, 5, 0]
                   , {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
                   data.response.err = err;
                   console.error(new Error(err));
@@ -83,10 +66,9 @@ exports.uploadOffers = {
                   next();
                 });
 
-                api.cassandra.client.execute('INSERT INTO Ofertas_por_precio(id_oferta, nombre, precio_oferta, '
-                    + 'fecha_final, imagen, puntuacion) VALUES(?,?,?,?,?,?)'
-                  , [id, offer.descripcion, parseFloat(offer.offerPrice)
-                    , data.params.ffin, offer.image, 0]
+                var bucket = offer.category[0];
+                api.cassandra.client.execute('INSERT INTO Categoria(bucket, nombre) VALUES(?,?)'
+                  , [bucket, offer.category]
                   , {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
                   data.response.err = err;
                   console.error(new Error(err));
@@ -96,18 +78,7 @@ exports.uploadOffers = {
                   next();
                 });
 
-                api.cassandra.client.execute('INSERT INTO Ofertas_por_descuento(id_oferta, nombre, descuento, '
-                    + 'fecha_final, imagen, puntuacion) VALUES(?,?,?,?,?,?)'
-                  , [id, offer.descripcion, parseFloat(offer.descuento)
-                    , data.params.ffin, offer.image, 0]
-                  , {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
-                  data.response.err = err;
-                  console.error(new Error(err));
-                  if (result) {
-                      data.response.oferta = result.rows;
-                  }
-                  next();
-                });
+
         //  }
         //  next();
         //});
@@ -136,10 +107,11 @@ exports.getOfferDetail = {
     },
 
     run: function (api, data, next) {
-      api.cassandra.client.execute('select * from Oferta_por_id where bucket=? and id_oferta=?', [1,data.params.offerId], {prepare: true, consistency: api.cassandra.types.consistencies.all}, function(err, result){
+      var bucket = parseInt(offerId.toString()[offerId.toString().length-1], 16);//Math.trunc(count/100);
+      api.cassandra.client.execute('select * from Oferta_por_id where bucket=? and id_oferta=?', [bucket,data.params.offerId], {prepare: true, consistency: api.cassandra.types.consistencies.quorum}, function(err, result){
         data.response.err = err;
         if (result) {
-            data.response.oferta = result.rows;
+            data.response.res = result.rows;
         }
         next();
       });

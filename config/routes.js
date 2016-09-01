@@ -30,9 +30,10 @@ exports.default = {
         { path: '/Apps/:token', action: 'getApps' },
         { path: '/Chap/Supermarkets/:pais', action: 'getSupermarkets' }, //Q4 quemar
         { path: '/Chap/Stores/', action: 'getStores' }, //Q2
-        { path: '/Chap/Offer/:uuidSupermercado/', action: 'getOffers' }, //Q5
-        //{ path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' },
         { path: '/Chap/Offer/topfavs', action: 'topOffers' }, //Q1
+        { path: '/Chap/Offer/:nombreSupermercado/', action: 'getOffers' }, //Q5
+        //{ path: '/Chap/Offer/addLike/:offerId/:productId', action: 'addLikes' },
+
         { path: '/Chap/getAllOffers/:value/:offset/', action: 'getAllOffers'},
         { path: '/Chap/getComentarios/:offerId', action: 'getComments'}, //Q7 no existe
         { path: '/Chap/getPerfil/:userId', action: 'getUserInfo'}, //Q3, no existe action,
